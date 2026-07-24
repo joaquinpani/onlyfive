@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://vc7ahn6cuo88"
+path="res://.godot/imported/palanca baja.ogg-62fa0a8f2491d3dfa34d66bb16bdd087.oggvorbisstr"
+
+[deps]
+
+source_file="res://sonidos/palanca baja.ogg"
+dest_files=["res://.godot/imported/palanca baja.ogg-62fa0a8f2491d3dfa34d66bb16bdd087.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

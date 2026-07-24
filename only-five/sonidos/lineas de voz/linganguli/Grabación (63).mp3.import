@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c512yaiexu8ey"
+path="res://.godot/imported/Grabación (63).mp3-00b6f7c33e54226f441258ad623d98d1.mp3str"
+
+[deps]
+
+source_file="res://sonidos/lineas de voz/linganguli/Grabación (63).mp3"
+dest_files=["res://.godot/imported/Grabación (63).mp3-00b6f7c33e54226f441258ad623d98d1.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

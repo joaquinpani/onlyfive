@@ -1,0 +1,23 @@
+~ start
+set GameManager.camara = false
+???: Hi there, i see you before?
+- No, who are you?
+	???: I am ginganguli.
+	ginganguli: i think you are trying to escape right?
+	giganguli: you need to pull the left handle
+	ginganguli: for anything in the world pull the left handle, its a trap!!
+	ginganguli: and you dont wanna lost time in traps right?
+	ginganguli: you dont have so much time
+	player: what are you trying to say? 
+	ginganguli: nothing, i just think you dont wanna lost five minutes in a trap
+	player: okey?
+	ginganguli: so... what handle are you going to pull?
+	- The left handel
+		ginganguli: come on men Do whatever you want but dont cry after, I warned you
+	- The right handel
+	ginganguli: yeah man you are so smart and handfull
+- Yes, i know who are you
+	Nathan: okey so you know what to do
+	
+set GameManager.camara = true
+=> END

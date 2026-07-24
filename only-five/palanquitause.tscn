@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://edcwff702kwf"]
+
+[ext_resource type="Script" uid="uid://ckk4el5cr6mim" path="res://palanquita.gd" id="1_1jkh3"]
+[ext_resource type="PackedScene" uid="uid://c8mww0ly41y3b" path="res://sprites/palanca.glb" id="2_ajrni"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_nho35"]
+radius = 0.6229661
+
+[node name="palanquita" type="StaticBody3D" unique_id=2075512238]
+script = ExtResource("1_1jkh3")
+
+[node name="palanca" parent="." unique_id=873458189 instance=ExtResource("2_ajrni")]
+transform = Transform3D(-2.1855694e-08, -0.5, 0, -0.5, 2.1855694e-08, 4.371139e-08, -4.371139e-08, 1.9106855e-15, -0.5, 2.8437977, 2.286456, -9.810335)
+
+[node name="Cube_001" parent="palanca" index="1" unique_id=1950286121]
+transform = Transform3D(0.05614615, -0.8275029, 0, 0.0827503, 0.56146145, 0, 0, 0, 0.1, 0.03136377, 0, 0.5248412)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1604888748]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5459301, 2.3887057, -9.816848)
+shape = SubResource("SphereShape3D_nho35")
+
+[editable path="palanca"]

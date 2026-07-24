@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://drj8pmj2o4h1a"
+path="res://.godot/imported/charla inicial.dialogue-93287638a346906a66bd50aca8abf60d.tres"
+
+[deps]
+
+source_file="res://dialogos/charla inicial.dialogue"
+dest_files=["res://.godot/imported/charla inicial.dialogue-93287638a346906a66bd50aca8abf60d.tres"]
+
+[params]
+
+defaults=true

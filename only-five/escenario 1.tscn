@@ -1,0 +1,180 @@
+[gd_scene format=3 uid="uid://dbuyfx32qc3pa"]
+
+[ext_resource type="Script" uid="uid://uv0s87pkam8j" path="res://character_body_3d.gd" id="1_tscvi"]
+[ext_resource type="Texture2D" uid="uid://bujrrljisbuys" path="res://sprites/puntero.png" id="2_yed1d"]
+[ext_resource type="FontFile" uid="uid://u7q88iut16og" path="res://augiepixel.ttf" id="3_6evt7"]
+[ext_resource type="PackedScene" uid="uid://edcwff702kwf" path="res://palanquitause.tscn" id="3_qbujx"]
+[ext_resource type="Texture2D" uid="uid://o8itb4x6ldqd" path="res://sprites/linganguli.png" id="3_yed1d"]
+[ext_resource type="Script" uid="uid://ch2c2sw436y72" path="res://hablar_personaje.gd" id="4_auxvv"]
+[ext_resource type="Texture2D" uid="uid://c827i577yfq4m" path="res://sprites/flecha.png" id="4_s7bym"]
+[ext_resource type="AudioStream" uid="uid://d34ebpuxi6tk0" path="res://sonidos/palanca baja fondo.ogg" id="6_auxvv"]
+[ext_resource type="AudioStream" uid="uid://ckpkqsp31vgai" path="res://sonidos/pared moviendose.ogg" id="9_s7bym"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_nho35"]
+
+[sub_resource type="Environment" id="Environment_nho35"]
+ambient_light_source = 2
+ambient_light_color = Color(0.5609549, 0.5609549, 0.5609549, 1)
+ambient_light_energy = 7.09
+glow_enabled = true
+
+[sub_resource type="Animation" id="Animation_qbujx"]
+length = 0.001
+tracks/0/type = "position_3d"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array(0, 1, -0.3026924, 3.670779, -12.112904)
+
+[sub_resource type="Animation" id="Animation_auxvv"]
+resource_name = "moverse"
+length = 2.5333333
+tracks/0/type = "position_3d"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array(0, 1, -0.3026924, 3.670779, -12.112904, 2.5333333, 1, 7.0743046, 3.670779, -12.112904)
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ij36q"]
+_data = {
+&"RESET": SubResource("Animation_qbujx"),
+&"moverse": SubResource("Animation_auxvv")
+}
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_sn88x"]
+height = 3.1687012
+
+[node name="Node3D" type="Node3D" unique_id=1819165176]
+
+[node name="CharacterBody3D" type="CharacterBody3D" parent="." unique_id=622563897]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.9411943, -3.2884402)
+script = ExtResource("1_tscvi")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D" unique_id=1773996199]
+shape = SubResource("CapsuleShape3D_nho35")
+
+[node name="Camera3D" type="Camera3D" parent="CharacterBody3D" unique_id=1217800473]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.7388363, -0.22238082)
+
+[node name="RayCast3D" type="RayCast3D" parent="CharacterBody3D/Camera3D" unique_id=753420920]
+target_position = Vector3(0, 0, -1)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1150474834]
+environment = SubResource("Environment_nho35")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=1625552754]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.42729163, 1.5897913, -10.054338)
+shadow_enabled = true
+omni_range = 56.29132
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="." unique_id=1215456608]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.03492856, 1.5897913, -20.211931)
+shadow_enabled = true
+omni_range = 56.29132
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1731608351]
+
+[node name="Puntero" type="Sprite2D" parent="CanvasLayer" unique_id=1033224776]
+self_modulate = Color(1, 1, 1, 0.49803922)
+position = Vector2(585, 302)
+scale = Vector2(0.01, 0.01)
+texture = ExtResource("2_yed1d")
+
+[node name="Node" type="Node" parent="." unique_id=1179095226]
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="Node" unique_id=1683865757]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.3625736, 3.670779, -4.361577)
+use_collision = true
+size = Vector3(1, 5.3826904, 14.538696)
+
+[node name="Label3D" type="Label3D" parent="Node" unique_id=1506974670]
+transform = Transform3D(0.99998236, 0, 0.0059444555, 0, 1, 0, -0.0059444555, 0, 0.99998236, -0.3026924, 3.670779, -10.235263)
+text = "Pull the lever!"
+font = ExtResource("3_6evt7")
+font_size = 62
+
+[node name="Sprite3D" type="Sprite3D" parent="Node/Label3D" unique_id=123444360]
+transform = Transform3D(0.025194751, 0.016285703, -2.8565119e-05, -0.01628569, 0.025194578, -9.6811265e-05, -2.8565104e-05, 9.6811316e-05, 0.029999845, 1.6243875, -0.45543647, 0.009660721)
+texture = ExtResource("4_s7bym")
+
+[node name="Label3D2" type="Label3D" parent="Node" unique_id=1667219554]
+transform = Transform3D(0.99998236, 0, 0.0059444555, 0, 1, 0, -0.0059444555, 0, 0.99998236, -0.3026924, 3.670779, -11.968218)
+modulate = Color(0.9768782, 0.1615254, 0, 1)
+text = "¡ Be carefull your time is limited !"
+font = ExtResource("3_6evt7")
+font_size = 62
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="Node" unique_id=489568069]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -0.3026924, 3.670779, -12.112904)
+use_collision = true
+size = Vector3(1, 5.3826904, 8.275909)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Node/CSGBox3D5" unique_id=1745776767]
+libraries/ = SubResource("AnimationLibrary_ij36q")
+
+[node name="CSGBox3D8" type="CSGBox3D" parent="Node" unique_id=506538968]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.3288746, 3.670779, -27.112904)
+use_collision = true
+size = Vector3(1, 5.3826904, 21.14484)
+
+[node name="CSGBox3D9" type="CSGBox3D" parent="Node" unique_id=1321013016]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 10.328875, 3.670779, -19.212925)
+use_collision = true
+size = Vector3(1, 5.3826904, 15.344881)
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="Node" unique_id=2131101677]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.946969, 3.670779, -4.361577)
+use_collision = true
+size = Vector3(1, 5.3826904, 14.538696)
+
+[node name="CSGBox3D7" type="CSGBox3D" parent="Node" unique_id=1306302156]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -9.671125, 3.7100558, -19.212925)
+use_collision = true
+size = Vector3(1, 5.3826904, 15.344881)
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="Node" unique_id=127206107]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -6.8442984, 3.670779, -12.112904)
+use_collision = true
+size = Vector3(1, 5.3826904, 6.7984943)
+
+[node name="CSGBox3D10" type="CSGBox3D" parent="Node" unique_id=940371964]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 6.2755556, 3.670779, -12.112904)
+use_collision = true
+size = Vector3(1, 5.3826904, 6.7984943)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Node" unique_id=1422322589]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.9227843, 3.5499606, -29.537708)
+use_collision = true
+flip_faces = true
+size = Vector3(27.983261, 5.0625, 57.49341)
+
+[node name="palanquita" parent="." unique_id=2075512238 instance=ExtResource("3_qbujx")]
+
+[node name="palanquita2" parent="." unique_id=678720703 instance=ExtResource("3_qbujx")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 18.552462, 0, -23.722136)
+
+[node name="palanquita3" parent="." unique_id=931700582 instance=ExtResource("3_qbujx")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 1.5524616, 0, -23.722136)
+
+[node name="hablar personaje" type="StaticBody3D" parent="." unique_id=1320311419]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2861862, 0, 0)
+script = ExtResource("4_auxvv")
+
+[node name="Sprite3D" type="Sprite3D" parent="hablar personaje" unique_id=1754503289]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -1.3695743, 2.7727106, -20.242327)
+billboard = 1
+texture = ExtResource("3_yed1d")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="hablar personaje" unique_id=355365290]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4715366, 2.5109282, -20.057142)
+shape = SubResource("CapsuleShape3D_sn88x")
+
+[node name="PalancaBaja" type="AudioStreamPlayer" parent="." unique_id=1261803233]
+stream = ExtResource("6_auxvv")
+
+[node name="ParedMoviendose" type="AudioStreamPlayer" parent="." unique_id=40515040]
+stream = ExtResource("9_s7bym")
