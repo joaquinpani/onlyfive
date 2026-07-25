@@ -1,0 +1,40 @@
+~ start
+set GameManager.personaje_actual = 4
+???: Hey broooo!
+set GameManager.personaje_actual = 6
+player: Oh, let me guess. You want to kill me or waste my time?
+set GameManager.personaje_actual = 4
+???: Nooo bro, stay calm, relax relax.
+???: I'm a good guy like you.
+set GameManager.personaje_actual = 6
+player: Let's see, what's your name?
+set GameManager.personaje_actual = 4
+alien: My name is Alien, bro. And just like you, I want to escape from here, but I couldn't. I solved everything like a pro alien!
+alien: But my biggest problem was that I never went to human classes. I need you to tell me what number is on the wall, alright bro?
+set GameManager.personaje_actual = 6
+player: Finally a decent and cool person! Alright bro.
+set GameManager.personaje_actual = 4
+alien: So what number is it, brother?
+- 2789
+	=> END
+- 2831
+	=> END
+- 9210
+	=> END
+- 9402
+	=> END
+- 2402
+	=> END
+- 1987
+	set GameManager.aliensi = true
+	=> END
+- 2935
+	=> END
+- 0952
+	=> END
+- 1920
+	=> END
+- 67
+	=> END
+- I don't know yet
+	=> END

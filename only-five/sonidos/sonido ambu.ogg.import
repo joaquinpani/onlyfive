@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://mthfqgsie3i8"
+path="res://.godot/imported/sonido ambu.ogg-35d2d58153f2fac5793092c655a8f9cd.oggvorbisstr"
+
+[deps]
+
+source_file="res://sonidos/sonido ambu.ogg"
+dest_files=["res://.godot/imported/sonido ambu.ogg-35d2d58153f2fac5793092c655a8f9cd.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

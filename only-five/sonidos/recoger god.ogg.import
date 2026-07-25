@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://psuo3n0uor58"
+path="res://.godot/imported/recoger god.ogg-2b0b273a5af94f666bca041bee4d8bf7.oggvorbisstr"
+
+[deps]
+
+source_file="res://sonidos/recoger god.ogg"
+dest_files=["res://.godot/imported/recoger god.ogg-2b0b273a5af94f666bca041bee4d8bf7.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

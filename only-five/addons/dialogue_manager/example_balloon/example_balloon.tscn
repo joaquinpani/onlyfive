@@ -5,8 +5,12 @@
 [ext_resource type="PackedScene" uid="uid://ckvgyvclnwggo" path="res://addons/dialogue_manager/dialogue_label.tscn" id="2_a8ve6"]
 [ext_resource type="FontFile" uid="uid://u7q88iut16og" path="res://augiepixel.ttf" id="2_nlsx6"]
 [ext_resource type="Script" uid="uid://bb52rsfwhkxbn" path="res://addons/dialogue_manager/dialogue_responses_menu.gd" id="3_72ixx"]
+[ext_resource type="Texture2D" uid="uid://dfn2u454wwokt" path="res://sprites/filemon.png" id="3_icj72"]
 [ext_resource type="AudioStream" uid="uid://ceyxajfwl17v6" path="res://sonidos/lineas de voz/linganguli/Grabación (61).mp3" id="3_odc0r"]
 [ext_resource type="AudioStream" uid="uid://cfipuv858hdyp" path="res://sonidos/lineas de voz/linganguli/Grabación (62).mp3" id="4_1kn55"]
+[ext_resource type="Texture2D" uid="uid://c5pabmrlrn18w" path="res://sprites/alien.png" id="4_83g4i"]
+[ext_resource type="Texture2D" uid="uid://5r7x26lv5gdx" path="res://sprites/monstruo1.png" id="4_exrs5"]
+[ext_resource type="Texture2D" uid="uid://sebylegeqadf" path="res://sprites/player.png" id="4_wbrl0"]
 [ext_resource type="AudioStream" uid="uid://c512yaiexu8ey" path="res://sonidos/lineas de voz/linganguli/Grabación (63).mp3" id="5_icj72"]
 [ext_resource type="AudioStream" uid="uid://b7o6yedmsx6fp" path="res://sonidos/lineas de voz/linganguli/Grabación (64).mp3" id="6_wbrl0"]
 [ext_resource type="AudioStream" uid="uid://nb6p7jbenyna" path="res://sonidos/lineas de voz/linganguli/Grabación (65).mp3" id="7_83g4i"]
@@ -135,7 +139,7 @@ layer = 100
 script = ExtResource("1_36de5")
 sprite_personaje = NodePath("Balloon/MarginContainer/Node2D/Linganguli")
 audio_stream_player = NodePath("Balloon/MarginContainer/Node2D/Grabación(61)")
-texturas_personajes = Array[Texture2D]([ExtResource("2_1337t"), null, null, null])
+texturas_personajes = Array[Texture2D]([ExtResource("2_1337t"), ExtResource("3_icj72"), ExtResource("4_exrs5"), ExtResource("4_83g4i"), ExtResource("4_83g4i"), ExtResource("4_wbrl0")])
 sonidos_p1 = Array[AudioStream]([ExtResource("3_odc0r"), ExtResource("4_1kn55"), ExtResource("5_icj72"), ExtResource("6_wbrl0"), ExtResource("7_83g4i")])
 
 [node name="Balloon" type="Control" parent="." unique_id=359403728]

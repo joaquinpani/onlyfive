@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://b0t0ndfobs62u"
+path="res://.godot/imported/dark.dialogue-da20140c3190f52351d5fddde0a197f9.tres"
+
+[deps]
+
+source_file="res://dialogos/dark.dialogue"
+dest_files=["res://.godot/imported/dark.dialogue-da20140c3190f52351d5fddde0a197f9.tres"]
+
+[params]
+
+defaults=true

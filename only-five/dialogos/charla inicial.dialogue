@@ -1,23 +1,33 @@
 ~ start
 set GameManager.camara = false
-???: Hi there, i see you before?
+???: Hi there, have I seen you before?
 - No, who are you?
-	???: I am ginganguli.
-	ginganguli: i think you are trying to escape right?
-	giganguli: you need to pull the left handle
-	ginganguli: for anything in the world pull the left handle, its a trap!!
-	ginganguli: and you dont wanna lost time in traps right?
-	ginganguli: you dont have so much time
-	player: what are you trying to say? 
-	ginganguli: nothing, i just think you dont wanna lost five minutes in a trap
-	player: okey?
-	ginganguli: so... what handle are you going to pull?
-	- The left handel
-		ginganguli: come on men Do whatever you want but dont cry after, I warned you
-	- The right handel
-	ginganguli: yeah man you are so smart and handfull
-- Yes, i know who are you
-	Nathan: okey so you know what to do
+	set GameManager.personaje_actual = 6
+	player: Who are you?
+	set GameManager.personaje_actual = 1
+	???: I'm Ginganguli.
+	ginganguli: I think you are trying to escape, right?
+	ginganguli: You need to pull the left handle.
+	ginganguli: Whatever you do, don't pull the right handle. It's a trap!!
+	ginganguli: And you don't want to waste time on traps, right?
+	ginganguli: You don't have much time.
+	set GameManager.personaje_actual = 6
+	player: What are you trying to say? 
+	set GameManager.personaje_actual = 1
+	ginganguli: Nothing, I just think you don't want to waste five minutes in a trap.
+	set GameManager.personaje_actual = 6
+	player: Okay?
+	set GameManager.personaje_actual = 1
+	ginganguli: So... which handle are you going to pull?
+	- The left handle
+		ginganguli: Come on man. Do whatever you want, but don't cry about it later. I warned you.
+	- The right handle
+		ginganguli: Yeah man, you are so smart and clever.
+- Yes, I know who you are
+	set GameManager.personaje_actual = 1
+	player: I know who you are.
+	set GameManager.personaje_actual = 6
+	ginganguli: Okay, so you know what to do.
 	
 set GameManager.camara = true
 => END

@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://7alr8cb86n4p"
+path="res://.godot/imported/filemon agradece.dialogue-d1fbba685920953ad7fcab54e0e0de10.tres"
+
+[deps]
+
+source_file="res://dialogos/filemon agradece.dialogue"
+dest_files=["res://.godot/imported/filemon agradece.dialogue-d1fbba685920953ad7fcab54e0e0de10.tres"]
+
+[params]
+
+defaults=true

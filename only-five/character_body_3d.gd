@@ -3,11 +3,12 @@ extends CharacterBody3D
 const SPEED = 5.0
 const JUMP_VELOCITY = 4.5
 const MOUSE_SENSITIVITY = 0.002
+var ala = false
 
 # Referencia a la cámara (asegúrate de que el nodo se llame Camera3D dentro de tu Player)
 @onready var camera = $Camera3D
 @onready var raycast = $Camera3D/RayCast3D
-
+var a = true
 func _ready() -> void:
 	# Oculta y atrapa el ratón en la ventana para poder girar la vista libremente
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
@@ -78,3 +79,21 @@ func _physics_process(delta: float) -> void:
 		velocity.z = move_toward(velocity.z, 0, SPEED)
 
 	move_and_slide()
+
+
+func _on_area_3d_body_entered(body: Node3D) -> void:
+	if a == true:
+		a = false
+		$"../Node/Sprite3D2".hide()
+		$"../Node/AnimationPlayer".play_backwards("goup")
+		$"../Completado".play()
+		$"../CanvasLayer/Label2/AnimationPlayer".play("new_animation")
+		$"../BombinsoundWorkoutWorkoutMusicVersion5551834".stop()
+	pass # Replace with function body.
+
+
+func _on_area_3d_2_body_entered(body: Node3D) -> void:
+	if ala == false:
+		$"../Node/CSGBox3D33/AnimationPlayer".play("new_animation")
+		ala = true
+	pass # Replace with function body.

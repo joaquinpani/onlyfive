@@ -1,0 +1,20 @@
+~ start
+set GameManager.personaje_actual = 2
+???: Hey friend, could you help me out?
+set GameManager.personaje_actual = 6
+player: Who are you??
+set GameManager.personaje_actual = 2
+filemon: My name is Filemon the anteater.
+filemon: I really want to play on my PS5, but my controller is over there.
+filemon: It doesn't want to move, can you wait here with me until it comes over? A new person might attract it.
+set GameManager.personaje_actual = 6
+player: Until it comes over? What are you talking about man, it's just a controller.
+set GameManager.personaje_actual = 2
+filemon: Hey, don't go messing with it!
+set GameManager.personaje_actual = 6
+player: I don't have time for this, man.
+set GameManager.personaje_actual = 2
+filemon: If you don't bring it to me, I won't let you pass.
+set GameManager.personaje_actual = 6
+player: Ugh, fine.
+=> END

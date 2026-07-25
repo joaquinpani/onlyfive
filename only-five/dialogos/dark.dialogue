@@ -1,0 +1,36 @@
+~ start
+set GameManager.personaje_actual = 6
+player: Hey bro!
+set GameManager.personaje_actual = 3
+???: ....
+set GameManager.personaje_actual = 6
+player: Are you going to give me some quest just to waste my time?
+set GameManager.personaje_actual = 3
+???: ....
+set GameManager.personaje_actual = 6
+player: Come on, say something, you're making me uncomfortable.
+set GameManager.personaje_actual = 3
+???: Am I scary?
+set GameManager.personaje_actual = 6
+player: Lol bro, of course not.
+set GameManager.personaje_actual = 3
+???: OF COURSE I'M SCARY!! YOU'RE TERRIFIED!!
+set GameManager.personaje_actual = 6
+player: Nah bro, I wasn't born yesterday, even if my sprite says otherwise.
+set GameManager.personaje_actual = 3
+???: How dare you challenge the terror I bring!
+???: NOW YOU WILL SUFFER THE CONSEQUENCES!!
+set GameManager.personaje_actual = 6
+player: What consequences?
+set GameManager.personaje_actual = 3
+???: ...
+???: ...
+set GameManager.personaje_actual = 6
+player: ???
+set GameManager.personaje_actual = 3
+???: Ah sorry, technical difficulties.
+set GameManager.personaje_actual = 6
+
+player: XD
+set GameManager.darker = true
+=> END

@@ -1,0 +1,6 @@
+~ start
+set GameManager.personaje_actual = 2
+filemon: Come on man, get over here and wait for it to get closer.
+set GameManager.personaje_actual = 6
+player: Maybe I should listen to him.
+=> END

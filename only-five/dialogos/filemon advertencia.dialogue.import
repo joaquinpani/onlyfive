@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://d0hymbm7jgjh6"
+path="res://.godot/imported/filemon advertencia.dialogue-6d860e86883be5a1be8e14e5980ce8de.tres"
+
+[deps]
+
+source_file="res://dialogos/filemon advertencia.dialogue"
+dest_files=["res://.godot/imported/filemon advertencia.dialogue-6d860e86883be5a1be8e14e5980ce8de.tres"]
+
+[params]
+
+defaults=true

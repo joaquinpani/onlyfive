@@ -10,3 +10,4 @@ func interactuar():
 	$"../PalancaBaja".play()
 	$"../Node/Label3D".hide()
 	$"../ParedMoviendose".play()
+	$"../Node/Label3D2".show()

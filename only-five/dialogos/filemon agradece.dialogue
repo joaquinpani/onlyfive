@@ -1,0 +1,7 @@
+~ start
+set GameManager.personaje_actual = 2
+filemon: Well, thanks man!
+filemon: Well, actually, thanks for nothing because you didn't do anything.
+set GameManager.personaje_actual = 6
+player: Man, next time I should probably listen to him.
+=> END

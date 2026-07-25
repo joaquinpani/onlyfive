@@ -19,6 +19,7 @@ class_name DialogueManagerExampleBalloon extends CanvasLayer
 @export var sonidos_p3: Array[AudioStream]
 @export var sonidos_p4: Array[AudioStream]
 @export var sonidos_p5: Array[AudioStream]
+@export var sonidos_p6: Array[AudioStream]
 ## =========================================================
 
 ## The dialogue resource
@@ -276,6 +277,7 @@ func reproducir_sonido_personaje() -> void:
 		3: sonidos_activos = sonidos_p3
 		4: sonidos_activos = sonidos_p4
 		5: sonidos_activos = sonidos_p5
+		6: sonidos_activos = sonidos_p6
 		
 	if sonidos_activos.size() > 0:
 		audio_stream_player.stream = sonidos_activos[randi() % sonidos_activos.size()]
