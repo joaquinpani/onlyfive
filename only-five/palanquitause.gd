@@ -1,11 +1,21 @@
 extends StaticBody3D
 
+var usable = true
 
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
+func interactuar():
+	usable = false
+	$palanca/AnimationPlayer.play("Cube_001Action")
+	$"../../CanvasLayer/credits/AnimationPlayer".play("new_animation")
+	$"../personajes/Kid2".play()
+	$"../../PalancaBaja".play()
+	$"../../CanvasLayer/reloj/Timer".stop()
+	$"../../CanvasLayer/reloj/Timer2".stop()
+	
+	
+	
+func musica():
+	$"../personajes/BombinsoundWorkoutWorkoutMusicVersion5551834".play()
+	
+func musicastop():
+	$"../personajes/BombinsoundWorkoutWorkoutMusicVersion5551834".stop()
+	

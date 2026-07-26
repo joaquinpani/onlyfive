@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bb765dvduwtch"
+path="res://.godot/imported/ling4.ogg-cbb280eda14eed7690effd6355b84f5a.oggvorbisstr"
+
+[deps]
+
+source_file="res://sonidos/lineas de voz/linganguli/ling4.ogg"
+dest_files=["res://.godot/imported/ling4.ogg-cbb280eda14eed7690effd6355b84f5a.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

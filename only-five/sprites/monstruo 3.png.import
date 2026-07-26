@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dtodof5vk2b6k"
 path.s3tc="res://.godot/imported/monstruo 3.png-50a6456ab2ed5931c2c9a58abaed887d.s3tc.ctex"
+path.etc2="res://.godot/imported/monstruo 3.png-50a6456ab2ed5931c2c9a58abaed887d.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://sprites/monstruo 3.png"
-dest_files=["res://.godot/imported/monstruo 3.png-50a6456ab2ed5931c2c9a58abaed887d.s3tc.ctex"]
+dest_files=["res://.godot/imported/monstruo 3.png-50a6456ab2ed5931c2c9a58abaed887d.s3tc.ctex", "res://.godot/imported/monstruo 3.png-50a6456ab2ed5931c2c9a58abaed887d.etc2.ctex"]
 
 [params]
 

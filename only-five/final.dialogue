@@ -1,0 +1,351 @@
+~ start
+set GameManager.cinematic = true
+set GameManager.personaje_actual = 5
+king: CONGRATULATIONS BROOO!
+set GameManager.personaje_actual = 6
+player: Oh, thanks!
+set GameManager.personaje_actual = 5
+king: I'm very proud of you. My name is King, of course, because I'm the king around here.
+set GameManager.personaje_actual = 6
+player: Ohhh, so you know what the heck is going on here, right?
+set GameManager.personaje_actual = 5
+king: Of course I do. I'm not the king for nothing, a king is the one who does his job the best.
+set GameManager.personaje_actual = 6
+player: Ohh that's awesome to be honest. I'd love for you to tell me what's going on here and how to finish the game.
+set GameManager.personaje_actual = 5
+king: Sure, let me explain. Me and my comrades are the Only Five.
+king: We have been programmed by a programmer lol.
+king: And I'm the king, obviously.
+set GameManager.personaje_actual = 6
+player: Oh, and what do you guys do? Because most of them have been stopping me, but I don't know from what.
+set GameManager.personaje_actual = 5
+set GameManager.palancaaparecer = true
+king: From the lever! Behind me is the end-of-game lever.
+king: When you pull this lever, you will win and go to the credits.
+set GameManager.personaje_actual = 6
+player: Wowowow finally I'm going to escape! 
+player: Thank you so much King, I see why you are the king. You're really cool, thanks!
+set GameManager.personaje_actual = 5
+king: Hey hey, wait, let's talk about something else.
+set GameManager.onlyfiveaparece = true
+set GameManager.personaje_actual = 6
+player: Uh, like what? 
+set GameManager.personaje_actual = 5
+king: Did you know that McDonald's hamburgers are made of sheep meat?
+set GameManager.personaje_actual = 6
+player: Uh, I didn't know that...
+set GameManager.personaje_actual = 5
+king: Hahaha well neither did I hahaha!
+set GameManager.personaje_actual = 6
+player: Well, I'm going to pull the lever, I don't have much time left.
+set GameManager.personaje_actual = 5
+king: Hey no wait, LET'S TALK ABOUT...
+set GameManager.personaje_actual = 6
+player: I don't have time!!
+set GameManager.personaje_actual = 5
+king: It doesn't matter anyway HAHAHA you can't escape from here anymore.
+set GameManager.personaje_actual = 6
+player: What????
+set GameManager.personaje_actual = 5
+king: I'm not the best at what I do for nothing.
+set GameManager.personaje_actual = 6
+set GameManager.mensajes = 100
+set GameManager.mensajes = GameManager.mensajes - 1
+player: Move out of the way! I need to pull that lever!
+set GameManager.personaje_actual = 5
+set GameManager.mensajes = GameManager.mensajes - 1
+king: Wait! Did you know that French fries aren't actually French? They're from Belgium!
+set GameManager.personaje_actual = 6
+set GameManager.mensajes = GameManager.mensajes - 1
+player: I don't care about potatoes! Let me pass!
+set GameManager.personaje_actual = 5
+set GameManager.mensajes = GameManager.mensajes - 1
+king: And did you know that ketchup was sold in the 1830s as medicine? 
+set GameManager.personaje_actual = 6
+set GameManager.mensajes = GameManager.mensajes - 1
+player: Are you just going to keep talking about fast food?!
+set GameManager.personaje_actual = 5
+set GameManager.mensajes = GameManager.mensajes - 1
+king: No! I can talk about animals too! Did you know wombats poop in cubes?
+set GameManager.personaje_actual = 6
+set GameManager.mensajes = GameManager.mensajes - 1
+player: Seriously, move! The timer is running out!
+set GameManager.personaje_actual = 5
+set GameManager.mensajes = GameManager.mensajes - 1
+king: A snail can sleep for three years! Imagine that! Three whole years of not doing anything!
+set GameManager.personaje_actual = 6
+set GameManager.mensajes = GameManager.mensajes - 1
+player: Kind of like what you're making me do right now!
+set GameManager.personaje_actual = 5
+set GameManager.mensajes = GameManager.mensajes - 1
+king: Hey, don't be rude to the King. Did you know a chef's hat has exactly 100 folds?
+set GameManager.personaje_actual = 6
+set GameManager.mensajes = GameManager.mensajes - 1
+player: STOP!
+set GameManager.personaje_actual = 5
+set GameManager.mensajes = GameManager.mensajes - 1
+king: It represents 100 ways to cook an egg!
+set GameManager.personaje_actual = 6
+set GameManager.mensajes = GameManager.mensajes - 1
+player: I'm going to cook you if you don't move!
+set GameManager.personaje_actual = 5
+set GameManager.mensajes = GameManager.mensajes - 1
+king: Uhhh... did you know... uh... peanuts aren't nuts? They're legumes!
+set GameManager.personaje_actual = 6
+set GameManager.mensajes = GameManager.mensajes - 1
+player: You're running out of facts, aren't you?
+set GameManager.personaje_actual = 5
+set GameManager.mensajes = GameManager.mensajes - 1
+king: No I'm not! Uh... an ostrich's eye is bigger than its brain!
+set GameManager.personaje_actual = 6
+set GameManager.mensajes = GameManager.mensajes - 1
+player: Just like you! Step aside!
+set GameManager.personaje_actual = 5
+set GameManager.mensajes = GameManager.mensajes - 1
+king: Guys! I need backup! I'm running out of Wikipedia facts!
+set GameManager.personaje_actual = 1
+set GameManager.mensajes = GameManager.mensajes - 1
+ginganguli: HELLOO BRO!
+set GameManager.personaje_actual = 6
+set GameManager.mensajes = GameManager.mensajes - 1
+player: Oh come on, not you again.
+set GameManager.personaje_actual = 1
+set GameManager.mensajes = GameManager.mensajes - 1
+ginganguli: Did you know that honey never spoils? You can eat 3000-year-old honey! LOL!
+set GameManager.personaje_actual = 6
+set GameManager.mensajes = GameManager.mensajes - 1
+player: Why are you all doing this to me?!
+set GameManager.personaje_actual = 1
+set GameManager.mensajes = GameManager.mensajes - 1
+ginganguli: Because it's funny bro! Also, bananas are berries, but strawberries aren't! Mind blown, right?
+set GameManager.personaje_actual = 6
+set GameManager.mensajes = GameManager.mensajes - 1
+player: I am losing my mind.
+set GameManager.personaje_actual = 2
+set GameManager.mensajes = GameManager.mensajes - 1
+filemon: Hey man. Over here.
+set GameManager.personaje_actual = 6
+set GameManager.mensajes = GameManager.mensajes - 1
+player: Let me guess, your PS5 controller is lost again?
+set GameManager.personaje_actual = 2
+set GameManager.mensajes = GameManager.mensajes - 1
+filemon: Nah man. I just came to tell you that anteaters like me don't actually have teeth.
+set GameManager.personaje_actual = 6
+set GameManager.mensajes = GameManager.mensajes - 1
+player: I don't care about your dental hygiene!
+set GameManager.personaje_actual = 2
+set GameManager.mensajes = GameManager.mensajes - 1
+filemon: We crush ants with our stomach muscles. Pretty cool, huh? Man, I really want to play PS5 though.
+set GameManager.personaje_actual = 6
+set GameManager.mensajes = GameManager.mensajes - 1
+player: Everybody just shut up and let me pull the lever!
+set GameManager.personaje_actual = 3
+set GameManager.mensajes = GameManager.mensajes - 1
+???: YOU CANNOT ESCAPE THE TERROR!!!
+set GameManager.personaje_actual = 6
+set GameManager.mensajes = GameManager.mensajes - 1
+player: Are you going to give me an animal fact too?
+set GameManager.personaje_actual = 3
+set GameManager.mensajes = GameManager.mensajes - 1
+???: YES!! I MEAN, NO! I BRING DARKNESS!!
+set GameManager.personaje_actual = 3
+set GameManager.mensajes = GameManager.mensajes - 1
+???: BUT ALSO... DID YOU KNOW OCTOPUSES HAVE THREE HEARTS?! TERRIFYING!!
+set GameManager.personaje_actual = 6
+set GameManager.mensajes = GameManager.mensajes - 1
+player: That's actually kind of interesting, BUT STILL, LET ME GO!
+set GameManager.personaje_actual = 4
+set GameManager.mensajes = GameManager.mensajes - 1
+alien: Relax broooo, chill out.
+set GameManager.personaje_actual = 6
+set GameManager.mensajes = GameManager.mensajes - 1
+player: Oh great, the alien. What do you have for me?
+set GameManager.personaje_actual = 4
+set GameManager.mensajes = GameManager.mensajes - 1
+alien: Bro, did you know that on Jupiter and Saturn, it literally rains diamonds? 
+set GameManager.personaje_actual = 6
+set GameManager.mensajes = GameManager.mensajes - 1
+player: I don't care about space weather!
+set GameManager.personaje_actual = 4
+set GameManager.mensajes = GameManager.mensajes - 1
+alien: But bro, we could be rich! We could buy so many binary code websites!
+set GameManager.personaje_actual = 5
+set GameManager.mensajes = GameManager.mensajes - 1
+king: See? We have millions of facts! Did you know a cloud can weigh more than a million pounds?
+set GameManager.personaje_actual = 6
+set GameManager.mensajes = GameManager.mensajes - 1
+player: I can't take this anymore.
+set GameManager.personaje_actual = 1
+set GameManager.mensajes = GameManager.mensajes - 1
+ginganguli: Cows have best friends and they get stressed if you separate them! LOL!
+set GameManager.personaje_actual = 2
+set GameManager.mensajes = GameManager.mensajes - 1
+filemon: Man, speaking of stress, my controller is still nowhere to be found. 
+set GameManager.personaje_actual = 3
+set GameManager.mensajes = GameManager.mensajes - 1
+???: FEAR ME! AND FEAR THE FACT THAT SHARKS ARE OLDER THAN TREES!!
+set GameManager.personaje_actual = 6
+set GameManager.mensajes = GameManager.mensajes - 1
+player: AAAHHHHHHHHH!
+set GameManager.personaje_actual = 5
+set GameManager.mensajes = GameManager.mensajes - 1
+king: HAHAHA! We are the Only Five! The masters of stalling!
+set GameManager.personaje_actual = 4
+set GameManager.mensajes = GameManager.mensajes - 1
+alien: Bro, did you know humans share 50% of their DNA with a banana? That's crazy bro.
+set GameManager.personaje_actual = 6
+set GameManager.mensajes = GameManager.mensajes - 1
+player: Just end the game already!!!
+set GameManager.personaje_actual = 5
+set GameManager.mensajes = GameManager.mensajes - 1
+king: Did you know that a jiffy is an actual unit of time? It's 1/100th of a second!
+set GameManager.personaje_actual = 6
+set GameManager.mensajes = GameManager.mensajes - 1
+player: I don't care about a jiffy! My time is running out!
+set GameManager.personaje_actual = 1
+set GameManager.mensajes = GameManager.mensajes - 1
+ginganguli: A blue whale's heart is the size of a golf cart! LOL!
+set GameManager.personaje_actual = 6
+set GameManager.mensajes = GameManager.mensajes - 1
+player: Move out of the way!
+set GameManager.personaje_actual = 2
+set GameManager.mensajes = GameManager.mensajes - 1
+filemon: Man, sloths can hold their breath longer than dolphins. Up to 40 minutes!
+set GameManager.personaje_actual = 6
+set GameManager.mensajes = GameManager.mensajes - 1
+player: I'm going to hold my breath until you let me pass!
+set GameManager.personaje_actual = 3
+set GameManager.mensajes = GameManager.mensajes - 1
+???: PIGS CAN'T LOOK UP AT THE SKY!! IT'S PHYSICALLY IMPOSSIBLE FOR THEM!!
+set GameManager.personaje_actual = 6
+set GameManager.mensajes = GameManager.mensajes - 1
+player: That is sad but IRRELEVANT!
+set GameManager.personaje_actual = 4
+set GameManager.mensajes = GameManager.mensajes - 1
+alien: Bro, water can boil and freeze at the same time. It's called the triple point!
+set GameManager.personaje_actual = 6
+set GameManager.mensajes = GameManager.mensajes - 1
+player: You guys are freezing my patience!
+set GameManager.personaje_actual = 5
+set GameManager.mensajes = GameManager.mensajes - 1
+king: A day on Venus is longer than a year on Venus!
+set GameManager.personaje_actual = 6
+set GameManager.mensajes = GameManager.mensajes - 1
+player: This conversation feels longer than a year on Venus!
+set GameManager.personaje_actual = 1
+set GameManager.mensajes = GameManager.mensajes - 1
+ginganguli: Bananas glow blue under black lights! Why? Who knows! LOL!
+set GameManager.personaje_actual = 6
+set GameManager.mensajes = GameManager.mensajes - 1
+player: Stop talking about bananas!
+set GameManager.personaje_actual = 2
+set GameManager.mensajes = GameManager.mensajes - 1
+filemon: You know... koalas have fingerprints that look exactly like human ones.
+set GameManager.personaje_actual = 6
+set GameManager.mensajes = GameManager.mensajes - 1
+player: I will leave my fingerprints on your face if you don't move!
+set GameManager.personaje_actual = 3
+set GameManager.mensajes = GameManager.mensajes - 1
+???: A JELLYFISH IS 95 PERCENT WATER!!! FEAR THE WATER!!!
+set GameManager.personaje_actual = 6
+set GameManager.mensajes = GameManager.mensajes - 1
+player: I am 100 percent done with this!
+set GameManager.personaje_actual = 4
+set GameManager.mensajes = GameManager.mensajes - 1
+alien: Bro, there are more fake flamingos in the world than real ones!
+set GameManager.personaje_actual = 6
+set GameManager.mensajes = GameManager.mensajes - 1
+player: Just let me pull the lever!
+set GameManager.personaje_actual = 5
+set GameManager.mensajes = GameManager.mensajes - 1
+king: Wait! The inventor of the frisbee was turned into a frisbee after he died!
+set GameManager.personaje_actual = 6
+set GameManager.mensajes = GameManager.mensajes - 1
+player: I'm going to turn you into a frisbee!
+set GameManager.personaje_actual = 1
+set GameManager.mensajes = GameManager.mensajes - 1
+ginganguli: Apples float in water because they are 25% air! LOL!
+set GameManager.personaje_actual = 6
+set GameManager.mensajes = GameManager.mensajes - 1
+player: My brain is going to explode!
+set GameManager.personaje_actual = 2
+set GameManager.mensajes = GameManager.mensajes - 1
+filemon: Wombat poop is cube-shaped so it doesn't roll away.
+set GameManager.personaje_actual = 6
+set GameManager.mensajes = GameManager.mensajes - 1
+player: The King already told me that one! You are running out of facts!
+set GameManager.personaje_actual = 3
+set GameManager.mensajes = GameManager.mensajes - 1
+???: A CORN EAR ALWAYS HAS AN EVEN NUMBER OF ROWS!! NEVER ODD!!
+set GameManager.personaje_actual = 6
+set GameManager.mensajes = GameManager.mensajes - 1
+player: WHO CARES ABOUT CORN?!
+set GameManager.personaje_actual = 4
+set GameManager.mensajes = GameManager.mensajes - 1
+alien: Bro, your nose and ears never stop growing!
+set GameManager.personaje_actual = 6
+set GameManager.mensajes = GameManager.mensajes - 1
+player: I can't hear you! I'm ignoring you!
+set GameManager.personaje_actual = 5
+set GameManager.mensajes = GameManager.mensajes - 1
+king: Cotton candy was invented by a dentist! How ironic!
+set GameManager.personaje_actual = 6
+set GameManager.mensajes = GameManager.mensajes - 1
+player: Let me pass! Let me pass! Let me pass!
+set GameManager.personaje_actual = 1
+set GameManager.mensajes = GameManager.mensajes - 1
+ginganguli: Humans are the only animals that blush! LOL!
+set GameManager.personaje_actual = 6
+set GameManager.mensajes = GameManager.mensajes - 1
+player: I am blushing from anger right now!
+set GameManager.personaje_actual = 2
+set GameManager.mensajes = GameManager.mensajes - 1
+filemon: Did you know a group of flamingos is called a flamboyance?
+set GameManager.personaje_actual = 6
+set GameManager.mensajes = GameManager.mensajes - 1
+player: I'm going to aggressively pull that lever!
+set GameManager.personaje_actual = 3
+set GameManager.mensajes = GameManager.mensajes - 1
+???: THE LONGEST HICCUP ATTACK LASTED 68 YEARS!!!
+set GameManager.personaje_actual = 6
+set GameManager.mensajes = GameManager.mensajes - 1
+player: I hope you all get the hiccups!
+set GameManager.personaje_actual = 4
+set GameManager.mensajes = GameManager.mensajes - 1
+alien: Snails have thousands of microscopic teeth, bro.
+set GameManager.personaje_actual = 6
+set GameManager.mensajes = GameManager.mensajes - 1
+player: SHUT UPPPPPP!
+set GameManager.personaje_actual = 5
+set GameManager.mensajes = GameManager.mensajes - 1
+king: A shrimp's heart is in its head!
+set GameManager.personaje_actual = 6
+set GameManager.mensajes = GameManager.mensajes - 1
+player: My head is about to burst!
+set GameManager.personaje_actual = 1
+set GameManager.mensajes = GameManager.mensajes - 1
+ginganguli: Elephants are the only animals that can't jump! LOL!
+set GameManager.personaje_actual = 6
+set GameManager.mensajes = GameManager.mensajes - 1
+player: I am going to jump over you!
+set GameManager.personaje_actual = 2
+set GameManager.mensajes = GameManager.mensajes - 1
+filemon: Slugs have four noses. Imagine having four noses, man.
+set GameManager.personaje_actual = 6
+set GameManager.mensajes = GameManager.mensajes - 1
+player: Please... just let me play the game.
+set GameManager.personaje_actual = 3
+set GameManager.mensajes = GameManager.mensajes - 1
+???: A CROCODILE CANNOT STICK ITS TONGUE OUT!!!
+set GameManager.personaje_actual = 6
+set GameManager.mensajes = GameManager.mensajes - 1
+player: I give up. I literally give up.
+set GameManager.personaje_actual = 4
+set GameManager.mensajes = GameManager.mensajes - 1
+alien: Kangaroos can't walk backwards, bro. 
+set GameManager.personaje_actual = 6
+set GameManager.mensajes = GameManager.mensajes - 1
+player: I wish I could walk backwards and never meet you guys.
+set GameManager.mensajes = GameManager.mensajes - 1
+set GameManager.cinematic = false
+=> END

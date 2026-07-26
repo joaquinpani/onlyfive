@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://ddcjacw1y34aj"
 path.s3tc="res://.godot/imported/hoja.png-192d7bb05f68d1678d744e1b4f7604db.s3tc.ctex"
+path.etc2="res://.godot/imported/hoja.png-192d7bb05f68d1678d744e1b4f7604db.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://sprites/hoja.png"
-dest_files=["res://.godot/imported/hoja.png-192d7bb05f68d1678d744e1b4f7604db.s3tc.ctex"]
+dest_files=["res://.godot/imported/hoja.png-192d7bb05f68d1678d744e1b4f7604db.s3tc.ctex", "res://.godot/imported/hoja.png-192d7bb05f68d1678d744e1b4f7604db.etc2.ctex"]
 
 [params]
 

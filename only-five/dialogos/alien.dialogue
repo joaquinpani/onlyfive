@@ -16,25 +16,46 @@ player: Finally a decent and cool person! Alright bro.
 set GameManager.personaje_actual = 4
 alien: So what number is it, brother?
 - 2789
+	ginganguli: Sorry bro, you're wrong! You can't just guess randomly, use a binary code website lol
+	set GameManager.maldeltiempo = true
 	=> END
 - 2831
+	ginganguli: Sorry bro, you're wrong! You can't just guess randomly, use a binary code website lol
+	set GameManager.maldeltiempo = true
 	=> END
 - 9210
+	ginganguli: Sorry bro, you're wrong! You can't just guess randomly, use a binary code website lol
+	set GameManager.maldeltiempo = true
 	=> END
 - 9402
+	ginganguli: Sorry bro, you're wrong! You can't just guess randomly, use a binary code website lol
+	set GameManager.maldeltiempo = true
 	=> END
 - 2402
+	ginganguli: Sorry bro, you're wrong! You can't just guess randomly, use a binary code website lol
+	set GameManager.maldeltiempo = true
 	=> END
 - 1987
 	set GameManager.aliensi = true
+	ginganguli: Thanks bro, now let's escape from here!
 	=> END
 - 2935
+	ginganguli: Sorry bro, you're wrong! You can't just guess randomly, use a binary code website lol
+	set GameManager.maldeltiempo = true
 	=> END
 - 0952
+	ginganguli: Sorry bro, you're wrong! You can't just guess randomly, use a binary code website lol
+	set GameManager.maldeltiempo = true
 	=> END
 - 1920
+	ginganguli: Sorry bro, you're wrong! You can't just guess randomly, use a binary code website lol
+	set GameManager.maldeltiempo = true
 	=> END
-- 67
+- 6767
+	ginganguli: Sorry bro, you're wrong! You can't just guess randomly, use a binary code website lol
+	set GameManager.maldeltiempo = true
 	=> END
 - I don't know yet
+	ginganguli: Alright bro, take your time!
+	set GameManager.maldeltiempo = true
 	=> END

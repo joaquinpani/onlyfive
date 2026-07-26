@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://his1w6aoh6cf"
 path.s3tc="res://.godot/imported/letrero 2.png-6f1ffea510089835aa89e8d4c2d4eed7.s3tc.ctex"
+path.etc2="res://.godot/imported/letrero 2.png-6f1ffea510089835aa89e8d4c2d4eed7.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://sprites/letrero 2.png"
-dest_files=["res://.godot/imported/letrero 2.png-6f1ffea510089835aa89e8d4c2d4eed7.s3tc.ctex"]
+dest_files=["res://.godot/imported/letrero 2.png-6f1ffea510089835aa89e8d4c2d4eed7.s3tc.ctex", "res://.godot/imported/letrero 2.png-6f1ffea510089835aa89e8d4c2d4eed7.etc2.ctex"]
 
 [params]
 

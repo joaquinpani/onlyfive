@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://blwfb5umj2h2y"
+path="res://.godot/imported/ginganguli castigo.dialogue-a5cf3de969d5a6dd39e9c02b9986dbb2.tres"
+
+[deps]
+
+source_file="res://ginganguli castigo.dialogue"
+dest_files=["res://.godot/imported/ginganguli castigo.dialogue-a5cf3de969d5a6dd39e9c02b9986dbb2.tres"]
+
+[params]
+
+defaults=true

@@ -1,0 +1,15 @@
+~ start
+set GameManager.personaje_actual = 1
+ginganguli: HELLOO BRO!
+set GameManager.personaje_actual = 6
+player: Ugh, you again...
+set GameManager.personaje_actual = 1
+ginganguli: Yeeeess! And this time I came to tell you: I TOLD YOU SO!
+set GameManager.personaje_actual = 6
+player: Huh? What are you talking about?
+set GameManager.personaje_actual = 1
+ginganguli: I told you to pull the left handle because you get the key in the parkour.
+ginganguli: But you don't have it, you fell into the trap and now you can't do anything. You'll have to start all over again!
+ginganguli: LOL!
+set GameManager.maldeltiempo = true
+=> END

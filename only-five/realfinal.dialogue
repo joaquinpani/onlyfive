@@ -1,0 +1,8 @@
+~ start
+set GameManager.personaje_actual = 5
+king: You'll never reach the lever!!
+set GameManager.personaje_actual = 4
+alien: Hey King... where was I supposed to stand?
+set GameManager.personaje_actual = 5
+king: Oh no....
+=> END

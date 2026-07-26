@@ -7,13 +7,35 @@
 [ext_resource type="Script" uid="uid://bb52rsfwhkxbn" path="res://addons/dialogue_manager/dialogue_responses_menu.gd" id="3_72ixx"]
 [ext_resource type="Texture2D" uid="uid://dfn2u454wwokt" path="res://sprites/filemon.png" id="3_icj72"]
 [ext_resource type="AudioStream" uid="uid://ceyxajfwl17v6" path="res://sonidos/lineas de voz/linganguli/Grabación (61).mp3" id="3_odc0r"]
-[ext_resource type="AudioStream" uid="uid://cfipuv858hdyp" path="res://sonidos/lineas de voz/linganguli/Grabación (62).mp3" id="4_1kn55"]
 [ext_resource type="Texture2D" uid="uid://c5pabmrlrn18w" path="res://sprites/alien.png" id="4_83g4i"]
 [ext_resource type="Texture2D" uid="uid://5r7x26lv5gdx" path="res://sprites/monstruo1.png" id="4_exrs5"]
 [ext_resource type="Texture2D" uid="uid://sebylegeqadf" path="res://sprites/player.png" id="4_wbrl0"]
-[ext_resource type="AudioStream" uid="uid://c512yaiexu8ey" path="res://sonidos/lineas de voz/linganguli/Grabación (63).mp3" id="5_icj72"]
-[ext_resource type="AudioStream" uid="uid://b7o6yedmsx6fp" path="res://sonidos/lineas de voz/linganguli/Grabación (64).mp3" id="6_wbrl0"]
-[ext_resource type="AudioStream" uid="uid://nb6p7jbenyna" path="res://sonidos/lineas de voz/linganguli/Grabación (65).mp3" id="7_83g4i"]
+[ext_resource type="Texture2D" uid="uid://cfgmn3ngvh0vk" path="res://sprites/ruby.png" id="6_uylda"]
+[ext_resource type="AudioStream" uid="uid://dye1ca1yuvqa3" path="res://sonidos/lineas de voz/linganguli/ling1.ogg" id="8_s55h4"]
+[ext_resource type="AudioStream" uid="uid://damr47camv27w" path="res://sonidos/lineas de voz/linganguli/ling2.ogg" id="9_c7uhq"]
+[ext_resource type="AudioStream" uid="uid://bhqg2nmadgoj7" path="res://sonidos/lineas de voz/linganguli/ling5.ogg" id="10_8dfid"]
+[ext_resource type="AudioStream" uid="uid://cdw0u7yhcmksq" path="res://sonidos/lineas de voz/linganguli/ling3.ogg" id="11_hf7m3"]
+[ext_resource type="AudioStream" uid="uid://bb765dvduwtch" path="res://sonidos/lineas de voz/linganguli/ling4.ogg" id="12_whlvq"]
+[ext_resource type="AudioStream" uid="uid://y3v0jrcv5buk" path="res://sonidos/filipino1.ogg" id="13_s55h4"]
+[ext_resource type="AudioStream" uid="uid://jnshsjj46byu" path="res://sonidos/filipino2.ogg" id="14_c7uhq"]
+[ext_resource type="AudioStream" uid="uid://dpsoji7p8tsh3" path="res://sonidos/filipino 3.ogg" id="15_8dfid"]
+[ext_resource type="AudioStream" uid="uid://dje6j2l22p5yd" path="res://sonidos/filipino4.ogg" id="16_hf7m3"]
+[ext_resource type="AudioStream" uid="uid://vix4dtciwtv0" path="res://sonidos/filipino5.ogg" id="17_whlvq"]
+[ext_resource type="AudioStream" uid="uid://iojbkanam48v" path="res://sonidos/alien1.ogg" id="18_rkqe2"]
+[ext_resource type="AudioStream" uid="uid://dy1wy50wuhbuj" path="res://sonidos/alien2.ogg" id="19_y35q6"]
+[ext_resource type="AudioStream" uid="uid://bc11ngk1523fx" path="res://sonidos/alien3.ogg" id="20_fuaxh"]
+[ext_resource type="AudioStream" uid="uid://cia815ggdet6q" path="res://sonidos/alien4.ogg" id="21_7yrcx"]
+[ext_resource type="AudioStream" uid="uid://bwn6i1nr6m7k7" path="res://sonidos/alien5.ogg" id="22_ywudl"]
+[ext_resource type="AudioStream" uid="uid://bxrua770ijj34" path="res://sonidos/king1.ogg" id="23_c5gow"]
+[ext_resource type="AudioStream" uid="uid://dbjlmgvwrsbdm" path="res://sonidos/king2.ogg" id="24_s3lc6"]
+[ext_resource type="AudioStream" uid="uid://bie0hn3p4vfhw" path="res://sonidos/king3.ogg" id="25_ancld"]
+[ext_resource type="AudioStream" uid="uid://d06ndbp2na6p4" path="res://sonidos/king4.ogg" id="26_2cl1g"]
+[ext_resource type="AudioStream" uid="uid://bmue1vr0t24ba" path="res://sonidos/king5.ogg" id="27_bibu1"]
+[ext_resource type="AudioStream" uid="uid://bevn7x8ksdqu0" path="res://sonidos/kid1.ogg" id="28_e38m1"]
+[ext_resource type="AudioStream" uid="uid://dcyg7v2ieousf" path="res://sonidos/kid2.ogg" id="29_q3joy"]
+[ext_resource type="AudioStream" uid="uid://damia87joahgm" path="res://sonidos/kid3.ogg" id="30_7fb0i"]
+[ext_resource type="AudioStream" uid="uid://8b0lyc643r7j" path="res://sonidos/kid4.ogg" id="31_keixe"]
+[ext_resource type="AudioStream" uid="uid://drevyfg5owoxv" path="res://sonidos/kid5.ogg" id="32_ni180"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_spyqn"]
 bg_color = Color(0, 0, 0, 1)
@@ -139,8 +161,12 @@ layer = 100
 script = ExtResource("1_36de5")
 sprite_personaje = NodePath("Balloon/MarginContainer/Node2D/Linganguli")
 audio_stream_player = NodePath("Balloon/MarginContainer/Node2D/Grabación(61)")
-texturas_personajes = Array[Texture2D]([ExtResource("2_1337t"), ExtResource("3_icj72"), ExtResource("4_exrs5"), ExtResource("4_83g4i"), ExtResource("4_83g4i"), ExtResource("4_wbrl0")])
-sonidos_p1 = Array[AudioStream]([ExtResource("3_odc0r"), ExtResource("4_1kn55"), ExtResource("5_icj72"), ExtResource("6_wbrl0"), ExtResource("7_83g4i")])
+texturas_personajes = Array[Texture2D]([ExtResource("2_1337t"), ExtResource("3_icj72"), ExtResource("4_exrs5"), ExtResource("4_83g4i"), ExtResource("6_uylda"), ExtResource("4_wbrl0")])
+sonidos_p1 = Array[AudioStream]([ExtResource("8_s55h4"), ExtResource("9_c7uhq"), ExtResource("10_8dfid"), ExtResource("11_hf7m3"), ExtResource("12_whlvq")])
+sonidos_p2 = Array[AudioStream]([ExtResource("13_s55h4"), ExtResource("14_c7uhq"), ExtResource("15_8dfid"), ExtResource("16_hf7m3"), ExtResource("17_whlvq")])
+sonidos_p4 = Array[AudioStream]([ExtResource("18_rkqe2"), ExtResource("19_y35q6"), ExtResource("20_fuaxh"), ExtResource("21_7yrcx"), ExtResource("22_ywudl")])
+sonidos_p5 = Array[AudioStream]([ExtResource("23_c5gow"), ExtResource("24_s3lc6"), ExtResource("25_ancld"), ExtResource("26_2cl1g"), ExtResource("27_bibu1")])
+sonidos_p6 = Array[AudioStream]([ExtResource("28_e38m1"), ExtResource("29_q3joy"), ExtResource("30_7fb0i"), ExtResource("31_keixe"), ExtResource("32_ni180")])
 
 [node name="Balloon" type="Control" parent="." unique_id=359403728]
 unique_name_in_owner = true
