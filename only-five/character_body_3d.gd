@@ -4,7 +4,7 @@ const SPEED = 5.0
 const JUMP_VELOCITY = 4.5
 const MOUSE_SENSITIVITY = 0.002
 var ala = false
-
+var ala2 = false
 # Referencia a la cámara (asegúrate de que el nodo se llame Camera3D dentro de tu Player)
 @onready var camera = $Camera3D
 @onready var raycast = $Camera3D/RayCast3D
@@ -80,7 +80,18 @@ func _physics_process(delta: float) -> void:
 			velocity.x = move_toward(velocity.x, 0, SPEED)
 			velocity.z = move_toward(velocity.z, 0, SPEED)
 
+	# Mueve al personaje con la física normal de Godot
 	move_and_slide()
+
+	# --- EMPUJE DE RIGIDBODIES (Para que la estrella/hilo se quiten al pasar) ---
+	for i in get_slide_collision_count():
+		var collision = get_slide_collision(i)
+		var collider = collision.get_collider()
+		# Si lo que tocamos es un cuerpo rígido (RigidBody3D)
+		if collider is RigidBody3D:
+			# Aplicamos un impulso proporcional a nuestra velocidad de movimiento para empujarlo
+			var push_dir = -collision.get_normal()
+			collider.apply_central_impulse(push_dir * SPEED * 0.5)
 
 
 func _on_area_3d_body_entered(body: Node3D) -> void:
@@ -105,4 +116,12 @@ func cambiosa():
 
 
 func _on_estrellas_body_entered(body: Node3D) -> void:
-	pass # Replace with function body.
+	if ala2 == false:
+		$"../OmniLight3D12".hide()
+		$"../zona2/pared/Sprite3D/AnimationPlayer".play("aniamtion")
+		$"../zona2/pared/AnimationPlayer".play("moverse")
+		$"../Node/CSGBox3D16/AnimationPlayer".play_backwards("moverpues")
+		$"../zona2/CSGBox3D45/AnimationPlayer".play("new_animation")
+		$"../ParedMoviendose".play()
+		ala2 = true
+	pass # Replace with function body.w 

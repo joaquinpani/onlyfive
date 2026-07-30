@@ -1,0 +1,60 @@
+[gd_scene format=3 uid="uid://dvpsl7pbei7us"]
+
+[ext_resource type="PackedScene" uid="uid://dbu2qjdo03tdg" path="res://3d objetcs/estrella azul.glb" id="1_46ao5"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_nho35"]
+top_radius = 0.026855469
+bottom_radius = 0.026855469
+height = 2.769226
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_kojnv"]
+height = 2.717163
+radius = 0.026855469
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_31qs0"]
+points = PackedVector3Array(-0.058194946, -0.005411072, -0.4150233, 0.023300303, 0.90728694, 0.1583834, 0.024473893, 0.94344956, -0.14189395, 0.9119603, 0.27654174, -0.14520392, -0.57732254, -0.7852342, 0.14130375, 0.57789195, -0.7955899, 0.14300074, -0.9241356, 0.30658948, -0.1460216, -0.08616936, 0.021869918, 0.41250026, 0.57754403, -0.79505926, -0.14730474, 0.8544799, 0.31849346, 0.1585926, -0.57732254, -0.7852342, -0.14569566, -0.8722135, 0.29441848, 0.16071786, 0.052186716, -0.062012963, 0.41479522, -0.03127951, -0.035864234, -0.42508608, -0.031704158, 0.96350765, -0.14517894, -0.0032000218, 0.38033822, 0.3288209, 0.597247, 0.21345495, -0.24786387, -0.030243317, 0.91877687, 0.1606435, 0.87105435, 0.26823562, 0.1617006, -0.5330405, -0.7600646, 0.16511181, -0.0032000216, 0.7359201, -0.22181804, 0.8972816, 0.32986057, -0.14291082, 0.8007076, 0.2708076, 0.19175407, -0.47620696, -0.674525, -0.19690892, -0.6119782, 0.18755887, -0.25119063, 0.4984145, -0.67587936, 0.19285905, 0.21647564, -0.27996424, -0.33197755, 0.023306357, 0.07760258, -0.40392298, -0.8701758, 0.23973627, 0.16033575, 0.07778034, 0.0503458, 0.4034049, -0.0032000216, 0.84526455, 0.18979406, 0.051145293, -0.03177635, -0.4114301)
+
+[node name="star" type="Node3D" unique_id=116601371]
+
+[node name="hilo" type="RigidBody3D" parent="." unique_id=1061879727]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.577958, 3.5890987, -6.9814467)
+mass = 0.1
+linear_damp = 1.0
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="hilo" unique_id=630924874]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.954633, 0)
+mesh = SubResource("CylinderMesh_nho35")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="hilo" unique_id=396606999]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9806645, 0)
+shape = SubResource("CylinderShape3D_kojnv")
+
+[node name="PinJoint3D3" type="PinJoint3D" parent="." unique_id=589316153]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.584579, 3.2228782, -6.978411)
+node_a = NodePath("../hilo")
+node_b = NodePath("../stars physycs")
+
+[node name="PinJoint3D" type="PinJoint3D" parent="." unique_id=1508639357]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.572886, 5.875298, -6.978411)
+node_a = NodePath("../../StaticBody3D")
+node_b = NodePath("../hilo")
+
+[node name="stars physycs" type="RigidBody3D" parent="." unique_id=109065389]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.582019, 2.706113, -6.9770513)
+mass = 0.3
+linear_damp = 2.0
+
+[node name="estrella azul" parent="stars physycs" unique_id=943140871 instance=ExtResource("1_46ao5")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="stars physycs" unique_id=1651247410]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_31qs0")
+
+[node name="OmniLight3D13" type="OmniLight3D" parent="stars physycs" unique_id=1714845384]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.063129425, -0.026576757, -0.030255795)
+light_color = Color(0.15235928, 0.5771529, 0.9999998, 1)
+shadow_enabled = true
+omni_range = 6.4335637
+
+[editable path="stars physycs/estrella azul"]
