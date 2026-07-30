@@ -156,7 +156,7 @@ _data = {
 &"progress": SubResource("Animation_qkmqt")
 }
 
-[node name="ExampleBalloon" type="CanvasLayer" unique_id=1434168376 node_paths=PackedStringArray("sprite_personaje", "audio_stream_player")]
+[node name="ExampleBalloon" type="CanvasLayer" unique_id=1434168376 node_paths=PackedStringArray("sprite_personaje", "audio_stream_player") groups=["dialogue_balloon"]]
 layer = 100
 script = ExtResource("1_36de5")
 sprite_personaje = NodePath("Balloon/MarginContainer/Node2D/Linganguli")

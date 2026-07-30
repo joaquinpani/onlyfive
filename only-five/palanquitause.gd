@@ -10,6 +10,7 @@ func interactuar():
 	$"../../PalancaBaja".play()
 	$"../../CanvasLayer/reloj/Timer".stop()
 	$"../../CanvasLayer/reloj/Timer2".stop()
+	$"../../CanvasLayer/reloj".hide()
 	
 	
 	

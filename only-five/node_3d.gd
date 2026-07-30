@@ -85,7 +85,7 @@ func siguiente_punto() -> void:
 			print("DEBUG: ¡Vuelta completada (en reversa)! Llevamos ", vueltas_completadas, " de 5 vueltas.")
 		
 	# Si completa las 5 vueltas sin interrupciones, va al punto 5
-	if vueltas_completadas >= 5:
+	if vueltas_completadas >= 2:
 		yendo_a_p5 = true
 		print("DEBUG: ¡5 vueltas alcanzadas! Abandonando circuito y directo al punto 5...")
 

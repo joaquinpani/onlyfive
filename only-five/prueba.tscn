@@ -55,6 +55,7 @@
 [ext_resource type="AudioStream" uid="uid://dtl8j44r3mar6" path="res://sonidos/end.ogg" id="61_faubp"]
 [ext_resource type="AudioStream" uid="uid://cret3s3n26o55" path="res://sonidos/unsegundito.ogg" id="62_f2vi6"]
 [ext_resource type="AudioStream" uid="uid://jfqj1n5wkst8" path="res://pasodeunminutazo.ogg" id="63_gf32i"]
+[ext_resource type="Script" uid="uid://uv0s87pkam8j" path="res://character_body_3d.gd" id="63_hk4mn"]
 [ext_resource type="Texture2D" uid="uid://cy6urayajtnk4" path="res://sprites/door.png" id="64_lcu86"]
 [ext_resource type="Script" uid="uid://d1ylqqwm4u8vp" path="res://static_body_3d.gd" id="65_hbyow"]
 [ext_resource type="Script" uid="uid://dmub5skm5r8w8" path="res://thened.gd" id="66_x7vlp"]
@@ -1305,6 +1306,8 @@ size = Vector3(2.2817383, 1.6534424, 2.2341309)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_6w0ue"]
 size = Vector3(2.652832, 1.6534424, 3.3938904)
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_nho35"]
 
 [node name="Node3D" type="Node3D" unique_id=1819165176]
 metadata/_edit_horizontal_guides_ = [-336.0]
@@ -2701,9 +2704,9 @@ use_collision = true
 size = Vector3(1, 5.3826904, 6.5809345)
 
 [node name="CSGBox3D20" type="CSGBox3D" parent="zona2" unique_id=194994914]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 11.059029, 0, -19.78233)
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 11.096081, 0, -19.782335)
 use_collision = true
-size = Vector3(1, 5.3826904, 9.03859)
+size = Vector3(1, 5.3826904, 8.964485)
 
 [node name="Node3D" type="Node3D" parent="zona2" unique_id=1070937991 node_paths=PackedStringArray("p1", "p2", "p3", "p4", "p5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.469314, -0.08578658, -25.541815)
@@ -2986,6 +2989,19 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.813593, 0, -1.1982918)
 [node name="CollisionShape3D" type="CollisionShape3D" parent="thened/personajes/Area3D3" unique_id=1211245810]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.3954678, 1.8958282, 0.9775543)
 shape = SubResource("BoxShape3D_6w0ue")
+
+[node name="player" type="CharacterBody3D" parent="." unique_id=323260720]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.33111048, 2.185473, -2.663421)
+script = ExtResource("63_hk4mn")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="player" unique_id=644579180]
+shape = SubResource("CapsuleShape3D_nho35")
+
+[node name="Camera3D" type="Camera3D" parent="player" unique_id=1800956415]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5582795, -0.36938787)
+
+[node name="RayCast3D" type="RayCast3D" parent="player/Camera3D" unique_id=1696051316]
+transform = Transform3D(1, 0, 0, 0, -0.028895453, -0.9995824, 0, 0.9995824, -0.028895453, 0, 0, 0)
 
 [connection signal="timeout" from="WorldEnvironment/Timer" to="CharacterBody3D2/Sprite3D2" method="_on_timer_timeout"]
 [connection signal="pressed" from="CanvasLayer/Label4/TextureButton" to="CanvasLayer/reloj" method="_on_texture_button_pressed"]

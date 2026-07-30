@@ -873,9 +873,6 @@ _data = {
 &"new_animation": SubResource("Animation_87jc2")
 }
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_nho35"]
-size = Vector3(1, 1, 6.2177773)
-
 [sub_resource type="Animation" id="Animation_qbujx"]
 length = 0.001
 tracks/0/type = "position_3d"
@@ -1125,12 +1122,22 @@ _data = {
 &"new_animation": SubResource("Animation_n65h0")
 }
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_nho35"]
+size = Vector3(1, 1, 6.2177773)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_qefoi"]
+size = Vector3(31.887085, 8.185425, 1.4674072)
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_sn88x"]
+radius = 0.7836914
+height = 3.1687012
+
 [sub_resource type="Animation" id="Animation_wwn1j"]
 length = 0.001
 tracks/0/type = "position_3d"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Node3D")
+tracks/0/path = NodePath("parkul zone/Node3D")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = PackedFloat32Array(0, 1, 0, -5.4892974, 0)
@@ -1153,7 +1160,7 @@ length = 2.7666667
 tracks/0/type = "position_3d"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Node3D")
+tracks/0/path = NodePath("parkul zone/Node3D")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = PackedFloat32Array(0, 1, 0, -5.4892974, 0, 2.7666667, 1, 0, 0.027276993, 0)
@@ -1175,13 +1182,6 @@ _data = {
 &"RESET": SubResource("Animation_wwn1j"),
 &"goup": SubResource("Animation_shnak")
 }
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_qefoi"]
-size = Vector3(31.887085, 8.185425, 1.4674072)
-
-[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_sn88x"]
-radius = 0.7836914
-height = 3.1687012
 
 [sub_resource type="Animation" id="Animation_fq22r"]
 length = 0.001
@@ -2111,13 +2111,6 @@ texture = ExtResource("18_hlgl1")
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/credits" unique_id=1379107019]
 libraries/ = SubResource("AnimationLibrary_rexif")
 
-[node name="Area3D" type="Area3D" parent="." unique_id=1767399498]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.82143736, 0)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=751973465]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.860442, 1.9387658, -22.881319)
-shape = SubResource("BoxShape3D_nho35")
-
 [node name="Node" type="Node" parent="." unique_id=1179095226]
 
 [node name="CSGBox3D3" type="CSGBox3D" parent="Node" unique_id=1683865757]
@@ -2174,9 +2167,9 @@ use_collision = true
 size = Vector3(1, 5.3826904, 21.14484)
 
 [node name="CSGBox3D21" type="CSGBox3D" parent="Node" unique_id=162909227]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -3.111909, 3.670779, -54.860165)
+transform = Transform3D(0.999808, 0, -0.019593533, 0, 1, 0, 0.019593533, 0, 0.999808, -3.0551789, 3.670779, -58.926056)
 use_collision = true
-size = Vector3(1, 5.3826904, 11.744783)
+size = Vector3(1, 5.3826904, 17.535477)
 
 [node name="CSGBox3D27" type="CSGBox3D" parent="Node" unique_id=567810816]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -27.059605, 3.6774871, -60.73227)
@@ -2210,9 +2203,9 @@ size = Vector3(1, 5.3826904, 7.6124654)
 libraries/ = SubResource("AnimationLibrary_tp3f7")
 
 [node name="CSGBox3D29" type="CSGBox3D" parent="Node" unique_id=185700712]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -12.427499, 3.670779, -57.96088)
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -13.260607, 3.670779, -57.96088)
 use_collision = true
-size = Vector3(1, 5.3826904, 11.744783)
+size = Vector3(1, 5.3826904, 10.078568)
 
 [node name="CSGBox3D34" type="CSGBox3D" parent="Node" unique_id=965676795]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -12.427499, 3.670779, -47.21864)
@@ -2243,9 +2236,64 @@ use_collision = true
 size = Vector3(1, 5.3826904, 7.235551)
 
 [node name="CSGBox3D23" type="CSGBox3D" parent="Node" unique_id=720934632]
-transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 2.2503178, 3.670779, -55.84426)
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 2.648869, 3.670779, -59.926052)
 use_collision = true
-size = Vector3(0.001, 5.3826904, 11.744783)
+size = Vector3(0.79810154, 5.3826904, 19.908363)
+
+[node name="CSGBox3D35" type="CSGBox3D" parent="Node" unique_id=1588506002]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -3.0233, 3.670779, -76.88469)
+use_collision = true
+size = Vector3(0.79810154, 5.3826904, 21.079813)
+
+[node name="CSGBox3D41" type="CSGBox3D" parent="Node" unique_id=1126667052]
+transform = Transform3D(1.3113416e-07, 0, 1, 0, 1, 0, -1, 0, 1.3113416e-07, -8.394606, 3.670779, -87.027725)
+use_collision = true
+size = Vector3(0.79810154, 5.3826904, 10.842641)
+
+[node name="CSGBox3D42" type="CSGBox3D" parent="Node" unique_id=1178510627]
+transform = Transform3D(1.3113416e-07, 0, 1, 0, 1, 0, -1, 0, 1.3113416e-07, 6.593792, 3.670779, -87.027725)
+use_collision = true
+size = Vector3(0.79810154, 5.3826904, 10.842641)
+
+[node name="CSGBox3D43" type="CSGBox3D" parent="Node" unique_id=1291838670]
+transform = Transform3D(-1, 0, 8.742277e-08, 0, 1, 0, -8.742277e-08, 0, -1, 11.618278, 3.670779, -97.061165)
+use_collision = true
+size = Vector3(0.79810154, 5.3826904, 20.876905)
+
+[node name="CSGBox3D45" type="CSGBox3D" parent="Node" unique_id=500179027]
+transform = Transform3D(-4.371138e-08, 0, -1, 0, 1, 0, 1, 0, -4.371138e-08, -1.9998188, 3.670779, -107.28879)
+use_collision = true
+size = Vector3(0.79810154, 5.3826904, 28.619215)
+
+[node name="CSGBox3D44" type="CSGBox3D" parent="Node" unique_id=2145715532]
+transform = Transform3D(-1, 0, 8.742277e-08, 0, 1, 0, -8.742277e-08, 0, -1, -13.255433, 3.670779, -96.92653)
+use_collision = true
+size = Vector3(0.79810154, 5.3826904, 20.607632)
+
+[node name="CSGBox3D40" type="CSGBox3D" parent="Node" unique_id=1108669494]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 1.5839089, 3.670779, -83.7996)
+use_collision = true
+size = Vector3(0.79810154, 5.3826904, 7.2180834)
+
+[node name="CSGBox3D36" type="CSGBox3D" parent="Node" unique_id=673455373]
+transform = Transform3D(1.3113416e-07, 0, 1, 0, 1, 0, -1, 0, 1.3113416e-07, 1.1501389, 3.670779, -75.630264)
+use_collision = true
+size = Vector3(0.79810154, 5.3826904, 9.131996)
+
+[node name="CSGBox3D39" type="CSGBox3D" parent="Node" unique_id=76697810]
+transform = Transform3D(1.3113416e-07, 0, 1, 0, 1, 0, -1, 0, 1.3113416e-07, 5.617436, 3.670779, -80.63803)
+use_collision = true
+size = Vector3(0.79810154, 5.3826904, 9.131996)
+
+[node name="CSGBox3D37" type="CSGBox3D" parent="Node" unique_id=1706035528]
+transform = Transform3D(1.3113416e-07, 0, 1, 0, 1, 0, -1, 0, 1.3113416e-07, 6.7876625, 3.670779, -69.63269)
+use_collision = true
+size = Vector3(0.79810154, 5.3826904, 9.131996)
+
+[node name="CSGBox3D38" type="CSGBox3D" parent="Node" unique_id=708247131]
+transform = Transform3D(-1, 0, 8.742277e-08, 0, 1, 0, -8.742277e-08, 0, -1, 10.119701, 3.670779, -73.418335)
+use_collision = true
+size = Vector3(0.79810154, 5.3826904, 15.149698)
 
 [node name="CSGBox3D17" type="CSGBox3D" parent="Node" unique_id=86608625]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 6.0912423, 3.670779, -49.53383)
@@ -2273,26 +2321,6 @@ transform = Transform3D(-0.99983084, 0, -0.018391797, 0, 1, 0, 0.018391797, 0, -
 material_override = SubResource("StandardMaterial3D_cup5b")
 use_collision = true
 size = Vector3(1, 5.3826904, 18.340975)
-
-[node name="CSGBox3D12" type="CSGBox3D" parent="Node" unique_id=875568247]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -62.781254, 3.670779, -27.112906)
-use_collision = true
-size = Vector3(1, 5.3826904, 105.17237)
-
-[node name="CSGBox3D14" type="CSGBox3D" parent="Node" unique_id=2007839322]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -120.546524, 3.670779, -27.112904)
-use_collision = true
-size = Vector3(1, 5.3826904, 11.12314)
-
-[node name="CSGBox3D15" type="CSGBox3D" parent="Node" unique_id=255084569]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -120.00302, 3.670779, -19.03436)
-use_collision = true
-size = Vector3(1, 5.3826904, 11.12314)
-
-[node name="CSGBox3D13" type="CSGBox3D" parent="Node" unique_id=1901555957]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -62.84054, 3.670779, -19.045895)
-use_collision = true
-size = Vector3(1, 5.3826904, 105.29095)
 
 [node name="CSGBox3D9" type="CSGBox3D" parent="Node" unique_id=1321013016]
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 10.328875, 3.670779, -16.053524)
@@ -2336,491 +2364,521 @@ use_collision = true
 size = Vector3(1, 5.3826904, 6.7984943)
 
 [node name="CSGBox3D" type="CSGBox3D" parent="Node" unique_id=1422322589]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36.639023, 3.5755043, -23.54296)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40.687202, 3.5755053, -52.85111)
 use_collision = true
 flip_faces = true
-size = Vector3(179.7342, 5.0625, 90.55939)
+size = Vector3(188.00967, 5.0625, 149.28413)
 
-[node name="Node3D" type="Node3D" parent="Node" unique_id=1138307723]
+[node name="parkul zone" type="Node3D" parent="Node" unique_id=906096940]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.4085846, -0.14902782, 0.02822113)
+
+[node name="Node3D" type="Node3D" parent="Node/parkul zone" unique_id=1138307723]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -5.4892974, 0)
 script = ExtResource("6_bo5ku")
 
-[node name="red area9" type="CSGBox3D" parent="Node/Node3D" unique_id=1531406323]
+[node name="red area9" type="CSGBox3D" parent="Node/parkul zone/Node3D" unique_id=1531406323]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -45.730278, 3.133253, -21.456333)
 material_override = SubResource("StandardMaterial3D_bo5ku")
 use_collision = true
 size = Vector3(1.6409607, 3.8970642, 6.0165405)
 
-[node name="Area3D" type="Area3D" parent="Node/Node3D/red area9" unique_id=1178670465]
+[node name="Area3D" type="Area3D" parent="Node/parkul zone/Node3D/red area9" unique_id=1178670465]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.31111145)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/Node3D/red area9/Area3D" unique_id=2067967767]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/parkul zone/Node3D/red area9/Area3D" unique_id=2067967767]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.008548737, -0.17765999, 0.5988921)
 shape = SubResource("BoxShape3D_wwn1j")
 
-[node name="red area10" type="CSGBox3D" parent="Node/Node3D" unique_id=668751570]
+[node name="red area10" type="CSGBox3D" parent="Node/parkul zone/Node3D" unique_id=668751570]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -49.749905, 2.7671032, -24.735083)
 material_override = SubResource("StandardMaterial3D_bo5ku")
 use_collision = true
 size = Vector3(1.6409607, 3.8970642, 5.2842407)
 
-[node name="Area3D" type="Area3D" parent="Node/Node3D/red area10" unique_id=1309221205]
+[node name="Area3D" type="Area3D" parent="Node/parkul zone/Node3D/red area10" unique_id=1309221205]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.31111145)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/Node3D/red area10/Area3D" unique_id=1548836891]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/parkul zone/Node3D/red area10/Area3D" unique_id=1548836891]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.008548737, -0.17765999, 0.5988921)
 shape = SubResource("BoxShape3D_wwn1j")
 
-[node name="red area11" type="CSGBox3D" parent="Node/Node3D" unique_id=943494668]
+[node name="red area11" type="CSGBox3D" parent="Node/parkul zone/Node3D" unique_id=943494668]
 transform = Transform3D(-4.371139e-08, -1, -4.371139e-08, 0, -4.371139e-08, 1, -1, 4.371139e-08, 1.9106855e-15, -51.948704, 2.9772625, -23.603432)
 material_override = SubResource("StandardMaterial3D_bo5ku")
 use_collision = true
 size = Vector3(1.6409607, 3.8970642, 5.7045593)
 
-[node name="Area3D" type="Area3D" parent="Node/Node3D/red area11" unique_id=1228081320]
+[node name="Area3D" type="Area3D" parent="Node/parkul zone/Node3D/red area11" unique_id=1228081320]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.31111145)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/Node3D/red area11/Area3D" unique_id=2014580861]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/parkul zone/Node3D/red area11/Area3D" unique_id=2014580861]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.008548737, -0.17765999, 0.5988921)
 shape = SubResource("BoxShape3D_wwn1j")
 
-[node name="red area5" type="CSGBox3D" parent="Node/Node3D" unique_id=392741900]
+[node name="red area5" type="CSGBox3D" parent="Node/parkul zone/Node3D" unique_id=392741900]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -31.1972, 1.4728833, -22.730457)
 material_override = SubResource("StandardMaterial3D_bo5ku")
 use_collision = true
 size = Vector3(1.6409607, 1.3488159, 2.6958008)
 
-[node name="Area3D" type="Area3D" parent="Node/Node3D/red area5" unique_id=303436498]
+[node name="Area3D" type="Area3D" parent="Node/parkul zone/Node3D/red area5" unique_id=303436498]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.31111145)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/Node3D/red area5/Area3D" unique_id=1356568376]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/parkul zone/Node3D/red area5/Area3D" unique_id=1356568376]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.008548737, -0.0036907196, 0.3019104)
 shape = SubResource("BoxShape3D_qv3k7")
 
-[node name="red area2" type="CSGBox3D" parent="Node/Node3D" unique_id=1637880163]
+[node name="red area2" type="CSGBox3D" parent="Node/parkul zone/Node3D" unique_id=1637880163]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.627718, 1.6649442, -20.884418)
 material_override = SubResource("StandardMaterial3D_bo5ku")
 use_collision = true
 size = Vector3(1.6409607, 1.3488159, 2.6958008)
 
-[node name="Area3D" type="Area3D" parent="Node/Node3D/red area2" unique_id=389606592]
+[node name="Area3D" type="Area3D" parent="Node/parkul zone/Node3D/red area2" unique_id=389606592]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.31111145)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/Node3D/red area2/Area3D" unique_id=1994711089]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/parkul zone/Node3D/red area2/Area3D" unique_id=1994711089]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.008548737, -0.0036907196, 0.3019104)
 shape = SubResource("BoxShape3D_qv3k7")
 
-[node name="red area3" type="CSGBox3D" parent="Node/Node3D" unique_id=1461556421]
+[node name="red area3" type="CSGBox3D" parent="Node/parkul zone/Node3D" unique_id=1461556421]
 transform = Transform3D(-4.371139e-08, 5.9604645e-08, -1, 1, 2.6054018e-15, -4.371139e-08, 0, -1, -5.9604645e-08, -28.732838, 1.8660733, -25.001919)
 material_override = SubResource("StandardMaterial3D_bo5ku")
 use_collision = true
 size = Vector3(1.6409607, 0.54138184, 2.6958008)
 
-[node name="Area3D" type="Area3D" parent="Node/Node3D/red area3" unique_id=1151642870]
+[node name="Area3D" type="Area3D" parent="Node/parkul zone/Node3D/red area3" unique_id=1151642870]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.31111145)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/Node3D/red area3/Area3D" unique_id=1925774930]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/parkul zone/Node3D/red area3/Area3D" unique_id=1925774930]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.008548737, -0.015312195, 0.3019104)
 shape = SubResource("BoxShape3D_sn88x")
 
-[node name="red area8" type="CSGBox3D" parent="Node/Node3D" unique_id=1749773463]
+[node name="red area8" type="CSGBox3D" parent="Node/parkul zone/Node3D" unique_id=1749773463]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38.967365, 1.0691663, -23.19769)
 material_override = SubResource("StandardMaterial3D_bo5ku")
 use_collision = true
 size = Vector3(1.6409607, 0.54138184, 7.4015503)
 
-[node name="Area3D" type="Area3D" parent="Node/Node3D/red area8" unique_id=1992386474]
+[node name="Area3D" type="Area3D" parent="Node/parkul zone/Node3D/red area8" unique_id=1992386474]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.31111145)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/Node3D/red area8/Area3D" unique_id=1616188709]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/parkul zone/Node3D/red area8/Area3D" unique_id=1616188709]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.008548737, -0.015312195, 0.46277237)
 shape = SubResource("BoxShape3D_bo5ku")
 
-[node name="red area6" type="CSGBox3D" parent="Node/Node3D" unique_id=991946492]
+[node name="red area6" type="CSGBox3D" parent="Node/parkul zone/Node3D" unique_id=991946492]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.01081, 1.0691663, -23.19769)
 material_override = SubResource("StandardMaterial3D_bo5ku")
 use_collision = true
 size = Vector3(1.6409607, 0.54138184, 7.4015503)
 
-[node name="Area3D" type="Area3D" parent="Node/Node3D/red area6" unique_id=1241269987]
+[node name="Area3D" type="Area3D" parent="Node/parkul zone/Node3D/red area6" unique_id=1241269987]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.31111145)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/Node3D/red area6/Area3D" unique_id=293198010]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/parkul zone/Node3D/red area6/Area3D" unique_id=293198010]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.008548737, -0.015312195, 0.46277237)
 shape = SubResource("BoxShape3D_bo5ku")
 
-[node name="red area" type="CSGBox3D" parent="Node/Node3D" unique_id=1168813976]
+[node name="red area" type="CSGBox3D" parent="Node/parkul zone/Node3D" unique_id=1168813976]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.13368, 1.0691663, -25.001919)
 material_override = SubResource("StandardMaterial3D_bo5ku")
 use_collision = true
 size = Vector3(1.6409607, 0.54138184, 2.6958008)
 
-[node name="Area3D" type="Area3D" parent="Node/Node3D/red area" unique_id=1958275125]
+[node name="Area3D" type="Area3D" parent="Node/parkul zone/Node3D/red area" unique_id=1958275125]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.31111145)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/Node3D/red area/Area3D" unique_id=1427960436]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/parkul zone/Node3D/red area/Area3D" unique_id=1427960436]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.008548737, -0.015312195, 0.3019104)
 shape = SubResource("BoxShape3D_sn88x")
 
-[node name="red area4" type="CSGBox3D" parent="Node/Node3D" unique_id=447078962]
+[node name="red area4" type="CSGBox3D" parent="Node/parkul zone/Node3D" unique_id=447078962]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -53.161358, 1.0691663, -21.09216)
 material_override = SubResource("StandardMaterial3D_bo5ku")
 use_collision = true
 size = Vector3(1.6409607, 0.54138184, 2.6958008)
 
-[node name="Area3D" type="Area3D" parent="Node/Node3D/red area4" unique_id=677868465]
+[node name="Area3D" type="Area3D" parent="Node/parkul zone/Node3D/red area4" unique_id=677868465]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.31111145)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/Node3D/red area4/Area3D" unique_id=167494381]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/parkul zone/Node3D/red area4/Area3D" unique_id=167494381]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.008548737, -0.015312195, 0.3019104)
 shape = SubResource("BoxShape3D_sn88x")
 
-[node name="rotador" type="Node3D" parent="Node/Node3D" unique_id=742784108]
+[node name="rotador" type="Node3D" parent="Node/parkul zone/Node3D" unique_id=742784108]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.72776794)
 script = ExtResource("7_qv3k7")
 
-[node name="red area12" type="CSGBox3D" parent="Node/Node3D/rotador" unique_id=579533224]
+[node name="red area12" type="CSGBox3D" parent="Node/parkul zone/Node3D/rotador" unique_id=579533224]
 transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, -58.69512, 1.2983457, -22.335445)
 material_override = SubResource("StandardMaterial3D_bo5ku")
 use_collision = true
 size = Vector3(0.19271088, 0.9997406, 0.20922852)
 
-[node name="Area3D" type="Area3D" parent="Node/Node3D/rotador/red area12" unique_id=169156962]
+[node name="Area3D" type="Area3D" parent="Node/parkul zone/Node3D/rotador/red area12" unique_id=169156962]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.31111145)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/Node3D/rotador/red area12/Area3D" unique_id=247250469]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/parkul zone/Node3D/rotador/red area12/Area3D" unique_id=247250469]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0013847351, 0.092695236, 0.31012917)
 shape = SubResource("BoxShape3D_shnak")
 
-[node name="red area13" type="CSGBox3D" parent="Node/Node3D/rotador/red area12" unique_id=341647118]
+[node name="red area13" type="CSGBox3D" parent="Node/parkul zone/Node3D/rotador/red area12" unique_id=341647118]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0.3976928, 0.60603714)
 material_override = SubResource("StandardMaterial3D_bo5ku")
 use_collision = true
 size = Vector3(0.19271088, 0.9997406, 0.20922852)
 
-[node name="Area3D" type="Area3D" parent="Node/Node3D/rotador/red area12/red area13" unique_id=550847279]
+[node name="Area3D" type="Area3D" parent="Node/parkul zone/Node3D/rotador/red area12/red area13" unique_id=550847279]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.31111145)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/Node3D/rotador/red area12/red area13/Area3D" unique_id=1592479147]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/parkul zone/Node3D/rotador/red area12/red area13/Area3D" unique_id=1592479147]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0013847351, 0.092695236, 0.31012917)
 shape = SubResource("BoxShape3D_shnak")
 
-[node name="red area14" type="CSGBox3D" parent="Node/Node3D/rotador/red area12" unique_id=1054594667]
+[node name="red area14" type="CSGBox3D" parent="Node/parkul zone/Node3D/rotador/red area12" unique_id=1054594667]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0.3976928, -0.59414864)
 material_override = SubResource("StandardMaterial3D_bo5ku")
 use_collision = true
 size = Vector3(0.19271088, 0.9997406, 0.20922852)
 
-[node name="Area3D" type="Area3D" parent="Node/Node3D/rotador/red area12/red area14" unique_id=1847919388]
+[node name="Area3D" type="Area3D" parent="Node/parkul zone/Node3D/rotador/red area12/red area14" unique_id=1847919388]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.31111145)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/Node3D/rotador/red area12/red area14/Area3D" unique_id=456193188]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/parkul zone/Node3D/rotador/red area12/red area14/Area3D" unique_id=456193188]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0013847351, 0.092695236, 0.31012917)
 shape = SubResource("BoxShape3D_shnak")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Node/Node3D/rotador" unique_id=863004767]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Node/parkul zone/Node3D/rotador" unique_id=863004767]
 libraries/ = SubResource("AnimationLibrary_1h56m")
 
-[node name="rotador3" type="Node3D" parent="Node/Node3D" unique_id=1813664648]
+[node name="rotador3" type="Node3D" parent="Node/parkul zone/Node3D" unique_id=1813664648]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.197998, 0, -1.213356)
 script = ExtResource("7_qv3k7")
 
-[node name="red area12" type="CSGBox3D" parent="Node/Node3D/rotador3" unique_id=2047493760]
+[node name="red area12" type="CSGBox3D" parent="Node/parkul zone/Node3D/rotador3" unique_id=2047493760]
 transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, -58.69512, 1.2983457, -22.335445)
 material_override = SubResource("StandardMaterial3D_bo5ku")
 use_collision = true
 size = Vector3(0.19271088, 0.9997406, 0.20922852)
 
-[node name="Area3D" type="Area3D" parent="Node/Node3D/rotador3/red area12" unique_id=101643737]
+[node name="Area3D" type="Area3D" parent="Node/parkul zone/Node3D/rotador3/red area12" unique_id=101643737]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.31111145)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/Node3D/rotador3/red area12/Area3D" unique_id=1265307498]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/parkul zone/Node3D/rotador3/red area12/Area3D" unique_id=1265307498]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0013847351, 0.092695236, 0.31012917)
 shape = SubResource("BoxShape3D_shnak")
 
-[node name="red area13" type="CSGBox3D" parent="Node/Node3D/rotador3/red area12" unique_id=1456057282]
+[node name="red area13" type="CSGBox3D" parent="Node/parkul zone/Node3D/rotador3/red area12" unique_id=1456057282]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0.3976928, 0.60603714)
 material_override = SubResource("StandardMaterial3D_bo5ku")
 use_collision = true
 size = Vector3(0.19271088, 0.9997406, 0.20922852)
 
-[node name="Area3D" type="Area3D" parent="Node/Node3D/rotador3/red area12/red area13" unique_id=1708022708]
+[node name="Area3D" type="Area3D" parent="Node/parkul zone/Node3D/rotador3/red area12/red area13" unique_id=1708022708]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.31111145)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/Node3D/rotador3/red area12/red area13/Area3D" unique_id=1715754867]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/parkul zone/Node3D/rotador3/red area12/red area13/Area3D" unique_id=1715754867]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0013847351, 0.092695236, 0.31012917)
 shape = SubResource("BoxShape3D_shnak")
 
-[node name="red area14" type="CSGBox3D" parent="Node/Node3D/rotador3/red area12" unique_id=1737311235]
+[node name="red area14" type="CSGBox3D" parent="Node/parkul zone/Node3D/rotador3/red area12" unique_id=1737311235]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0.3976928, -0.59414864)
 material_override = SubResource("StandardMaterial3D_bo5ku")
 use_collision = true
 size = Vector3(0.19271088, 0.9997406, 0.20922852)
 
-[node name="Area3D" type="Area3D" parent="Node/Node3D/rotador3/red area12/red area14" unique_id=1149533302]
+[node name="Area3D" type="Area3D" parent="Node/parkul zone/Node3D/rotador3/red area12/red area14" unique_id=1149533302]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.31111145)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/Node3D/rotador3/red area12/red area14/Area3D" unique_id=1372852181]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/parkul zone/Node3D/rotador3/red area12/red area14/Area3D" unique_id=1372852181]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0013847351, 0.092695236, 0.31012917)
 shape = SubResource("BoxShape3D_shnak")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Node/Node3D/rotador3" unique_id=1916659879]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Node/parkul zone/Node3D/rotador3" unique_id=1916659879]
 libraries/ = SubResource("AnimationLibrary_1h56m")
 
-[node name="rotador4" type="Node3D" parent="Node/Node3D" unique_id=472877537]
+[node name="rotador4" type="Node3D" parent="Node/parkul zone/Node3D" unique_id=472877537]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.3605804, 0, -1.213356)
 script = ExtResource("7_qv3k7")
 
-[node name="red area12" type="CSGBox3D" parent="Node/Node3D/rotador4" unique_id=1788956925]
+[node name="red area12" type="CSGBox3D" parent="Node/parkul zone/Node3D/rotador4" unique_id=1788956925]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -58.69512, 1.2983457, -20.598679)
 material_override = SubResource("StandardMaterial3D_bo5ku")
 use_collision = true
 size = Vector3(0.19271088, 0.9997406, 0.20922852)
 
-[node name="Area3D" type="Area3D" parent="Node/Node3D/rotador4/red area12" unique_id=1403181871]
+[node name="Area3D" type="Area3D" parent="Node/parkul zone/Node3D/rotador4/red area12" unique_id=1403181871]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.31111145)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/Node3D/rotador4/red area12/Area3D" unique_id=1410920362]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/parkul zone/Node3D/rotador4/red area12/Area3D" unique_id=1410920362]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0013847351, 0.092695236, 0.31012917)
 shape = SubResource("BoxShape3D_odru0")
 
-[node name="red area13" type="CSGBox3D" parent="Node/Node3D/rotador4/red area12" unique_id=1661567425]
+[node name="red area13" type="CSGBox3D" parent="Node/parkul zone/Node3D/rotador4/red area12" unique_id=1661567425]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0.3976928, 0.60603714)
 material_override = SubResource("StandardMaterial3D_bo5ku")
 use_collision = true
 size = Vector3(0.19271088, 0.9997406, 0.20922852)
 
-[node name="Area3D" type="Area3D" parent="Node/Node3D/rotador4/red area12/red area13" unique_id=466685252]
+[node name="Area3D" type="Area3D" parent="Node/parkul zone/Node3D/rotador4/red area12/red area13" unique_id=466685252]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.31111145)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/Node3D/rotador4/red area12/red area13/Area3D" unique_id=815960793]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/parkul zone/Node3D/rotador4/red area12/red area13/Area3D" unique_id=815960793]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0013847351, 0.092695236, 0.31012917)
 shape = SubResource("BoxShape3D_shnak")
 
-[node name="red area14" type="CSGBox3D" parent="Node/Node3D/rotador4/red area12" unique_id=1738830361]
+[node name="red area14" type="CSGBox3D" parent="Node/parkul zone/Node3D/rotador4/red area12" unique_id=1738830361]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0.3976928, -0.59414864)
 material_override = SubResource("StandardMaterial3D_bo5ku")
 use_collision = true
 size = Vector3(0.19271088, 0.9997406, 0.20922852)
 
-[node name="Area3D" type="Area3D" parent="Node/Node3D/rotador4/red area12/red area14" unique_id=2107548943]
+[node name="Area3D" type="Area3D" parent="Node/parkul zone/Node3D/rotador4/red area12/red area14" unique_id=2107548943]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.31111145)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/Node3D/rotador4/red area12/red area14/Area3D" unique_id=589792516]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/parkul zone/Node3D/rotador4/red area12/red area14/Area3D" unique_id=589792516]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0013847351, 0.092695236, 0.31012917)
 shape = SubResource("BoxShape3D_shnak")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Node/Node3D/rotador4" unique_id=1906415851]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Node/parkul zone/Node3D/rotador4" unique_id=1906415851]
 libraries/ = SubResource("AnimationLibrary_1h56m")
 
-[node name="rotador5" type="Node3D" parent="Node/Node3D" unique_id=359546976]
+[node name="rotador5" type="Node3D" parent="Node/parkul zone/Node3D" unique_id=359546976]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.771896, 0, -3.8156776)
 script = ExtResource("7_qv3k7")
 
-[node name="red area12" type="CSGBox3D" parent="Node/Node3D/rotador5" unique_id=733571390]
+[node name="red area12" type="CSGBox3D" parent="Node/parkul zone/Node3D/rotador5" unique_id=733571390]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -58.69512, 1.2983457, -20.598679)
 material_override = SubResource("StandardMaterial3D_bo5ku")
 use_collision = true
 size = Vector3(0.19271088, 0.9997406, 0.20922852)
 
-[node name="Area3D" type="Area3D" parent="Node/Node3D/rotador5/red area12" unique_id=644044735]
+[node name="Area3D" type="Area3D" parent="Node/parkul zone/Node3D/rotador5/red area12" unique_id=644044735]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.31111145)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/Node3D/rotador5/red area12/Area3D" unique_id=1867034474]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/parkul zone/Node3D/rotador5/red area12/Area3D" unique_id=1867034474]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0013847351, 0.092695236, 0.31012917)
 shape = SubResource("BoxShape3D_odru0")
 
-[node name="red area13" type="CSGBox3D" parent="Node/Node3D/rotador5/red area12" unique_id=485145713]
+[node name="red area13" type="CSGBox3D" parent="Node/parkul zone/Node3D/rotador5/red area12" unique_id=485145713]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0.3976928, 0.60603714)
 material_override = SubResource("StandardMaterial3D_bo5ku")
 use_collision = true
 size = Vector3(0.19271088, 0.9997406, 0.20922852)
 
-[node name="Area3D" type="Area3D" parent="Node/Node3D/rotador5/red area12/red area13" unique_id=596821954]
+[node name="Area3D" type="Area3D" parent="Node/parkul zone/Node3D/rotador5/red area12/red area13" unique_id=596821954]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.31111145)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/Node3D/rotador5/red area12/red area13/Area3D" unique_id=1435557637]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/parkul zone/Node3D/rotador5/red area12/red area13/Area3D" unique_id=1435557637]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0013847351, 0.092695236, 0.31012917)
 shape = SubResource("BoxShape3D_shnak")
 
-[node name="red area14" type="CSGBox3D" parent="Node/Node3D/rotador5/red area12" unique_id=1813051700]
+[node name="red area14" type="CSGBox3D" parent="Node/parkul zone/Node3D/rotador5/red area12" unique_id=1813051700]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0.3976928, -0.59414864)
 material_override = SubResource("StandardMaterial3D_bo5ku")
 use_collision = true
 size = Vector3(0.19271088, 0.9997406, 0.20922852)
 
-[node name="Area3D" type="Area3D" parent="Node/Node3D/rotador5/red area12/red area14" unique_id=1240421076]
+[node name="Area3D" type="Area3D" parent="Node/parkul zone/Node3D/rotador5/red area12/red area14" unique_id=1240421076]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.31111145)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/Node3D/rotador5/red area12/red area14/Area3D" unique_id=1013331280]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/parkul zone/Node3D/rotador5/red area12/red area14/Area3D" unique_id=1013331280]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0013847351, 0.092695236, 0.31012917)
 shape = SubResource("BoxShape3D_shnak")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Node/Node3D/rotador5" unique_id=1884451799]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Node/parkul zone/Node3D/rotador5" unique_id=1884451799]
 libraries/ = SubResource("AnimationLibrary_1h56m")
 
-[node name="rotador2" type="Node3D" parent="Node/Node3D" unique_id=1984366749]
+[node name="rotador2" type="Node3D" parent="Node/parkul zone/Node3D" unique_id=1984366749]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2000122, 0, -3.0741692)
 script = ExtResource("7_qv3k7")
 
-[node name="red area12" type="CSGBox3D" parent="Node/Node3D/rotador2" unique_id=2071587808]
+[node name="red area12" type="CSGBox3D" parent="Node/parkul zone/Node3D/rotador2" unique_id=2071587808]
 transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, -58.69512, 1.2983457, -22.335445)
 material_override = SubResource("StandardMaterial3D_bo5ku")
 use_collision = true
 size = Vector3(0.19271088, 0.9997406, 0.20922852)
 
-[node name="Area3D" type="Area3D" parent="Node/Node3D/rotador2/red area12" unique_id=556276855]
+[node name="Area3D" type="Area3D" parent="Node/parkul zone/Node3D/rotador2/red area12" unique_id=556276855]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.31111145)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/Node3D/rotador2/red area12/Area3D" unique_id=912671959]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/parkul zone/Node3D/rotador2/red area12/Area3D" unique_id=912671959]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0013847351, 0.092695236, 0.31012917)
 shape = SubResource("BoxShape3D_shnak")
 
-[node name="red area13" type="CSGBox3D" parent="Node/Node3D/rotador2/red area12" unique_id=285804959]
+[node name="red area13" type="CSGBox3D" parent="Node/parkul zone/Node3D/rotador2/red area12" unique_id=285804959]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0.3976928, 0.60603714)
 material_override = SubResource("StandardMaterial3D_bo5ku")
 use_collision = true
 size = Vector3(0.19271088, 0.9997406, 0.20922852)
 
-[node name="Area3D" type="Area3D" parent="Node/Node3D/rotador2/red area12/red area13" unique_id=1363743178]
+[node name="Area3D" type="Area3D" parent="Node/parkul zone/Node3D/rotador2/red area12/red area13" unique_id=1363743178]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.31111145)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/Node3D/rotador2/red area12/red area13/Area3D" unique_id=711052073]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/parkul zone/Node3D/rotador2/red area12/red area13/Area3D" unique_id=711052073]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0013847351, 0.092695236, 0.31012917)
 shape = SubResource("BoxShape3D_shnak")
 
-[node name="red area14" type="CSGBox3D" parent="Node/Node3D/rotador2/red area12" unique_id=935803738]
+[node name="red area14" type="CSGBox3D" parent="Node/parkul zone/Node3D/rotador2/red area12" unique_id=935803738]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0.3976928, -0.59414864)
 material_override = SubResource("StandardMaterial3D_bo5ku")
 use_collision = true
 size = Vector3(0.19271088, 0.9997406, 0.20922852)
 
-[node name="Area3D" type="Area3D" parent="Node/Node3D/rotador2/red area12/red area14" unique_id=109756510]
+[node name="Area3D" type="Area3D" parent="Node/parkul zone/Node3D/rotador2/red area12/red area14" unique_id=109756510]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.31111145)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/Node3D/rotador2/red area12/red area14/Area3D" unique_id=1038454367]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/parkul zone/Node3D/rotador2/red area12/red area14/Area3D" unique_id=1038454367]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0013847351, 0.092695236, 0.31012917)
 shape = SubResource("BoxShape3D_shnak")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Node/Node3D/rotador2" unique_id=1593242091]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Node/parkul zone/Node3D/rotador2" unique_id=1593242091]
 libraries/ = SubResource("AnimationLibrary_1h56m")
 
-[node name="movedisas" type="Node3D" parent="Node/Node3D" unique_id=276572892]
+[node name="movedisas" type="Node3D" parent="Node/parkul zone/Node3D" unique_id=276572892]
 script = ExtResource("8_wwn1j")
 
-[node name="red area13" type="CSGBox3D" parent="Node/Node3D/movedisas" unique_id=1445450073]
+[node name="red area13" type="CSGBox3D" parent="Node/parkul zone/Node3D/movedisas" unique_id=1445450073]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -76.8882, 1.0691663, -25.19769)
 material_override = SubResource("StandardMaterial3D_bo5ku")
 use_collision = true
 size = Vector3(1.6409607, 0.54138184, 7.4015503)
 
-[node name="Area3D" type="Area3D" parent="Node/Node3D/movedisas/red area13" unique_id=2118335950]
+[node name="Area3D" type="Area3D" parent="Node/parkul zone/Node3D/movedisas/red area13" unique_id=2118335950]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.31111145)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/Node3D/movedisas/red area13/Area3D" unique_id=2140232553]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/parkul zone/Node3D/movedisas/red area13/Area3D" unique_id=2140232553]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.008548737, -0.015312195, 0.46277237)
 shape = SubResource("BoxShape3D_1mj3s")
 
-[node name="red area15" type="CSGBox3D" parent="Node/Node3D/movedisas" unique_id=913329634]
+[node name="red area15" type="CSGBox3D" parent="Node/parkul zone/Node3D/movedisas" unique_id=913329634]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -88.206894, 1.0691663, -25.19769)
 material_override = SubResource("StandardMaterial3D_bo5ku")
 use_collision = true
 size = Vector3(1.6409607, 0.54138184, 7.4015503)
 
-[node name="Area3D" type="Area3D" parent="Node/Node3D/movedisas/red area15" unique_id=442835408]
+[node name="Area3D" type="Area3D" parent="Node/parkul zone/Node3D/movedisas/red area15" unique_id=442835408]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.31111145)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/Node3D/movedisas/red area15/Area3D" unique_id=1712307195]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/parkul zone/Node3D/movedisas/red area15/Area3D" unique_id=1712307195]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.008548737, -0.015312195, 0.46277237)
 shape = SubResource("BoxShape3D_1mj3s")
 
-[node name="red area14" type="CSGBox3D" parent="Node/Node3D/movedisas" unique_id=440091668]
+[node name="red area14" type="CSGBox3D" parent="Node/parkul zone/Node3D/movedisas" unique_id=440091668]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -75.017365, 1.0691663, -21.98113)
 material_override = SubResource("StandardMaterial3D_bo5ku")
 use_collision = true
 size = Vector3(4.7930145, 0.54138184, 3.6598816)
 
-[node name="Area3D" type="Area3D" parent="Node/Node3D/movedisas/red area14" unique_id=2016009159]
+[node name="Area3D" type="Area3D" parent="Node/parkul zone/Node3D/movedisas/red area14" unique_id=2016009159]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.31111145)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/Node3D/movedisas/red area14/Area3D" unique_id=755864766]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/parkul zone/Node3D/movedisas/red area14/Area3D" unique_id=755864766]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0066490173, 0.20237923, 0.38121796)
 shape = SubResource("BoxShape3D_1h56m")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Node/Node3D/movedisas" unique_id=1312538517]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Node/parkul zone/Node3D/movedisas" unique_id=1312538517]
 libraries/ = SubResource("AnimationLibrary_6j7nh")
 
-[node name="movedisas2" type="Node3D" parent="Node/Node3D" unique_id=1464157059]
+[node name="movedisas2" type="Node3D" parent="Node/parkul zone/Node3D" unique_id=1464157059]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -184.64966, 0, -46)
 script = ExtResource("8_wwn1j")
 
-[node name="red area13" type="CSGBox3D" parent="Node/Node3D/movedisas2" unique_id=1466172175]
+[node name="red area13" type="CSGBox3D" parent="Node/parkul zone/Node3D/movedisas2" unique_id=1466172175]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -76.8882, 1.0691663, -25.19769)
 material_override = SubResource("StandardMaterial3D_bo5ku")
 use_collision = true
 size = Vector3(1.6409607, 0.54138184, 7.4015503)
 
-[node name="Area3D" type="Area3D" parent="Node/Node3D/movedisas2/red area13" unique_id=775411606]
+[node name="Area3D" type="Area3D" parent="Node/parkul zone/Node3D/movedisas2/red area13" unique_id=775411606]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.31111145)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/Node3D/movedisas2/red area13/Area3D" unique_id=1428495824]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/parkul zone/Node3D/movedisas2/red area13/Area3D" unique_id=1428495824]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.008548737, -0.015312195, 0.46277237)
 shape = SubResource("BoxShape3D_1mj3s")
 
-[node name="red area15" type="CSGBox3D" parent="Node/Node3D/movedisas2" unique_id=1597236286]
+[node name="red area15" type="CSGBox3D" parent="Node/parkul zone/Node3D/movedisas2" unique_id=1597236286]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -88.206894, 1.0691663, -25.19769)
 material_override = SubResource("StandardMaterial3D_bo5ku")
 use_collision = true
 size = Vector3(1.6409607, 0.54138184, 7.4015503)
 
-[node name="Area3D" type="Area3D" parent="Node/Node3D/movedisas2/red area15" unique_id=1762822706]
+[node name="Area3D" type="Area3D" parent="Node/parkul zone/Node3D/movedisas2/red area15" unique_id=1762822706]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.31111145)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/Node3D/movedisas2/red area15/Area3D" unique_id=2127434434]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/parkul zone/Node3D/movedisas2/red area15/Area3D" unique_id=2127434434]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.008548737, -0.015312195, 0.46277237)
 shape = SubResource("BoxShape3D_1mj3s")
 
-[node name="red area14" type="CSGBox3D" parent="Node/Node3D/movedisas2" unique_id=1661963366]
+[node name="red area14" type="CSGBox3D" parent="Node/parkul zone/Node3D/movedisas2" unique_id=1661963366]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -75.017365, 1.0691663, -21.98113)
 material_override = SubResource("StandardMaterial3D_bo5ku")
 use_collision = true
 size = Vector3(4.7930145, 0.54138184, 3.6598816)
 
-[node name="Area3D" type="Area3D" parent="Node/Node3D/movedisas2/red area14" unique_id=1348590299]
+[node name="Area3D" type="Area3D" parent="Node/parkul zone/Node3D/movedisas2/red area14" unique_id=1348590299]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.31111145)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/Node3D/movedisas2/red area14/Area3D" unique_id=220036264]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/parkul zone/Node3D/movedisas2/red area14/Area3D" unique_id=220036264]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0066490173, 0.20237923, 0.38121796)
 shape = SubResource("BoxShape3D_1h56m")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Node/Node3D/movedisas2" unique_id=694935486]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Node/parkul zone/Node3D/movedisas2" unique_id=694935486]
 libraries/ = SubResource("AnimationLibrary_6j7nh")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Node" unique_id=227496890]
-libraries/ = SubResource("AnimationLibrary_odru0")
+[node name="Area3D" type="Area3D" parent="Node/parkul zone" unique_id=1767399498]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.4085846, 0.9704652, -0.02822113)
 
-[node name="Sprite3D2" type="Sprite3D" parent="Node" unique_id=799785221]
-transform = Transform3D(-9.026409e-09, 0, -0.099999994, 0, 0.17603621, 0, 0.20650016, 0, -4.3711386e-09, -119.228905, 1.4633818, -23.03348)
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/parkul zone/Area3D" unique_id=751973465]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.860442, 1.9387658, -22.881319)
+shape = SubResource("BoxShape3D_nho35")
+
+[node name="CSGBox3D12" type="CSGBox3D" parent="Node/parkul zone/Area3D" unique_id=875568247]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -62.781254, 2.8493416, -27.112906)
+use_collision = true
+size = Vector3(1, 5.3826904, 105.17237)
+
+[node name="CSGBox3D13" type="CSGBox3D" parent="Node/parkul zone/Area3D" unique_id=1901555957]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -62.84054, 2.8493416, -19.045895)
+use_collision = true
+size = Vector3(1, 5.3826904, 105.29095)
+
+[node name="CSGBox3D14" type="CSGBox3D" parent="Node/parkul zone" unique_id=2007839322]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -121.4275, 3.8198068, -27.141125)
+use_collision = true
+size = Vector3(1, 5.3826904, 12.067918)
+
+[node name="CSGBox3D15" type="CSGBox3D" parent="Node/parkul zone/CSGBox3D14" unique_id=255084569]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.078543, 0, -1.015892)
+use_collision = true
+size = Vector3(1, 5.3826904, 11.12314)
+
+[node name="Sprite3D2" type="Sprite3D" parent="Node/parkul zone/CSGBox3D14" unique_id=799785221]
+transform = Transform3D(0.20650016, 0, 0, 0, 0.17603621, 0, 0, 0, 0.099999994, 4.079424, -2.2073972, -1.7900085)
 texture = ExtResource("9_1h56m")
 
-[node name="Area3D" type="Area3D" parent="Node/Sprite3D2" unique_id=1035421319]
+[node name="Area3D" type="Area3D" parent="Node/parkul zone/CSGBox3D14/Sprite3D2" unique_id=1035421319]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/Sprite3D2/Area3D" unique_id=1029868778]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/parkul zone/CSGBox3D14/Sprite3D2/Area3D" unique_id=1029868778]
 transform = Transform3D(1, 0, 0, 0, 1, 0, -2.1316282e-14, 0, 1, -0.08037567, 3.5927124, -0.23376465)
 shape = SubResource("BoxShape3D_qefoi")
 
-[node name="lalvwe" type="StaticBody3D" parent="Node" unique_id=230196064]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -123.6285, 0, -3.072506)
+[node name="lalvwe" type="StaticBody3D" parent="Node/parkul zone/CSGBox3D14" unique_id=230196064]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 24.040398, -3.670779, 2.6095886)
 script = ExtResource("10_n65h0")
 
-[node name="Sprite3D" type="Sprite3D" parent="Node/lalvwe" unique_id=1477502307]
+[node name="Sprite3D" type="Sprite3D" parent="Node/parkul zone/CSGBox3D14/lalvwe" unique_id=1477502307]
 transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -1.3695743, 2.7727106, -20.242327)
 billboard = 1
 texture = ExtResource("11_g7eus")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/lalvwe" unique_id=1137265868]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/parkul zone/CSGBox3D14/lalvwe" unique_id=1137265868]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4715366, 2.5109282, -20.057142)
 shape = SubResource("CapsuleShape3D_sn88x")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Node" unique_id=227496890]
+libraries/ = SubResource("AnimationLibrary_odru0")
 
 [node name="Label3D7" type="Label3D" parent="." unique_id=785579997]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 6.4317265, 3.240542, -46.416683)
@@ -3095,9 +3153,9 @@ use_collision = true
 size = Vector3(1, 5.3826904, 6.465637)
 
 [node name="CSGBox3D33" type="CSGBox3D" parent="zona2" unique_id=442024155]
-transform = Transform3D(-0.9997414, 0, 0.022742901, 0, 1, 0, -0.022742901, 0, -0.9997414, -39.183224, 0, -21.606966)
+transform = Transform3D(-0.9997414, 0, 0.022742901, 0, 1, 0, -0.022742901, 0, -0.9997414, -39.17847, 0, -21.815897)
 use_collision = true
-size = Vector3(1, 5.3826904, 25.284184)
+size = Vector3(1, 5.3826904, 24.866213)
 
 [node name="CSGBox3D30" type="CSGBox3D" parent="zona2" unique_id=826328276]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.9073486e-06, 0, -28.805027)
@@ -3180,7 +3238,7 @@ dialogo_advertencia = ExtResource("25_otddh")
 dialogo_agradecimiento = ExtResource("26_03lbn")
 
 [node name="dualsenseusablpro" parent="zona2/Node3D" unique_id=1373633510 instance=ExtResource("54_q7xn4")]
-transform = Transform3D(-0.0999598, 0, -0.0028352903, 0, 0.1, 0, 0.0028352903, 0, -0.0999598, -0.23149967, -5.1573076, -0.14779663)
+transform = Transform3D(-0.0999598, 0, -0.0028352903, 0, 0.1, 0, 0.0028352903, 0, -0.0999598, -0.23376656, -5.157307, -0.13324356)
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="zona2/Node3D/dualsenseusablpro" unique_id=337841745]
 stream = ExtResource("29_u1p4t")
@@ -3453,39 +3511,39 @@ shape = SubResource("BoxShape3D_6w0ue")
 [connection signal="pressed" from="CanvasLayer/Label4/TextureButton" to="CanvasLayer/reloj" method="_on_texture_button_pressed"]
 [connection signal="timeout" from="CanvasLayer/reloj/Timer" to="CanvasLayer/reloj" method="_on_timer_timeout"]
 [connection signal="timeout" from="CanvasLayer/reloj/Timer2" to="CanvasLayer/reloj" method="_on_timer_2_timeout"]
-[connection signal="body_entered" from="Area3D" to="palanquita3" method="_on_area_3d_body_entered"]
-[connection signal="body_entered" from="Node/Node3D/red area9/Area3D" to="Node/Node3D" method="_on_area_3d_body_entered"]
-[connection signal="body_entered" from="Node/Node3D/red area10/Area3D" to="Node/Node3D" method="_on_area_3d_body_entered"]
-[connection signal="body_entered" from="Node/Node3D/red area11/Area3D" to="Node/Node3D" method="_on_area_3d_body_entered"]
-[connection signal="body_entered" from="Node/Node3D/red area5/Area3D" to="Node/Node3D" method="_on_area_3d_body_entered"]
-[connection signal="body_entered" from="Node/Node3D/red area2/Area3D" to="Node/Node3D" method="_on_area_3d_body_entered"]
-[connection signal="body_entered" from="Node/Node3D/red area3/Area3D" to="Node/Node3D" method="_on_area_3d_body_entered"]
-[connection signal="body_entered" from="Node/Node3D/red area8/Area3D" to="Node/Node3D" method="_on_area_3d_body_entered"]
-[connection signal="body_entered" from="Node/Node3D/red area6/Area3D" to="Node/Node3D" method="_on_area_3d_body_entered"]
-[connection signal="body_entered" from="Node/Node3D/red area/Area3D" to="Node/Node3D" method="_on_area_3d_body_entered"]
-[connection signal="body_entered" from="Node/Node3D/red area4/Area3D" to="Node/Node3D" method="_on_area_3d_body_entered"]
-[connection signal="body_entered" from="Node/Node3D/rotador/red area12/Area3D" to="Node/Node3D" method="_on_area_3d_body_entered"]
-[connection signal="body_entered" from="Node/Node3D/rotador/red area12/red area13/Area3D" to="Node/Node3D" method="_on_area_3d_body_entered"]
-[connection signal="body_entered" from="Node/Node3D/rotador/red area12/red area14/Area3D" to="Node/Node3D" method="_on_area_3d_body_entered"]
-[connection signal="body_entered" from="Node/Node3D/rotador3/red area12/Area3D" to="Node/Node3D" method="_on_area_3d_body_entered"]
-[connection signal="body_entered" from="Node/Node3D/rotador3/red area12/red area13/Area3D" to="Node/Node3D" method="_on_area_3d_body_entered"]
-[connection signal="body_entered" from="Node/Node3D/rotador3/red area12/red area14/Area3D" to="Node/Node3D" method="_on_area_3d_body_entered"]
-[connection signal="body_entered" from="Node/Node3D/rotador4/red area12/Area3D" to="Node/Node3D" method="_on_area_3d_body_entered"]
-[connection signal="body_entered" from="Node/Node3D/rotador4/red area12/red area13/Area3D" to="Node/Node3D" method="_on_area_3d_body_entered"]
-[connection signal="body_entered" from="Node/Node3D/rotador4/red area12/red area14/Area3D" to="Node/Node3D" method="_on_area_3d_body_entered"]
-[connection signal="body_entered" from="Node/Node3D/rotador5/red area12/Area3D" to="Node/Node3D" method="_on_area_3d_body_entered"]
-[connection signal="body_entered" from="Node/Node3D/rotador5/red area12/red area13/Area3D" to="Node/Node3D" method="_on_area_3d_body_entered"]
-[connection signal="body_entered" from="Node/Node3D/rotador5/red area12/red area14/Area3D" to="Node/Node3D" method="_on_area_3d_body_entered"]
-[connection signal="body_entered" from="Node/Node3D/rotador2/red area12/Area3D" to="Node/Node3D" method="_on_area_3d_body_entered"]
-[connection signal="body_entered" from="Node/Node3D/rotador2/red area12/red area13/Area3D" to="Node/Node3D" method="_on_area_3d_body_entered"]
-[connection signal="body_entered" from="Node/Node3D/rotador2/red area12/red area14/Area3D" to="Node/Node3D" method="_on_area_3d_body_entered"]
-[connection signal="body_entered" from="Node/Node3D/movedisas/red area13/Area3D" to="Node/Node3D" method="_on_area_3d_body_entered"]
-[connection signal="body_entered" from="Node/Node3D/movedisas/red area15/Area3D" to="Node/Node3D" method="_on_area_3d_body_entered"]
-[connection signal="body_entered" from="Node/Node3D/movedisas/red area14/Area3D" to="Node/Node3D" method="_on_area_3d_body_entered"]
-[connection signal="body_entered" from="Node/Node3D/movedisas2/red area13/Area3D" to="Node/Node3D" method="_on_area_3d_body_entered"]
-[connection signal="body_entered" from="Node/Node3D/movedisas2/red area15/Area3D" to="Node/Node3D" method="_on_area_3d_body_entered"]
-[connection signal="body_entered" from="Node/Node3D/movedisas2/red area14/Area3D" to="Node/Node3D" method="_on_area_3d_body_entered"]
-[connection signal="body_entered" from="Node/Sprite3D2/Area3D" to="CharacterBody3D" method="_on_area_3d_body_entered"]
+[connection signal="body_entered" from="Node/parkul zone/Node3D/red area9/Area3D" to="Node/parkul zone/Node3D" method="_on_area_3d_body_entered"]
+[connection signal="body_entered" from="Node/parkul zone/Node3D/red area10/Area3D" to="Node/parkul zone/Node3D" method="_on_area_3d_body_entered"]
+[connection signal="body_entered" from="Node/parkul zone/Node3D/red area11/Area3D" to="Node/parkul zone/Node3D" method="_on_area_3d_body_entered"]
+[connection signal="body_entered" from="Node/parkul zone/Node3D/red area5/Area3D" to="Node/parkul zone/Node3D" method="_on_area_3d_body_entered"]
+[connection signal="body_entered" from="Node/parkul zone/Node3D/red area2/Area3D" to="Node/parkul zone/Node3D" method="_on_area_3d_body_entered"]
+[connection signal="body_entered" from="Node/parkul zone/Node3D/red area3/Area3D" to="Node/parkul zone/Node3D" method="_on_area_3d_body_entered"]
+[connection signal="body_entered" from="Node/parkul zone/Node3D/red area8/Area3D" to="Node/parkul zone/Node3D" method="_on_area_3d_body_entered"]
+[connection signal="body_entered" from="Node/parkul zone/Node3D/red area6/Area3D" to="Node/parkul zone/Node3D" method="_on_area_3d_body_entered"]
+[connection signal="body_entered" from="Node/parkul zone/Node3D/red area/Area3D" to="Node/parkul zone/Node3D" method="_on_area_3d_body_entered"]
+[connection signal="body_entered" from="Node/parkul zone/Node3D/red area4/Area3D" to="Node/parkul zone/Node3D" method="_on_area_3d_body_entered"]
+[connection signal="body_entered" from="Node/parkul zone/Node3D/rotador/red area12/Area3D" to="Node/parkul zone/Node3D" method="_on_area_3d_body_entered"]
+[connection signal="body_entered" from="Node/parkul zone/Node3D/rotador/red area12/red area13/Area3D" to="Node/parkul zone/Node3D" method="_on_area_3d_body_entered"]
+[connection signal="body_entered" from="Node/parkul zone/Node3D/rotador/red area12/red area14/Area3D" to="Node/parkul zone/Node3D" method="_on_area_3d_body_entered"]
+[connection signal="body_entered" from="Node/parkul zone/Node3D/rotador3/red area12/Area3D" to="Node/parkul zone/Node3D" method="_on_area_3d_body_entered"]
+[connection signal="body_entered" from="Node/parkul zone/Node3D/rotador3/red area12/red area13/Area3D" to="Node/parkul zone/Node3D" method="_on_area_3d_body_entered"]
+[connection signal="body_entered" from="Node/parkul zone/Node3D/rotador3/red area12/red area14/Area3D" to="Node/parkul zone/Node3D" method="_on_area_3d_body_entered"]
+[connection signal="body_entered" from="Node/parkul zone/Node3D/rotador4/red area12/Area3D" to="Node/parkul zone/Node3D" method="_on_area_3d_body_entered"]
+[connection signal="body_entered" from="Node/parkul zone/Node3D/rotador4/red area12/red area13/Area3D" to="Node/parkul zone/Node3D" method="_on_area_3d_body_entered"]
+[connection signal="body_entered" from="Node/parkul zone/Node3D/rotador4/red area12/red area14/Area3D" to="Node/parkul zone/Node3D" method="_on_area_3d_body_entered"]
+[connection signal="body_entered" from="Node/parkul zone/Node3D/rotador5/red area12/Area3D" to="Node/parkul zone/Node3D" method="_on_area_3d_body_entered"]
+[connection signal="body_entered" from="Node/parkul zone/Node3D/rotador5/red area12/red area13/Area3D" to="Node/parkul zone/Node3D" method="_on_area_3d_body_entered"]
+[connection signal="body_entered" from="Node/parkul zone/Node3D/rotador5/red area12/red area14/Area3D" to="Node/parkul zone/Node3D" method="_on_area_3d_body_entered"]
+[connection signal="body_entered" from="Node/parkul zone/Node3D/rotador2/red area12/Area3D" to="Node/parkul zone/Node3D" method="_on_area_3d_body_entered"]
+[connection signal="body_entered" from="Node/parkul zone/Node3D/rotador2/red area12/red area13/Area3D" to="Node/parkul zone/Node3D" method="_on_area_3d_body_entered"]
+[connection signal="body_entered" from="Node/parkul zone/Node3D/rotador2/red area12/red area14/Area3D" to="Node/parkul zone/Node3D" method="_on_area_3d_body_entered"]
+[connection signal="body_entered" from="Node/parkul zone/Node3D/movedisas/red area13/Area3D" to="Node/parkul zone/Node3D" method="_on_area_3d_body_entered"]
+[connection signal="body_entered" from="Node/parkul zone/Node3D/movedisas/red area15/Area3D" to="Node/parkul zone/Node3D" method="_on_area_3d_body_entered"]
+[connection signal="body_entered" from="Node/parkul zone/Node3D/movedisas/red area14/Area3D" to="Node/parkul zone/Node3D" method="_on_area_3d_body_entered"]
+[connection signal="body_entered" from="Node/parkul zone/Node3D/movedisas2/red area13/Area3D" to="Node/parkul zone/Node3D" method="_on_area_3d_body_entered"]
+[connection signal="body_entered" from="Node/parkul zone/Node3D/movedisas2/red area15/Area3D" to="Node/parkul zone/Node3D" method="_on_area_3d_body_entered"]
+[connection signal="body_entered" from="Node/parkul zone/Node3D/movedisas2/red area14/Area3D" to="Node/parkul zone/Node3D" method="_on_area_3d_body_entered"]
+[connection signal="body_entered" from="Node/parkul zone/Area3D" to="palanquita3" method="_on_area_3d_body_entered"]
+[connection signal="body_entered" from="Node/parkul zone/CSGBox3D14/Sprite3D2/Area3D" to="CharacterBody3D" method="_on_area_3d_body_entered"]
 [connection signal="body_entered" from="zona2/Node3D/ZonaEvasion" to="zona2/Node3D" method="_on_zona_evasion_body_entered"]
 [connection signal="body_entered" from="zona2/Area3D" to="zona2/Node3D" method="_on_area_3d_body_entered"]
 [connection signal="body_entered" from="CharacterBody3D2/Area3D" to="CharacterBody3D2" method="_on_area_3d_body_entered"]
