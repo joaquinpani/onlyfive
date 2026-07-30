@@ -1144,7 +1144,7 @@ tracks/0/keys = PackedFloat32Array(0, 1, 0, -5.4892974, 0)
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("../textos parkul:visible")
+tracks/1/path = NodePath("parkul zone/textos parkul:visible")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
@@ -1167,7 +1167,7 @@ tracks/0/keys = PackedFloat32Array(0, 1, 0, -5.4892974, 0, 2.7666667, 1, 0, 0.02
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("../textos parkul:visible")
+tracks/1/path = NodePath("parkul zone/textos parkul:visible")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
@@ -1512,34 +1512,19 @@ shadow_enabled = true
 omni_range = 56.29132
 
 [node name="OmniLight3D6" type="OmniLight3D" parent="." unique_id=197377779]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26.284506, 1.5897913, -21.7104)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 31.690506, 1.5897913, -22.189676)
 shadow_enabled = true
 omni_range = 56.29132
 
 [node name="OmniLight3D7" type="OmniLight3D" parent="." unique_id=1871096281]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34.274147, 1.5897913, -8.732426)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39.18564, 1.5897913, -8.732426)
 shadow_enabled = true
 omni_range = 56.29132
 
 [node name="OmniLight3D8" type="OmniLight3D" parent="." unique_id=1380892288]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.075218, 1.5897913, 9.709642)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.98671, 1.5897913, 9.709642)
 shadow_enabled = true
 omni_range = 56.29132
-
-[node name="OmniLight3D3" type="OmniLight3D" parent="." unique_id=796881145]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -123.84968, 1.5897913, -23.297596)
-shadow_enabled = true
-omni_range = 140.90974
-
-[node name="OmniLight3D4" type="OmniLight3D" parent="." unique_id=123079410]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -43.415714, 1.5897913, -23.297596)
-shadow_enabled = true
-omni_range = 140.90974
-
-[node name="OmniLight3D5" type="OmniLight3D" parent="." unique_id=1517974852]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -64.85302, 1.5897913, -23.297596)
-shadow_enabled = true
-omni_range = 140.90974
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1731608351]
 
@@ -2323,9 +2308,9 @@ use_collision = true
 size = Vector3(1, 5.3826904, 18.340975)
 
 [node name="CSGBox3D9" type="CSGBox3D" parent="Node" unique_id=1321013016]
-transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 10.328875, 3.670779, -16.053524)
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 10.328874, 3.670779, -4.6286106)
 use_collision = true
-size = Vector3(1, 5.3826904, 9.026078)
+size = Vector3(1, 5.3826904, 31.875904)
 
 [node name="CSGBox3D16" type="CSGBox3D" parent="Node" unique_id=692613656]
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 10.328875, 3.670779, -23.618004)
@@ -2341,9 +2326,44 @@ use_collision = true
 size = Vector3(1, 5.3826904, 14.538696)
 
 [node name="CSGBox3D7" type="CSGBox3D" parent="Node" unique_id=1306302156]
-transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -9.671125, 3.7100558, -15.208981)
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -9.671125, 3.7100558, -6.980982)
 use_collision = true
-size = Vector3(1, 5.3826904, 7.3369913)
+size = Vector3(1, 5.3826904, 23.792988)
+
+[node name="CSGBox3D12" type="CSGBox3D" parent="Node" unique_id=689060664]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -20.02807, 3.7100558, -15.319391)
+use_collision = true
+size = Vector3(1, 5.3826904, 24.576069)
+
+[node name="CSGBox3D13" type="CSGBox3D" parent="Node" unique_id=481102263]
+transform = Transform3D(1.3113416e-07, 0, 1, 0, 1, 0, -1, 0, 1.3113416e-07, -25.025608, 3.7100558, -3.4110835)
+use_collision = true
+size = Vector3(1, 5.3826904, 10.928476)
+
+[node name="CSGBox3D46" type="CSGBox3D" parent="Node" unique_id=975388208]
+transform = Transform3D(1, 0, -1.7484555e-07, 0, 1, 0, 1.7484555e-07, 0, 1, -27.94849, 3.7100558, 4.1748734)
+use_collision = true
+size = Vector3(1, 5.3826904, 16.11475)
+
+[node name="CSGBox3D47" type="CSGBox3D" parent="Node" unique_id=1278013449]
+transform = Transform3D(1, 0, -1.7484555e-07, 0, 1, 0, 1.7484555e-07, 0, 1, -19.762346, 3.7100558, 8.158111)
+use_collision = true
+size = Vector3(1, 5.3826904, 8.362551)
+
+[node name="CSGBox3D48" type="CSGBox3D" parent="Node" unique_id=630183941]
+transform = Transform3D(-2.1855695e-07, 0, -1, 0, 1, 0, 1, 0, -2.1855695e-07, -14.654182, 3.7100558, 4.528833)
+use_collision = true
+size = Vector3(1, 5.3826904, 11.160768)
+
+[node name="CSGBox3D15" type="CSGBox3D" parent="Node" unique_id=532409844]
+transform = Transform3D(1.3113416e-07, 0, 1, 0, 1, 0, -1, 0, 1.3113416e-07, -23.800396, 3.7100558, 11.950141)
+use_collision = true
+size = Vector3(1, 5.3826904, 9.044438)
+
+[node name="CSGBox3D14" type="CSGBox3D" parent="Node" unique_id=1177331486]
+transform = Transform3D(1.3113416e-07, 0, 1, 0, 1, 0, -1, 0, 1.3113416e-07, -15.01195, 3.7100558, -27.15798)
+use_collision = true
+size = Vector3(1, 5.3826904, 10.928476)
 
 [node name="CSGBox3D11" type="CSGBox3D" parent="Node" unique_id=796044230]
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -9.671125, 3.7100558, -22.798412)
@@ -2354,9 +2374,9 @@ size = Vector3(1, 5.3826904, 8.173905)
 libraries/ = SubResource("AnimationLibrary_wwn1j")
 
 [node name="CSGBox3D6" type="CSGBox3D" parent="Node" unique_id=127206107]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -6.8442984, 3.670779, -12.112904)
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -6.638266, 3.670779, -12.112904)
 use_collision = true
-size = Vector3(1, 5.3826904, 6.7984943)
+size = Vector3(1, 5.3826904, 6.38643)
 
 [node name="CSGBox3D10" type="CSGBox3D" parent="Node" unique_id=940371964]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 6.2755556, 3.670779, -12.112904)
@@ -2364,13 +2384,13 @@ use_collision = true
 size = Vector3(1, 5.3826904, 6.7984943)
 
 [node name="CSGBox3D" type="CSGBox3D" parent="Node" unique_id=1422322589]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40.687202, 3.5755053, -52.85111)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40.69039, 3.6081667, 2.598957)
 use_collision = true
 flip_faces = true
-size = Vector3(188.00967, 5.0625, 149.28413)
+size = Vector3(188.00967, 5.0625, 260.10632)
 
 [node name="parkul zone" type="Node3D" parent="Node" unique_id=906096940]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.4085846, -0.14902782, 0.02822113)
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -0.6226654, -0.14902782, 0.94749165)
 
 [node name="Node3D" type="Node3D" parent="Node/parkul zone" unique_id=1138307723]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -5.4892974, 0)
@@ -2845,12 +2865,17 @@ use_collision = true
 size = Vector3(1, 5.3826904, 105.29095)
 
 [node name="CSGBox3D14" type="CSGBox3D" parent="Node/parkul zone" unique_id=2007839322]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -121.4275, 3.8198068, -27.141125)
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -121.41878, 3.8198068, -27.152699)
 use_collision = true
 size = Vector3(1, 5.3826904, 12.067918)
 
 [node name="CSGBox3D15" type="CSGBox3D" parent="Node/parkul zone/CSGBox3D14" unique_id=255084569]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.078543, 0, -1.015892)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.078543, 0, -0.21073914)
+use_collision = true
+size = Vector3(1, 5.3826904, 12.733445)
+
+[node name="CSGBox3D16" type="CSGBox3D" parent="Node/parkul zone/CSGBox3D14" unique_id=1927195737]
+transform = Transform3D(-0.02114131, 0, -0.9997765, 0, 1, 0, 0.9997765, 0, -0.02114131, 4.7407513, 0, 5.8558044)
 use_collision = true
 size = Vector3(1, 5.3826904, 11.12314)
 
@@ -2877,6 +2902,81 @@ texture = ExtResource("11_g7eus")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4715366, 2.5109282, -20.057142)
 shape = SubResource("CapsuleShape3D_sn88x")
 
+[node name="textos parkul" type="Node3D" parent="Node/parkul zone" unique_id=1622453800]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.4085846, -5.3402696, -0.02822113)
+visible = false
+
+[node name="Label3D" type="Label3D" parent="Node/parkul zone/textos parkul" unique_id=189892603]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -16.442596, 8.461773, -23.668175)
+billboard = 1
+modulate = Color(2.887845e-06, 0.73830646, 0.8765961, 1)
+text = "Come on dont lose time!!!"
+font = ExtResource("3_6evt7")
+font_size = 80
+
+[node name="Label3D2" type="Label3D" parent="Node/parkul zone/textos parkul" unique_id=2117757826]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -37.280888, 8.461773, -23.668175)
+billboard = 1
+modulate = Color(0.88235295, 1, 0, 1)
+text = "jump with spaceboard"
+font = ExtResource("3_6evt7")
+font_size = 120
+
+[node name="Label3D4" type="Label3D" parent="Node/parkul zone/textos parkul" unique_id=1103586069]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -48.73932, 8.461773, -19.5622)
+modulate = Color(0.42181903, 0.3362184, 0.9785418, 1)
+text = "Be careful with
+ the jump."
+font = ExtResource("3_6evt7")
+font_size = 120
+
+[node name="Label3D5" type="Label3D" parent="Node/parkul zone/textos parkul" unique_id=379541107]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -63.27695, 8.796558, -22.530928)
+billboard = 1
+modulate = Color(0.99999994, 0.21915644, 0.07526512, 1)
+text = "¡THis is crazy!"
+font = ExtResource("3_6evt7")
+font_size = 120
+
+[node name="Label3D6" type="Label3D" parent="Node/parkul zone/textos parkul" unique_id=620112259]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -82.83191, 9.295905, -25.49311)
+billboard = 1
+modulate = Color(2.6471912e-07, 0.68108934, 0.089887954, 1)
+text = "stop here"
+font = ExtResource("3_6evt7")
+font_size = 120
+
+[node name="Label3D3" type="Label3D" parent="Node/parkul zone/textos parkul" unique_id=198963349]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -29.451067, 8.629428, -23.931452)
+billboard = 1
+modulate = Color(0.50109357, 0.99253136, 0, 1)
+text = "here"
+font = ExtResource("3_6evt7")
+font_size = 120
+
+[node name="Sprite3D2" type="Sprite3D" parent="Node/parkul zone/textos parkul" unique_id=1708732195]
+transform = Transform3D(0.006692979, 0.004215125, -0.02893851, -0.016285686, 0.025194574, -9.681126e-05, 0.02428951, 0.015731059, 0.007909103, -29.509724, 8.168649, -22.545336)
+texture = ExtResource("4_s7bym")
+
+[node name="Sprite3D3" type="Sprite3D" parent="Node/parkul zone/textos parkul" unique_id=1309614745]
+transform = Transform3D(0.005756451, -0.029014174, -0.005004094, -0.029391825, -0.005962096, 0.0007578043, -0.0017273979, 0.0047572367, -0.02957001, -82.655396, 8.517258, -26.171942)
+texture = ExtResource("4_s7bym")
+
+[node name="OmniLight3D4" type="OmniLight3D" parent="Node/parkul zone" unique_id=123079410]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -43.8243, 1.7388191, -23.325817)
+shadow_enabled = true
+omni_range = 140.90974
+
+[node name="OmniLight3D5" type="OmniLight3D" parent="Node/parkul zone" unique_id=1517974852]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -65.261604, 1.7388191, -23.325817)
+shadow_enabled = true
+omni_range = 140.90974
+
+[node name="OmniLight3D3" type="OmniLight3D" parent="Node/parkul zone" unique_id=796881145]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -124.25826, 1.7388191, -23.325817)
+shadow_enabled = true
+omni_range = 140.90974
+
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Node" unique_id=227496890]
 libraries/ = SubResource("AnimationLibrary_odru0")
 
@@ -2895,66 +2995,6 @@ text = "11111000011"
 font = ExtResource("3_6evt7")
 font_size = 120
 outline_size = 22
-
-[node name="textos parkul" type="Node3D" parent="." unique_id=1622453800]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -5.4892974, 0)
-visible = false
-
-[node name="Label3D" type="Label3D" parent="textos parkul" unique_id=189892603]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -16.442596, 8.461773, -23.668175)
-billboard = 1
-modulate = Color(2.887845e-06, 0.73830646, 0.8765961, 1)
-text = "Come on dont lose time!!!"
-font = ExtResource("3_6evt7")
-font_size = 80
-
-[node name="Label3D2" type="Label3D" parent="textos parkul" unique_id=2117757826]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -37.280888, 8.461773, -23.668175)
-billboard = 1
-modulate = Color(0.88235295, 1, 0, 1)
-text = "jump with spaceboard"
-font = ExtResource("3_6evt7")
-font_size = 120
-
-[node name="Label3D4" type="Label3D" parent="textos parkul" unique_id=1103586069]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -48.73932, 8.461773, -19.5622)
-modulate = Color(0.42181903, 0.3362184, 0.9785418, 1)
-text = "Be careful with
- the jump."
-font = ExtResource("3_6evt7")
-font_size = 120
-
-[node name="Label3D5" type="Label3D" parent="textos parkul" unique_id=379541107]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -63.27695, 8.796558, -22.530928)
-billboard = 1
-modulate = Color(0.99999994, 0.21915644, 0.07526512, 1)
-text = "¡THis is crazy!"
-font = ExtResource("3_6evt7")
-font_size = 120
-
-[node name="Label3D6" type="Label3D" parent="textos parkul" unique_id=620112259]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -82.83191, 9.295905, -25.49311)
-billboard = 1
-modulate = Color(2.6471912e-07, 0.68108934, 0.089887954, 1)
-text = "stop here"
-font = ExtResource("3_6evt7")
-font_size = 120
-
-[node name="Label3D3" type="Label3D" parent="textos parkul" unique_id=198963349]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -29.451067, 8.629428, -23.931452)
-billboard = 1
-modulate = Color(0.50109357, 0.99253136, 0, 1)
-text = "here"
-font = ExtResource("3_6evt7")
-font_size = 120
-
-[node name="Sprite3D2" type="Sprite3D" parent="textos parkul" unique_id=1708732195]
-transform = Transform3D(0.006692979, 0.004215125, -0.02893851, -0.016285686, 0.025194574, -9.681126e-05, 0.02428951, 0.015731059, 0.007909103, -29.509724, 8.168649, -22.545336)
-texture = ExtResource("4_s7bym")
-
-[node name="Sprite3D3" type="Sprite3D" parent="textos parkul" unique_id=1309614745]
-transform = Transform3D(0.005756451, -0.029014174, -0.005004094, -0.029391825, -0.005962096, 0.0007578043, -0.0017273979, 0.0047572367, -0.02957001, -82.655396, 8.517258, -26.171942)
-texture = ExtResource("4_s7bym")
 
 [node name="palanquita" parent="." unique_id=2075512238 instance=ExtResource("3_qbujx")]
 
@@ -3009,7 +3049,7 @@ shape = SubResource("CapsuleShape3D_sn88x")
 libraries/ = SubResource("AnimationLibrary_cup5b")
 
 [node name="hablar personaje2" type="StaticBody3D" parent="." unique_id=2046462465]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.593899, 0.3098178, -0.28477)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32.19703, 0.3098178, -1.5980463)
 script = ExtResource("17_03lbn")
 
 [node name="Sprite3D" type="Sprite3D" parent="hablar personaje2" unique_id=996219357]
@@ -3166,67 +3206,72 @@ size = Vector3(1, 5.3826904, 7.7358437)
 libraries/ = SubResource("AnimationLibrary_f03om")
 
 [node name="CSGBox3D18" type="CSGBox3D" parent="zona2" unique_id=1713568625]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.0512524, 0, -15.346274)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.0512543, 0, -17.59212)
 use_collision = true
-size = Vector3(1, 5.3826904, 9.891634)
+size = Vector3(1, 5.3826904, 14.383317)
 
 [node name="CSGBox3D19" type="CSGBox3D" parent="zona2" unique_id=1997458467]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 7.1614857, 0, -32.230446)
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 7.225891, 0, -37.307106)
 use_collision = true
-size = Vector3(1, 5.3826904, 14.786149)
+size = Vector3(1, 5.3826904, 16.049503)
+
+[node name="CSGBox3D19" type="CSGBox3D" parent="zona2/CSGBox3D19" unique_id=1416808165]
+transform = Transform3D(-4.371138e-08, 0, -1, 0, 1, 0, 1, 0, -4.371138e-08, 1.9319687, 0, 7.2220573)
+use_collision = true
+size = Vector3(1, 5.3826904, 5.4616127)
 
 [node name="CSGBox3D21" type="CSGBox3D" parent="zona2" unique_id=868035126]
-transform = Transform3D(-1, 0, 8.742277e-08, 0, 1, 0, -8.742277e-08, 0, -1, 15.046904, 0, -33.66417)
+transform = Transform3D(-1, 0, 8.742277e-08, 0, 1, 0, -8.742277e-08, 0, -1, 15.046904, 0, -38.57566)
 use_collision = true
 size = Vector3(1, 5.3826904, 8.860107)
 
 [node name="CSGBox3D23" type="CSGBox3D" parent="zona2" unique_id=1685410131]
-transform = Transform3D(-1, 0, 8.742277e-08, 0, 1, 0, -8.742277e-08, 0, -1, 21.667877, 0, -26.662006)
+transform = Transform3D(-1, 0, 8.742277e-08, 0, 1, 0, -8.742277e-08, 0, -1, 21.667877, 0, -31.5735)
 use_collision = true
 size = Vector3(1, 5.3826904, 12.072328)
 
 [node name="CSGBox3D24" type="CSGBox3D" parent="zona2" unique_id=1224218495]
-transform = Transform3D(-4.371138e-08, 0, -1, 0, 1, 0, 1, 0, -4.371138e-08, 27.20815, 0, -20.981596)
+transform = Transform3D(-4.371138e-08, 0, -1, 0, 1, 0, 1, 0, -4.371138e-08, 27.208149, 0, -25.893087)
 use_collision = true
 size = Vector3(1, 5.3826904, 12.072328)
 
 [node name="CSGBox3D26" type="CSGBox3D" parent="zona2" unique_id=943558852]
-transform = Transform3D(-4.371138e-08, 0, -1, 0, 1, 0, 1, 0, -4.371138e-08, 27.208149, 0, -32.56575)
+transform = Transform3D(-4.371138e-08, 0, -1, 0, 1, 0, 1, 0, -4.371138e-08, 27.208149, 0, -37.47724)
 use_collision = true
 size = Vector3(1, 5.3826904, 12.072328)
 
 [node name="CSGBox3D27" type="CSGBox3D" parent="zona2" unique_id=674565692]
-transform = Transform3D(-4.371138e-08, 0, -1, 0, 1, 0, 1, 0, -4.371138e-08, 26.210995, 0, -37.165)
+transform = Transform3D(-4.371138e-08, 0, -1, 0, 1, 0, 1, 0, -4.371138e-08, 26.210995, 0, -42.076492)
 use_collision = true
 size = Vector3(1, 5.3826904, 23.482498)
 
 [node name="CSGBox3D28" type="CSGBox3D" parent="zona2" unique_id=1338666050]
-transform = Transform3D(-4.371138e-08, 0, -1, 0, 1, 0, 1, 0, -4.371138e-08, 26.210997, 0, -16.165)
+transform = Transform3D(-4.371138e-08, 0, -1, 0, 1, 0, 1, 0, -4.371138e-08, 22.244469, 0, -21.076492)
 use_collision = true
-size = Vector3(1, 5.3826904, 23.482498)
+size = Vector3(1, 5.3826904, 31.415546)
 
 [node name="CSGBox3D29" type="CSGBox3D" parent="zona2" unique_id=1925404748]
-transform = Transform3D(-1, 0, 8.742277e-08, 0, 1, 0, -8.742277e-08, 0, -1, 37.60024, 0, -26.165)
+transform = Transform3D(-1, 0, 8.742277e-08, 0, 1, 0, -8.742277e-08, 0, -1, 37.600235, 0, -26.124363)
 use_collision = true
-size = Vector3(1, 5.3826904, 23.482498)
+size = Vector3(1, 5.3826904, 33.386757)
 
 [node name="CSGBox3D25" type="CSGBox3D" parent="zona2" unique_id=956478029]
-transform = Transform3D(1, 0, 7.1054274e-15, 0, 1, 0, -7.1054274e-15, 0, 1, 32.742126, 0, -26.981596)
+transform = Transform3D(1, 0, 7.1054274e-15, 0, 1, 0, -7.1054274e-15, 0, 1, 32.742126, 0, -31.89309)
 use_collision = true
 size = Vector3(1, 5.3826904, 12.072328)
 
 [node name="CSGBox3D22" type="CSGBox3D" parent="zona2" unique_id=1310014194]
-transform = Transform3D(-1, 0, 8.742277e-08, 0, 1, 0, -8.742277e-08, 0, -1, 15.046905, 0, -19.72833)
+transform = Transform3D(-1, 0, 8.742277e-08, 0, 1, 0, -8.742277e-08, 0, -1, 15.046905, 0, -24.639824)
 use_collision = true
 size = Vector3(1, 5.3826904, 6.5809345)
 
 [node name="CSGBox3D20" type="CSGBox3D" parent="zona2" unique_id=194994914]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 11.059029, 0, -19.78233)
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 11.059027, 0, -24.345226)
 use_collision = true
 size = Vector3(1, 5.3826904, 9.03859)
 
 [node name="Node3D" type="Node3D" parent="zona2" unique_id=1070937991 node_paths=PackedStringArray("p1", "p2", "p3", "p4", "p5")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.469314, -0.08578658, -25.541815)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.469314, -0.08578658, -29.672188)
 script = ExtResource("23_7q6po")
 velocidad = 10.0
 p1 = NodePath("../Waypoints/P1")
@@ -3238,40 +3283,41 @@ dialogo_advertencia = ExtResource("25_otddh")
 dialogo_agradecimiento = ExtResource("26_03lbn")
 
 [node name="dualsenseusablpro" parent="zona2/Node3D" unique_id=1373633510 instance=ExtResource("54_q7xn4")]
-transform = Transform3D(-0.0999598, 0, -0.0028352903, 0, 0.1, 0, 0.0028352903, 0, -0.0999598, -0.23376656, -5.157307, -0.13324356)
+transform = Transform3D(-0.0999598, 0, -0.0028352903, 0, 0.1, 0, 0.0028352903, 0, -0.0999598, -0.23376656, -5.157307, -0.7897892)
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="zona2/Node3D/dualsenseusablpro" unique_id=337841745]
 stream = ExtResource("29_u1p4t")
 max_distance = 20.0
 
 [node name="ZonaEvasion" type="Area3D" parent="zona2/Node3D" unique_id=786402609]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4.6128407)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="zona2/Node3D/ZonaEvasion" unique_id=2009628362]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.07133484, -0.27726126, -0.3958683)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.07133484, -0.27726126, -5.3073597)
 shape = SubResource("SphereShape3D_sn88x")
 
 [node name="Waypoints" type="Node3D" parent="zona2" unique_id=191174189]
 
 [node name="P1" type="Marker3D" parent="zona2/Waypoints" unique_id=185106064]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.099, -5.154, -18.42)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.098999, -5.154, -23.331493)
 
 [node name="P2" type="Marker3D" parent="zona2/Waypoints" unique_id=1499541069]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34.685, -5.154, -18.42)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34.685, -5.154, -23.331491)
 
 [node name="P3" type="Marker3D" parent="zona2/Waypoints" unique_id=971753223]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 35.405, -5.154, -33.761)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 35.405, -5.154, -38.672493)
 
 [node name="P4" type="Marker3D" parent="zona2/Waypoints" unique_id=1626397417]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.239, -5.154, -33.761)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.239, -5.154, -38.672493)
 
 [node name="P5" type="Marker3D" parent="zona2/Waypoints" unique_id=1209681858]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.935747, -2.35647, -26.01404)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.74555, -2.35647, -30.808153)
 
 [node name="Area3D" type="Area3D" parent="zona2" unique_id=770328078]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.17251039, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="zona2/Area3D" unique_id=142046542]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.309917, -0.78466797, -25.915413)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.309917, -0.78466797, -30.826906)
 shape = SubResource("BoxShape3D_uenwl")
 
 [node name="pages" type="StaticBody3D" parent="." unique_id=1597346083]

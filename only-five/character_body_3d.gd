@@ -102,3 +102,7 @@ func _on_area_3d_2_body_entered(body: Node3D) -> void:
 	
 func cambiosa():
 	get_tree().change_scene_to_file("res://menu.tscn")
+
+
+func _on_estrellas_body_entered(body: Node3D) -> void:
+	pass # Replace with function body.
