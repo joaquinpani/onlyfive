@@ -117,7 +117,7 @@ func cambiosa():
 
 func _on_estrellas_body_entered(body: Node3D) -> void:
 	if ala2 == false:
-		$"../OmniLight3D12".hide()
+		
 		$"../zona2/pared/Sprite3D/AnimationPlayer".play("aniamtion")
 		$"../zona2/pared/AnimationPlayer".play("moverse")
 		$"../Node/CSGBox3D16/AnimationPlayer".play_backwards("moverpues")
