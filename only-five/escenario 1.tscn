@@ -1644,7 +1644,7 @@ wait_time = 1.5
 one_shot = true
 
 [node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=1625552754]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.42729163, 3.5082288, -8.623531)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.42729163, 1.8835001, -8.623531)
 light_energy = 8.0
 light_size = 5.0
 light_specular = 0.1
@@ -1652,7 +1652,7 @@ shadow_enabled = true
 omni_range = 16.00601
 
 [node name="OmniLight3D2" type="OmniLight3D" parent="." unique_id=1215456608]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.03492856, 3.8785858, -20.211931)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.743262, 1.4900317, -20.211931)
 light_energy = 7.96
 light_size = 5.0
 shadow_enabled = true
