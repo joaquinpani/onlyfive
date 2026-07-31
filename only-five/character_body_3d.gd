@@ -5,6 +5,7 @@ const JUMP_VELOCITY = 4.5
 const MOUSE_SENSITIVITY = 0.002
 var ala = false
 var ala2 = false
+var ala3 = false
 # Referencia a la cámara (asegúrate de que el nodo se llame Camera3D dentro de tu Player)
 @onready var camera = $Camera3D
 @onready var raycast = $Camera3D/RayCast3D
@@ -128,5 +129,8 @@ func _on_estrellas_body_entered(body: Node3D) -> void:
 
 
 func _on_control_body_entered(body: Node3D) -> void:
-	$"../zona2/pared/AnimationPlayer".play("moverse")
+	if ala3 == false:
+		$"../zona2/pared/AnimationPlayer".play("moverse")
+		ala3 = true
+		
 	pass # Replace with function body.

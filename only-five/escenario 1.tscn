@@ -84,12 +84,15 @@
 [ext_resource type="PackedScene" uid="uid://yv3faph0r3ll" path="res://3d objetcs/estrella amarilla.glb" id="81_31ogg"]
 [ext_resource type="PackedScene" uid="uid://ch5m67jgpo16m" path="res://3d objetcs/estrella verde.glb" id="82_k0qej"]
 [ext_resource type="PackedScene" uid="uid://dajimsuks35tr" path="res://3d objetcs/circo.blend" id="84_hqi3u"]
+[ext_resource type="Texture2D" uid="uid://bb0vm87n4loxm" path="res://sprites2/advice 1.png" id="85_sdove"]
+[ext_resource type="Texture2D" uid="uid://b8l1cu5b4ipig" path="res://sprites2/advice 3.png" id="86_vjags"]
+[ext_resource type="Texture2D" uid="uid://c8mqv663v0xox" path="res://sprites2/advice 2.png" id="87_fqo8e"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_nho35"]
 
 [sub_resource type="Environment" id="Environment_nho35"]
 ambient_light_source = 2
-ambient_light_color = Color(0.0885599, 0.0885599, 0.0885599, 1)
+ambient_light_color = Color(0.19793725, 0.19793725, 0.19793719, 1)
 ambient_light_energy = 0.3
 glow_enabled = true
 
@@ -1074,6 +1077,20 @@ _data = {
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_shhnk"]
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sn88x"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qefoi"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_uenwl"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3icjp"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nho35"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xvgbs"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_40oj1"]
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_edfve"]
 
 [sub_resource type="Animation" id="Animation_bo5ku"]
@@ -1739,28 +1756,21 @@ environment = SubResource("Environment_nho35")
 wait_time = 1.5
 one_shot = true
 
-[node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=1625552754]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.77071285, 3.333506, -5.666297)
-light_energy = 5.0
-shadow_enabled = true
-omni_range = 16.00601
-
 [node name="OmniLight3D3" type="OmniLight3D" parent="." unique_id=271020087]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.2819498, 4.712824, -20.211931)
 light_energy = 5.0
 shadow_enabled = true
 omni_range = 30.58716
 
-[node name="OmniLight3D4" type="OmniLight3D" parent="." unique_id=1273731553]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.4526312, 4.712824, -20.211931)
+[node name="OmniLight3D13" type="OmniLight3D" parent="." unique_id=283461970]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.44228673, 3.4672034, -9.67742)
 light_energy = 5.0
 shadow_enabled = true
 omni_range = 30.58716
 
-[node name="OmniLight3D5" type="OmniLight3D" parent="." unique_id=1634427892]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.1602726, 5.0057154, -104.16987)
+[node name="OmniLight3D4" type="OmniLight3D" parent="." unique_id=1273731553]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.011368036, 4.712824, -20.211931)
 light_energy = 5.0
-light_negative = true
 shadow_enabled = true
 omni_range = 30.58716
 
@@ -1783,7 +1793,7 @@ shadow_enabled = true
 omni_range = 56.29132
 
 [node name="OmniLight3D6" type="OmniLight3D" parent="." unique_id=197377779]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 31.690506, 3.5571735, -22.189676)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.745432, 3.5571735, -21.635239)
 light_energy = 5.0
 light_size = 2.0
 shadow_enabled = true
@@ -1796,13 +1806,7 @@ shadow_enabled = true
 omni_range = 56.29132
 
 [node name="OmniLight3D7" type="OmniLight3D" parent="." unique_id=1871096281]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39.18564, 4.0995173, -8.876737)
-light_energy = 3.0
-shadow_enabled = true
-omni_range = 56.29132
-
-[node name="OmniLight3D8" type="OmniLight3D" parent="." unique_id=1380892288]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.98671, 3.8572345, 7.4652147)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32.373997, 4.6884866, 8.538979)
 light_energy = 3.0
 shadow_enabled = true
 omni_range = 56.29132
@@ -2654,36 +2658,43 @@ material = SubResource("StandardMaterial3D_shhnk")
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -16.943905, 3.7100558, -15.319391)
 use_collision = true
 size = Vector3(1, 5.3826904, 24.576069)
+material = SubResource("StandardMaterial3D_sn88x")
 
 [node name="CSGBox3D13" type="CSGBox3D" parent="Node" unique_id=481102263]
 transform = Transform3D(1.3113416e-07, 0, 1, 0, 1, 0, -1, 0, 1.3113416e-07, -23.445166, 3.7100558, -3.4110832)
 use_collision = true
 size = Vector3(1, 5.3826904, 14.08936)
+material = SubResource("StandardMaterial3D_qefoi")
 
 [node name="CSGBox3D46" type="CSGBox3D" parent="Node" unique_id=975388208]
 transform = Transform3D(1, 0, -1.7484555e-07, 0, 1, 0, 1.7484555e-07, 0, 1, -27.94849, 3.7100558, 4.1748734)
 use_collision = true
 size = Vector3(1, 5.3826904, 16.11475)
+material = SubResource("StandardMaterial3D_uenwl")
 
 [node name="CSGBox3D47" type="CSGBox3D" parent="Node" unique_id=1278013449]
 transform = Transform3D(1, 0, -1.7484555e-07, 0, 1, 0, 1.7484555e-07, 0, 1, -19.762346, 3.7100558, 7.45105)
 use_collision = true
 size = Vector3(1, 5.3826904, 9.776672)
+material = SubResource("StandardMaterial3D_3icjp")
 
 [node name="CSGBox3D48" type="CSGBox3D" parent="Node" unique_id=630183941]
 transform = Transform3D(-2.1855695e-07, 0, -1, 0, 1, 0, 1, 0, -2.1855695e-07, -14.654182, 3.7100558, 2.7822976)
 use_collision = true
 size = Vector3(1, 5.3826904, 11.160768)
+material = SubResource("StandardMaterial3D_nho35")
 
 [node name="CSGBox3D15" type="CSGBox3D" parent="Node" unique_id=532409844]
 transform = Transform3D(1.3113416e-07, 0, 1, 0, 1, 0, -1, 0, 1.3113416e-07, -23.800396, 3.7100558, 11.950141)
 use_collision = true
 size = Vector3(1, 5.3826904, 9.044438)
+material = SubResource("StandardMaterial3D_xvgbs")
 
 [node name="CSGBox3D14" type="CSGBox3D" parent="Node" unique_id=1177331486]
 transform = Transform3D(1.3113416e-07, 0, 1, 0, 1, 0, -1, 0, 1.3113416e-07, -15.01195, 3.7100558, -27.15798)
 use_collision = true
 size = Vector3(1, 5.3826904, 10.928476)
+material = SubResource("StandardMaterial3D_40oj1")
 
 [node name="CSGBox3D11" type="CSGBox3D" parent="Node" unique_id=796044230]
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -9.671125, 3.7100558, -22.798412)
@@ -4595,6 +4606,7 @@ material = SubResource("StandardMaterial3D_jdqxa")
 
 [node name="CSGBox3D6" type="CSGBox3D" parent="." unique_id=1325973527]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.80050945, 1.101657, -6.297683)
+visible = false
 use_collision = true
 size = Vector3(8.459543, 0.001, 11.484308)
 material = SubResource("StandardMaterial3D_jdqxa")
@@ -4607,6 +4619,7 @@ material = SubResource("StandardMaterial3D_jdqxa")
 
 [node name="CSGBox3D2" type="CSGBox3D" parent="." unique_id=1328112199]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.203343, 6.3024683, 33.975258)
+visible = false
 use_collision = true
 size = Vector3(96.78914, 0.001, 200.78658)
 material = SubResource("StandardMaterial3D_hqi3u")
@@ -4623,8 +4636,50 @@ use_collision = true
 size = Vector3(63.21328, 0.001, 55.94441)
 material = SubResource("StandardMaterial3D_hqi3u")
 
-[node name="circo" parent="." unique_id=1448476315 instance=ExtResource("84_hqi3u")]
-transform = Transform3D(6, 0, 0, 0, 6, 0, 0, 0, 6, 0.48661995, 5.9163704, -128.10626)
+[node name="carnaval" type="Node3D" parent="." unique_id=1301024364]
+
+[node name="circo" parent="carnaval" unique_id=1448476315 instance=ExtResource("84_hqi3u")]
+transform = Transform3D(6, 0, 0, 0, 6, 0, 0, 0, 6, 0.48661995, 7.660568, -128.10626)
+
+[node name="prohbieted area" type="Node3D" parent="." unique_id=914978098]
+
+[node name="Sprite3D" type="Sprite3D" parent="prohbieted area" unique_id=1554024401]
+transform = Transform3D(-0.2, 0, -1.7484556e-08, 0, 0.2, 0, 1.7484556e-08, 0, -0.2, -13.929475, 3.7953336, 2.2540073)
+modulate = Color(0.47788018, 0.47788012, 0.47788012, 1)
+texture = ExtResource("85_sdove")
+
+[node name="Sprite3D3" type="Sprite3D" parent="prohbieted area" unique_id=706550118]
+transform = Transform3D(-4.371139e-09, 0, 0.1, 0.042134136, 0.09069022, 1.8417416e-09, -0.09069022, 0.042134136, -3.964195e-09, -15.920086, 3.7953336, -5.8067455)
+texture = ExtResource("86_vjags")
+
+[node name="Sprite3D4" type="Sprite3D" parent="prohbieted area" unique_id=40535822]
+transform = Transform3D(-0.03080335, -0.011688959, 0.10121991, 0.003539933, 0.09120974, 0.017745975, -0.06922023, 0.009866124, -0.04413584, -16.01495, 3.7953336, -8.489896)
+texture = ExtResource("86_vjags")
+
+[node name="Sprite3D5" type="Sprite3D" parent="prohbieted area" unique_id=929199478]
+transform = Transform3D(0.01565044, -0.011282164, 0.10858015, 0.038600344, 0.079610944, 2.4879738e-09, -0.063386865, 0.045694623, 0.026808824, -16.005085, 4.5531864, -11.120802)
+texture = ExtResource("86_vjags")
+
+[node name="Sprite3D6" type="Sprite3D" parent="prohbieted area" unique_id=861308180]
+transform = Transform3D(-0.018551663, 0.007826737, 0.10802991, 0.02480052, 0.08739977, 1.5985105e-09, -0.069235735, 0.029209781, -0.028946526, -16.095005, 3.3507137, -14.103209)
+texture = ExtResource("86_vjags")
+
+[node name="Sprite3D7" type="Sprite3D" parent="prohbieted area" unique_id=550013477]
+transform = Transform3D(-0.0071904296, 0.0030335626, -0.11127662, 0.02480052, 0.08739977, 3.7526565e-10, 0.07131654, -0.03008764, -0.011219386, -10.623211, 3.3507137, -14.103209)
+texture = ExtResource("86_vjags")
+
+[node name="Sprite3D8" type="Sprite3D" parent="prohbieted area" unique_id=1527872064]
+transform = Transform3D(0.036998134, -0.015609091, -0.09579004, 0.024800517, 0.087399766, 1.0848952e-09, 0.061391268, -0.025900286, 0.057728913, -10.623211, 3.3507137, -9.850281)
+texture = ExtResource("86_vjags")
+
+[node name="Sprite3D9" type="Sprite3D" parent="prohbieted area" unique_id=1341183985]
+transform = Transform3D(-0.011234856, -0.044191543, -0.09683988, 0.02215072, 0.07540656, -0.055910543, 0.07166545, -0.030234845, 0.0020996814, -10.623211, 4.135503, -7.2757435)
+texture = ExtResource("86_vjags")
+
+[node name="Sprite3D2" type="Sprite3D" parent="prohbieted area" unique_id=341454286]
+transform = Transform3D(0.2, 0, 3.4969112e-08, 0, 0.2, 0, -3.4969112e-08, 0, 0.2, -22.48036, 3.7953336, -2.8614562)
+modulate = Color(0.3180198, 0.31801978, 0.31801975, 1)
+texture = ExtResource("87_fqo8e")
 
 [connection signal="timeout" from="WorldEnvironment/Timer" to="CharacterBody3D2/Sprite3D2" method="_on_timer_timeout"]
 [connection signal="pressed" from="CanvasLayer/Label4/TextureButton" to="CanvasLayer/reloj" method="_on_texture_button_pressed"]

@@ -24,7 +24,7 @@ func darker():
 	$"../../zona2/CSGBox3D30/AnimationPlayer".play_backwards("new_animation")
 
 func enddark():
-	$"../../WorldEnvironment".environment.ambient_light_color = Color.DARK_GRAY
+	$"../../WorldEnvironment".environment.ambient_light_color = Color.BLACK
 	$"../../CharacterBody3D/Camera3D/SpotLight3D".hide()
 	$"../AudioStreamPlayer3D".hide()
 	$"..".hide()
