@@ -4,12 +4,9 @@ var usable = true
 
 func interactuar():
 	usable = false
+	$"../zona2/pared/AnimationPlayer".play_backwards("moverse")
 	$palanca/AnimationPlayer.play("Cube_001Action")
-	$"../Node/CSGBox3D16/AnimationPlayer".play("moverpues")
-	$"../OmniLight3D3".hide()
-	$"../OmniLight3D4".hide()
-	
 	$"../PalancaBaja".play()
-	
+	$"../zona2/pared/Sprite3D".hide()
 	$"../ParedMoviendose".play()
-	
+	$"../zona2/pared/OmniLight3D14".hide()

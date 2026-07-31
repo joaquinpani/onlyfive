@@ -125,3 +125,8 @@ func _on_estrellas_body_entered(body: Node3D) -> void:
 		$"../ParedMoviendose".play()
 		ala2 = true
 	pass # Replace with function body.w 
+
+
+func _on_control_body_entered(body: Node3D) -> void:
+	$"../zona2/pared/AnimationPlayer".play("moverse")
+	pass # Replace with function body.
