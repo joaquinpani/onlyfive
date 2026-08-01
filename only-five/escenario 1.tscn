@@ -87,6 +87,11 @@
 [ext_resource type="Texture2D" uid="uid://bb0vm87n4loxm" path="res://sprites2/advice 1.png" id="85_sdove"]
 [ext_resource type="Texture2D" uid="uid://b8l1cu5b4ipig" path="res://sprites2/advice 3.png" id="86_vjags"]
 [ext_resource type="Texture2D" uid="uid://c8mqv663v0xox" path="res://sprites2/advice 2.png" id="87_fqo8e"]
+[ext_resource type="PackedScene" uid="uid://tcviho1i7mtq" path="res://3d objetcs/marco azul.glb" id="88_50gwn"]
+[ext_resource type="PackedScene" uid="uid://c2nsn3nko8bry" path="res://3d objetcs/lampara de pared.glb" id="88_vjags"]
+[ext_resource type="Texture2D" uid="uid://drea87ss31oxh" path="res://sprites2/cartel 2.png" id="89_qxi76"]
+[ext_resource type="Texture2D" uid="uid://cp4h1xwoqw766" path="res://sprites2/cartel 1.png" id="91_j4eu1"]
+[ext_resource type="Texture2D" uid="uid://bjb5fb38c5fmp" path="res://sprites2/cartel 3.png" id="92_72y23"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_nho35"]
 
@@ -967,6 +972,9 @@ albedo_color = Color(1, 0.23137255, 0.14117648, 1)
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_clh4j"]
 albedo_color = Color(1, 0.23137255, 0.14117648, 1)
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tvfs0"]
+albedo_color = Color(0, 0, 0, 1)
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wa6yv"]
 albedo_texture = ExtResource("21_opth6")
 
@@ -1728,11 +1736,22 @@ points = PackedVector3Array(-0.058194946, -0.005411072, -0.4150233, 0.023300303,
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hqi3u"]
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mshhq"]
+emission_enabled = true
+emission = Color(0.73189247, 0, 0.05934146, 1)
+emission_energy_multiplier = 2.0
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_50gwn"]
+size = Vector3(4.436001, 0.33076096, 1.6635675)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_qxi76"]
+size = Vector3(61.64099, 0.33076096, 1.6635675)
+
 [node name="Node3D" type="Node3D" unique_id=1819165176]
 metadata/_edit_horizontal_guides_ = [-336.0]
 
 [node name="CharacterBody3D" type="CharacterBody3D" parent="." unique_id=622563897 groups=["player"]]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2991714, 2.9411943, -1.4710447)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2991714, 2.9411943, -39.398052)
 script = ExtResource("1_tscvi")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D" unique_id=1773996199]
@@ -2522,6 +2541,11 @@ transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 2.64
 use_collision = true
 size = Vector3(0.79810154, 5.3826904, 19.908363)
 
+[node name="CSGBox3D50" type="CSGBox3D" parent="Node" unique_id=1519582319]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -0.019065892, 3.670779, -70.77508)
+size = Vector3(6.1339736, 5.3826904, 6.4449472)
+material = SubResource("StandardMaterial3D_tvfs0")
+
 [node name="CSGBox3D35" type="CSGBox3D" parent="Node" unique_id=1588506002]
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -3.0233, 3.670779, -76.88469)
 material_override = SubResource("StandardMaterial3D_wa6yv")
@@ -2529,41 +2553,41 @@ use_collision = true
 size = Vector3(0.79810154, 5.3826904, 21.079813)
 
 [node name="CSGBox3D41" type="CSGBox3D" parent="Node" unique_id=1126667052]
-transform = Transform3D(1.3113416e-07, 0, 1, 0, 1, 0, -1, 0, 1.3113416e-07, -20.32335, 13.045154, -87.027725)
+transform = Transform3D(1.3113416e-07, 0, 1, 0, 1, 0, -1, 0, 1.3113416e-07, -20.32335, 19.814297, -87.027725)
 material_override = SubResource("StandardMaterial3D_sdove")
 use_collision = true
-size = Vector3(0.79810154, 24.13144, 34.70013)
+size = Vector3(0.79810154, 37.669724, 34.70013)
 
 [node name="CSGBox3D49" type="CSGBox3D" parent="Node" unique_id=1193641916]
-transform = Transform3D(1.3113416e-07, 0, 1, 0, 1, 0, -1, 0, 1.3113416e-07, -0.8559315, 15.768931, -87.027725)
+transform = Transform3D(1.3113416e-07, 0, 1, 0, 1, 0, -1, 0, 1.3113416e-07, -0.8559315, 20.787964, -87.027725)
 material_override = SubResource("StandardMaterial3D_sdove")
 use_collision = true
-size = Vector3(0.79810154, 18.683884, 4.806541)
+size = Vector3(0.79810154, 28.721947, 4.806541)
 
 [node name="CSGBox3D42" type="CSGBox3D" parent="Node" unique_id=1178510627]
-transform = Transform3D(1.3113416e-07, 0, 1, 0, 1, 0, -1, 0, 1.3113416e-07, 13.659072, 12.918933, -87.027725)
+transform = Transform3D(1.3113416e-07, 0, 1, 0, 1, 0, -1, 0, 1.3113416e-07, 13.659072, 16.522854, -87.027725)
 material_override = SubResource("StandardMaterial3D_vjags")
 use_collision = true
-size = Vector3(0.79810154, 23.878998, 24.9732)
+size = Vector3(0.79810154, 31.086838, 24.9732)
 material = SubResource("StandardMaterial3D_qj4ya")
 
 [node name="CSGBox3D43" type="CSGBox3D" parent="Node" unique_id=1291838670]
-transform = Transform3D(-1, 0, 8.742277e-08, 0, 1, 0, -8.742277e-08, 0, -1, 25.517742, 12.687451, -114.65394)
+transform = Transform3D(-1, 0, 8.742277e-08, 0, 1, 0, -8.742277e-08, 0, -1, 25.517744, 22.185844, -131.62306)
 material_override = SubResource("StandardMaterial3D_fqo8e")
 use_collision = true
-size = Vector3(0.79810154, 23.430008, 56.062004)
+size = Vector3(0.79810154, 42.426796, 90.000244)
 
 [node name="CSGBox3D45" type="CSGBox3D" parent="Node" unique_id=500179027]
-transform = Transform3D(-4.371138e-08, 0, -1, 0, 1, 0, 1, 0, -4.371138e-08, -5.6204386, 13.635554, -142.75653)
+transform = Transform3D(-4.371138e-08, 0, -1, 0, 1, 0, 1, 0, -4.371138e-08, -5.6204386, 20.746372, -176.14369)
 material_override = SubResource("StandardMaterial3D_3mfpi")
 use_collision = true
-size = Vector3(0.79810154, 25.303802, 63.609562)
+size = Vector3(0.79810154, 39.525436, 63.609562)
 
 [node name="CSGBox3D44" type="CSGBox3D" parent="Node" unique_id=2145715532]
-transform = Transform3D(-1, 0, 8.742277e-08, 0, 1, 0, -8.742277e-08, 0, -1, -37.340183, 12.907306, -114.84833)
+transform = Transform3D(-1, 0, 8.742277e-08, 0, 1, 0, -8.742277e-08, 0, -1, -37.34018, 21.142529, -145.97893)
 material_override = SubResource("StandardMaterial3D_vkriw")
 use_collision = true
-size = Vector3(0.79810154, 23.855743, 56.451225)
+size = Vector3(0.79810154, 40.326187, 118.71243)
 
 [node name="CSGBox3D40" type="CSGBox3D" parent="Node" unique_id=1108669494]
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 1.5839089, 3.670779, -83.7996)
@@ -4612,14 +4636,13 @@ size = Vector3(8.459543, 0.001, 11.484308)
 material = SubResource("StandardMaterial3D_jdqxa")
 
 [node name="CSGBox3D4" type="CSGBox3D" parent="." unique_id=177522253]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.7755914, 1.101657, -103.56514)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.590899, 1.1016561, -126.261055)
 use_collision = true
-size = Vector3(62.01087, 0.001, 77.4674)
+size = Vector3(65.669495, 0.001, 122.80792)
 material = SubResource("StandardMaterial3D_jdqxa")
 
 [node name="CSGBox3D2" type="CSGBox3D" parent="." unique_id=1328112199]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.203343, 6.3024683, 33.975258)
-visible = false
 use_collision = true
 size = Vector3(96.78914, 0.001, 200.78658)
 material = SubResource("StandardMaterial3D_hqi3u")
@@ -4631,15 +4654,10 @@ size = Vector3(26.247028, 0.001, 21.419239)
 material = SubResource("StandardMaterial3D_hqi3u")
 
 [node name="CSGBox3D5" type="CSGBox3D" parent="." unique_id=2022009227]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.810993, 24.056393, -114.31598)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.810993, 32.25664, -132.67168)
 use_collision = true
-size = Vector3(63.21328, 0.001, 55.94441)
+size = Vector3(63.21328, 0.001, 92.6558)
 material = SubResource("StandardMaterial3D_hqi3u")
-
-[node name="carnaval" type="Node3D" parent="." unique_id=1301024364]
-
-[node name="circo" parent="carnaval" unique_id=1448476315 instance=ExtResource("84_hqi3u")]
-transform = Transform3D(6, 0, 0, 0, 6, 0, 0, 0, 6, 0.48661995, 7.660568, -128.10626)
 
 [node name="prohbieted area" type="Node3D" parent="." unique_id=914978098]
 
@@ -4680,6 +4698,100 @@ texture = ExtResource("86_vjags")
 transform = Transform3D(0.2, 0, 3.4969112e-08, 0, 0.2, 0, -3.4969112e-08, 0, 0.2, -22.48036, 3.7953336, -2.8614562)
 modulate = Color(0.3180198, 0.31801978, 0.31801975, 1)
 texture = ExtResource("87_fqo8e")
+
+[node name="carnaval" type="Node3D" parent="." unique_id=1301024364]
+
+[node name="Timer" type="Timer" parent="carnaval" unique_id=90274633]
+wait_time = 2.5
+one_shot = true
+
+[node name="circo" parent="carnaval" unique_id=1448476315 instance=ExtResource("84_hqi3u")]
+transform = Transform3D(6, 0, 0, 0, 6, 0, 0, 0, 6, 0.48661995, 7.660568, -160.39107)
+visible = false
+
+[node name="SpotLight3D" type="SpotLight3D" parent="carnaval/circo" unique_id=1581407252]
+transform = Transform3D(0.16666667, 0, 0, 0, -7.2852315e-09, 0.16666667, 0, -0.16666667, -7.2852315e-09, 0.02254486, 3.4589863, -0.056159973)
+light_color = Color(0.69214195, 0, 0.021961292, 1)
+light_energy = 5.0
+spot_range = 42.24123
+spot_angle = 43.853336
+
+[node name="marco azul" parent="carnaval" unique_id=1325708652 instance=ExtResource("88_50gwn")]
+transform = Transform3D(-0.59999996, 0, 5.2453665e-08, 0, 0.59999996, 0, -5.2453665e-08, 0, -0.59999996, 9.68753, 3.4614363, -78.09943)
+
+[node name="Sprite3D" type="Sprite3D" parent="carnaval/marco azul" unique_id=998329133]
+transform = Transform3D(-6.120552e-09, 0.001237576, 0.13999452, -1.0819236e-10, 0.13999452, -0.001237576, -0.14, -1.6229275e-10, -6.119356e-09, 0.20637512, 0, 0)
+shaded = true
+texture = ExtResource("89_qxi76")
+
+[node name="lampara de pared" parent="carnaval/marco azul" unique_id=401878406 instance=ExtResource("88_vjags")]
+transform = Transform3D(3.2451197e-08, 0, -0.16666666, 0, 0.16666666, 0, 0.16666666, 0, 3.2451197e-08, 0.73228455, 3.367547, -0.009846687)
+
+[node name="Cube_002" parent="carnaval/marco azul/lampara de pared" index="3" unique_id=388725409]
+surface_material_override/0 = SubResource("StandardMaterial3D_mshhq")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="carnaval/marco azul/lampara de pared" unique_id=642003092]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, -4.295231, 0)
+light_color = Color(0.6862745, 0.078431375, 0, 1)
+light_energy = 2.0
+light_size = 1.0
+omni_range = 4.977283
+
+[node name="marco azul2" parent="carnaval" unique_id=987326164 instance=ExtResource("88_50gwn")]
+transform = Transform3D(-2.6226829e-08, 0, -0.59999996, 0, 0.59999996, 0, 0.59999996, 0, -2.6226829e-08, 0.5722705, 3.4614363, -75.21366)
+
+[node name="Sprite3D" type="Sprite3D" parent="carnaval/marco azul2" unique_id=2105190561]
+transform = Transform3D(-6.120552e-09, 0.001237576, 0.13999452, -1.0819236e-10, 0.13999452, -0.001237576, -0.14, -1.6229275e-10, -6.119356e-09, 0.20637512, 0, 0)
+shaded = true
+texture = ExtResource("91_j4eu1")
+
+[node name="lampara de pared" parent="carnaval/marco azul2" unique_id=1528998106 instance=ExtResource("88_vjags")]
+transform = Transform3D(3.2451197e-08, 0, -0.16666666, 0, 0.16666666, 0, 0.16666666, 0, 3.2451197e-08, 0.73228455, 3.367547, -0.009846687)
+
+[node name="Cube_002" parent="carnaval/marco azul2/lampara de pared" index="3" unique_id=388725409]
+surface_material_override/0 = SubResource("StandardMaterial3D_mshhq")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="carnaval/marco azul2/lampara de pared" unique_id=307711530]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, -4.295231, 0)
+light_color = Color(0.6862745, 0.078431375, 0, 1)
+light_energy = 2.0
+light_size = 1.0
+omni_range = 4.999924
+
+[node name="marco azul3" parent="carnaval" unique_id=1561151663 instance=ExtResource("88_50gwn")]
+transform = Transform3D(0.59999996, 0, 5.3290705e-15, 0, 0.59999996, 0, -5.3290705e-15, 0, 0.59999996, -2.6280346, 3.4614363, -85.05589)
+
+[node name="Sprite3D" type="Sprite3D" parent="carnaval/marco azul3" unique_id=943242828]
+transform = Transform3D(-6.120552e-09, 0.001237576, 0.13999452, -1.0819236e-10, 0.13999452, -0.001237576, -0.14, -1.6229275e-10, -6.119356e-09, 0.20637512, 0, 0)
+shaded = true
+texture = ExtResource("92_72y23")
+
+[node name="lampara de pared" parent="carnaval/marco azul3" unique_id=2098938899 instance=ExtResource("88_vjags")]
+transform = Transform3D(3.2451197e-08, 0, -0.16666666, 0, 0.16666666, 0, 0.16666666, 0, 3.2451197e-08, 0.73228455, 3.367547, -0.009846687)
+
+[node name="Cube_002" parent="carnaval/marco azul3/lampara de pared" index="3" unique_id=388725409]
+surface_material_override/0 = SubResource("StandardMaterial3D_mshhq")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="carnaval/marco azul3/lampara de pared" unique_id=846499887]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, -4.295231, 0)
+light_color = Color(0.6862745, 0.078431375, 0, 1)
+light_energy = 2.0
+light_size = 1.0
+omni_range = 5.3875947
+
+[node name="circoestas" type="Area3D" parent="carnaval" unique_id=660923329]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.8616273, -57.28535)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="carnaval/circoestas" unique_id=1417192618]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.16128004, 0.20237923, -3.130684)
+shape = SubResource("BoxShape3D_50gwn")
+
+[node name="circoaparece" type="Area3D" parent="carnaval" unique_id=463773979]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.8616273, -102.13504)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="carnaval/circoaparece" unique_id=347774567]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.86529, 0.20237923, -0.71863556)
+shape = SubResource("BoxShape3D_qxi76")
 
 [connection signal="timeout" from="WorldEnvironment/Timer" to="CharacterBody3D2/Sprite3D2" method="_on_timer_timeout"]
 [connection signal="pressed" from="CanvasLayer/Label4/TextureButton" to="CanvasLayer/reloj" method="_on_texture_button_pressed"]
@@ -4727,8 +4839,14 @@ texture = ExtResource("87_fqo8e")
 [connection signal="body_entered" from="thened/personajes/Area3D3" to="thened" method="_on_area_3d_3_body_entered"]
 [connection signal="body_entered" from="estrellas" to="CharacterBody3D" method="_on_estrellas_body_entered"]
 [connection signal="body_entered" from="control" to="CharacterBody3D" method="_on_control_body_entered"]
+[connection signal="timeout" from="carnaval/Timer" to="CharacterBody3D" method="_on_timer_timeout"]
+[connection signal="body_entered" from="carnaval/circoestas" to="CharacterBody3D" method="_on_circoestas_body_entered"]
+[connection signal="body_entered" from="carnaval/circoaparece" to="CharacterBody3D" method="_on_circoaparece_body_entered"]
 
 [editable path="star/stars physycs/estrella azul"]
 [editable path="star3/stars physycs/estrella azul"]
 [editable path="star4/stars physycs/estrella azul"]
 [editable path="star5/stars physycs/estrella azul"]
+[editable path="carnaval/marco azul/lampara de pared"]
+[editable path="carnaval/marco azul2/lampara de pared"]
+[editable path="carnaval/marco azul3/lampara de pared"]

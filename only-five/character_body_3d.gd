@@ -6,6 +6,8 @@ const MOUSE_SENSITIVITY = 0.002
 var ala = false
 var ala2 = false
 var ala3 = false
+var ala4 = false
+var ala5 = false
 # Referencia a la cámara (asegúrate de que el nodo se llame Camera3D dentro de tu Player)
 @onready var camera = $Camera3D
 @onready var raycast = $Camera3D/RayCast3D
@@ -133,4 +135,26 @@ func _on_control_body_entered(body: Node3D) -> void:
 		$"../zona2/pared/AnimationPlayer".play("moverse")
 		ala3 = true
 		
+	pass # Replace with function body.
+
+
+func _on_circoestas_body_entered(body: Node3D) -> void:
+	if ala4 == false:
+		$"../Node/CSGBox3D20/AnimationPlayer".play_backwards("new_animation")
+		$"../carnaval/Timer".start()
+		ala4 = true
+	pass # Replace with function body.
+	
+	
+
+
+func _on_timer_timeout() -> void:
+	$"../Node/CSGBox3D50".hide()
+	pass # Replace with function body.
+
+
+func _on_circoaparece_body_entered(body: Node3D) -> void:
+	if ala5 == false:
+		$"../carnaval/circo".show()
+		ala5 = true
 	pass # Replace with function body.
