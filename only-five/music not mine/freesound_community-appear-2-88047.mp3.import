@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b42a0n506iyax"
+path="res://.godot/imported/freesound_community-appear-2-88047.mp3-5826830aec7029cf6ac1effcb241c285.mp3str"
+
+[deps]
+
+source_file="res://music not mine/freesound_community-appear-2-88047.mp3"
+dest_files=["res://.godot/imported/freesound_community-appear-2-88047.mp3-5826830aec7029cf6ac1effcb241c285.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

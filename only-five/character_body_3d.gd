@@ -8,6 +8,7 @@ var ala2 = false
 var ala3 = false
 var ala4 = false
 var ala5 = false
+var ala6 = false
 # Referencia a la cámara (asegúrate de que el nodo se llame Camera3D dentro de tu Player)
 @onready var camera = $Camera3D
 @onready var raycast = $Camera3D/RayCast3D
@@ -150,11 +151,26 @@ func _on_circoestas_body_entered(body: Node3D) -> void:
 
 func _on_timer_timeout() -> void:
 	$"../Node/CSGBox3D50".hide()
+	$"../carnaval/FreesoundCommunityAppear288047".play()
+	$"../Node/CSGBox3D51".hide()
 	pass # Replace with function body.
 
 
 func _on_circoaparece_body_entered(body: Node3D) -> void:
 	if ala5 == false:
 		$"../carnaval/circo".show()
+		$"../carnaval/FreesoundfxSpotlightTurningOn388828".play()
 		ala5 = true
+	pass # Replace with function body
+#323232
+
+
+func _on_circoestas_2_body_entered(body: Node3D) -> void:
+	if ala6 == false:
+		$"../carnaval/circo/SpotLight3D".hide()
+		$"../Node/CSGBox3D53".hide()
+		$"../carnaval/circo/SpotLight3D2".show()
+		$"../carnaval/UniversfieldAppearance04142918".play()
+		ala6 = true
 	pass # Replace with function body.
+	

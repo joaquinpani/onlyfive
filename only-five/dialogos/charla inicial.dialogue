@@ -20,9 +20,9 @@ set GameManager.camara = false
 	set GameManager.personaje_actual = 1
 	ginganguli: So... which handle are you going to pull?
 	- The left handle
-		ginganguli: Come on man. Do whatever you want, but don't cry about it later. I warned you.
-	- The right handle
 		ginganguli: Yeah man, you are so smart and clever.
+	- The right handle
+		ginganguli: Come on man. Do whatever you want, but don't cry about it later. I warned you.
 - Yes, I know who you are
 	set GameManager.personaje_actual = 1
 	player: I know who you are.

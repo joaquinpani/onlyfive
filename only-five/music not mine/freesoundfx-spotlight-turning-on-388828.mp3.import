@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bw8k32gc12u7a"
+path="res://.godot/imported/freesoundfx-spotlight-turning-on-388828.mp3-5faa1c8dc16a3288c618da4b7dde8875.mp3str"
+
+[deps]
+
+source_file="res://music not mine/freesoundfx-spotlight-turning-on-388828.mp3"
+dest_files=["res://.godot/imported/freesoundfx-spotlight-turning-on-388828.mp3-5faa1c8dc16a3288c618da4b7dde8875.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
