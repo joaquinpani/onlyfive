@@ -11,6 +11,12 @@ func pequeñosmovidos():
 func aparicion():
 	$FreesoundCommunityServomotor104111.play()
 	
+func indsi():
+	$FloraphonicShortPunchySineWaveDing17E211758.play()
+	
+func indno():
+	$FloraphonicShortPunchySineWaveDing7F211750.play()
+	
 func alt():
 	var sel = randi_range(1, 11)
 	match sel:

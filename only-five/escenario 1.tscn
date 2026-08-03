@@ -119,6 +119,8 @@
 [ext_resource type="AudioStream" uid="uid://bok78153k2it7" path="res://monitor sounds/aleatorios/servo6.ogg" id="110_swymh"]
 [ext_resource type="AudioStream" uid="uid://yf5x6010jjlr" path="res://monitor sounds/aleatorios/servo7.ogg" id="111_k6b4t"]
 [ext_resource type="AudioStream" uid="uid://i13y62svb54c" path="res://monitor sounds/aleatorios/servo8.ogg" id="112_qj4ya"]
+[ext_resource type="AudioStream" uid="uid://061y7kbewvfe" path="res://monitor sounds/floraphonic-short-punchy-sine-wave-ding-17-e-211758.mp3" id="120_k6b4t"]
+[ext_resource type="AudioStream" uid="uid://dn4a6xbb840t4" path="res://monitor sounds/floraphonic-short-punchy-sine-wave-ding-7-f-211750.mp3" id="121_qj4ya"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_nho35"]
 
@@ -1123,6 +1125,33 @@ _data = {
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nho35"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xvgbs"]
+
+[sub_resource type="Animation" id="Animation_qol8e"]
+length = 0.001
+tracks/0/type = "position_3d"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array(0, 1, -29.734604, 3.7100558, 11.950141)
+
+[sub_resource type="Animation" id="Animation_swymh"]
+resource_name = "new_animation"
+length = 2.0
+tracks/0/type = "position_3d"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array(0, 1, -29.734604, 3.7100558, 11.950141, 2, 1, -29.734604, 9.122091, 11.950141)
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_k6b4t"]
+_data = {
+&"RESET": SubResource("Animation_qol8e"),
+&"new_animation": SubResource("Animation_swymh")
+}
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_40oj1"]
 
@@ -2475,7 +2504,6 @@ tracks/4/keys = {
 [sub_resource type="Animation" id="Animation_tskli"]
 resource_name = "no"
 length = 11.5
-loop_mode = 1
 tracks/0/type = "rotation_3d"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -2504,11 +2532,86 @@ tracks/3/path = NodePath("base")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = PackedFloat32Array(0.93333334, 1, 0, 0, 0, 1, 4.67, 1, 0, 0, 0, 1, 7.9666667, 1, -0.4574831, 0, 0, 0.8892183, 8.9, 1, -0.45748308, 0, 0, 0.88921833, 9.333333, 1, -0.071833275, 0, 0, 0.9974167, 10.833333, 1, -0.071833275, 0, 0, 0.9974167, 11.466666, 1, 0.6418693, 0, 0, 0.7668142)
+tracks/4/type = "method"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("base/base 2/base3/monitor real/monitor real/SubViewport/PantallaMonitor")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(4.6666665, 9.333333, 11.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"values": [{
+"args": [],
+"method": &"cargando"
+}, {
+"args": [],
+"method": &"perder"
+}, {
+"args": [],
+"method": &"despuesdeperder"
+}]
+}
+tracks/5/type = "method"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("../../enlapc")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0.93333334, 4.6666665, 6.0333333, 7.1666665, 7.9666667, 8.9, 9.3, 9.566667, 9.633333, 9.796979, 9.9869795, 10.056979, 10.296979, 10.436979, 10.833333),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"values": [{
+"args": [],
+"method": &"desicion"
+}, {
+"args": [],
+"method": &"pequeñosmovidos"
+}, {
+"args": [],
+"method": &"pequeñosmovidos"
+}, {
+"args": [],
+"method": &"pequeñosmovidos"
+}, {
+"args": [],
+"method": &"pequeñosmovidos"
+}, {
+"args": [],
+"method": &"pequeñosmovidos"
+}, {
+"args": [],
+"method": &"pequeñosmovidos"
+}, {
+"args": [],
+"method": &"pequeñosmovidos"
+}, {
+"args": [],
+"method": &"indno"
+}, {
+"args": [],
+"method": &"pequeñosmovidos"
+}, {
+"args": [],
+"method": &"pequeñosmovidos"
+}, {
+"args": [],
+"method": &"indno"
+}, {
+"args": [],
+"method": &"pequeñosmovidos"
+}, {
+"args": [],
+"method": &"indno"
+}, {
+"args": [],
+"method": &"aparicion"
+}]
+}
 
 [sub_resource type="Animation" id="Animation_vchts"]
 resource_name = "si"
 length = 12.3
-loop_mode = 1
 tracks/0/type = "rotation_3d"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -2537,6 +2640,82 @@ tracks/3/path = NodePath("base")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = PackedFloat32Array(0.93333334, 1, 0, 0, 0, 1, 4.67, 1, 0, 0, 0, 1, 7.9666667, 1, -0.4574831, 0, 0, 0.8892183, 8.9, 1, -0.45748308, 0, 0, 0.88921833, 9.333333, 1, -0.071833275, 0, 0, 0.9974167, 10.833333, 1, -0.071833275, 0, 0, 0.9974166, 11.466666, 1, 0.6418693, 0, 0, 0.7668142)
+tracks/4/type = "method"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("base/base 2/base3/monitor real/monitor real/SubViewport/PantallaMonitor")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(4.7, 9.366667, 12.3),
+"transitions": PackedFloat32Array(1, 1, 1),
+"values": [{
+"args": [],
+"method": &"cargando"
+}, {
+"args": [],
+"method": &"ganar"
+}, {
+"args": [],
+"method": &"despuesdeganar"
+}]
+}
+tracks/5/type = "method"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("../../enlapc")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0.93333334, 4.6666665, 6.0333333, 7.1666665, 7.9666667, 8.9, 9.3, 9.566667, 9.633333, 9.796979, 9.9869795, 10.066979, 10.296979, 10.426979, 10.833333),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"values": [{
+"args": [],
+"method": &"desicion"
+}, {
+"args": [],
+"method": &"pequeñosmovidos"
+}, {
+"args": [],
+"method": &"pequeñosmovidos"
+}, {
+"args": [],
+"method": &"pequeñosmovidos"
+}, {
+"args": [],
+"method": &"pequeñosmovidos"
+}, {
+"args": [],
+"method": &"pequeñosmovidos"
+}, {
+"args": [],
+"method": &"pequeñosmovidos"
+}, {
+"args": [],
+"method": &"pequeñosmovidos"
+}, {
+"args": [],
+"method": &"indsi"
+}, {
+"args": [],
+"method": &"pequeñosmovidos"
+}, {
+"args": [],
+"method": &"pequeñosmovidos"
+}, {
+"args": [],
+"method": &"indsi"
+}, {
+"args": [],
+"method": &"pequeñosmovidos"
+}, {
+"args": [],
+"method": &"indsi"
+}, {
+"args": [],
+"method": &"aparicion"
+}]
+}
 
 [sub_resource type="Animation" id="Animation_fda0d"]
 resource_name = "si fix"
@@ -2651,6 +2830,13 @@ omni_range = 56.29132
 
 [node name="OmniLight3D15" type="OmniLight3D" parent="." unique_id=2089894748]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.18678284, 3.7247868, -20.22707)
+light_energy = 4.485
+shadow_enabled = true
+omni_range = 56.29132
+
+[node name="OmniLight3D16" type="OmniLight3D" parent="." unique_id=826336656]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.8381, 3.7247868, 5.196829)
+visible = false
 light_energy = 4.485
 shadow_enabled = true
 omni_range = 56.29132
@@ -3573,6 +3759,9 @@ transform = Transform3D(1.3113416e-07, 0, 1, 0, 1, 0, -1, 0, 1.3113416e-07, -29.
 use_collision = true
 size = Vector3(1, 5.3826904, 7.084168)
 material = SubResource("StandardMaterial3D_xvgbs")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Node/CSGBox3D52" unique_id=313657327]
+libraries/ = SubResource("AnimationLibrary_k6b4t")
 
 [node name="CSGBox3D54" type="CSGBox3D" parent="Node" unique_id=1112810448]
 transform = Transform3D(1.3113416e-07, 0, 1, 0, 1, 0, -1, 0, 1.3113416e-07, -36.74149, 3.7100558, 11.950141)
@@ -5905,7 +6094,7 @@ stream = ExtResource("101_qol8e")
 transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, -0.886467, -1.18149)
 
 [node name="base" type="AnimatableBody3D" parent="prohibited area/monitor fix/monitor esqueleto" unique_id=1324843801]
-transform = Transform3D(1, 0, 0, 0, 0.17600763, -0.9843886, 0, 0.9843886, 0.17600763, 0, 1.2248679, 2.9082546)
+transform = Transform3D(1, 0, 0, 0, 0.1760076, -0.9843884, 0, 0.9843884, 0.1760076, 0, 1.2248679, 2.9082546)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="prohibited area/monitor fix/monitor esqueleto/base" unique_id=1559224992]
 transform = Transform3D(1, 0, 0, 0, 0.6932816, -0.7206668, 0, 0.7206668, 0.6932816, -0.012672424, 0.02939701, 7.343292e-05)
@@ -5931,7 +6120,7 @@ mesh = SubResource("ArrayMesh_nyupy")
 skeleton = NodePath("")
 
 [node name="base3" type="Node3D" parent="prohibited area/monitor fix/monitor esqueleto/base/base 2" unique_id=1513280688]
-transform = Transform3D(-1.0000004, 1.841292e-07, -7.7545394e-08, -1.3760892e-07, -0.35337344, 0.935482, 1.4484735e-07, 0.9354809, 0.3533739, 0.0069770813, 0.35760307, -0.65316343)
+transform = Transform3D(-1.0000004, 1.8412918e-07, -7.754537e-08, -1.3760892e-07, -0.3533734, 0.9354818, 1.4484735e-07, 0.93548083, 0.3533738, 0.0069770813, 0.35760307, -0.65316343)
 
 [node name="CollisionShape3D3" type="CollisionShape3D" parent="prohibited area/monitor fix/monitor esqueleto/base/base 2/base3" unique_id=1097083272]
 transform = Transform3D(1, -1.15463195e-14, 1.7763568e-15, 1.15463195e-14, 0.99999994, -2.9802322e-08, 1.3322676e-15, 0, 0.99999994, 0, -0.00027561188, -0.0022878647)
@@ -5944,7 +6133,7 @@ mesh = SubResource("ArrayMesh_84gd0")
 skeleton = NodePath("")
 
 [node name="monitor real" type="Node3D" parent="prohibited area/monitor fix/monitor esqueleto/base/base 2/base3" unique_id=1796703173]
-transform = Transform3D(1.0000012, 1.9468263e-08, 9.3284676e-08, -6.941622e-08, 0.819479, 0.5731089, -6.52875e-08, -0.5731089, 0.819479, 0.006996155, -0.80930376, -0.12837315)
+transform = Transform3D(1.0000012, 1.9468263e-08, 9.328467e-08, -6.941622e-08, 0.819479, 0.5731089, -6.52875e-08, -0.5731089, 0.8194789, 0.006996155, -0.80930376, -0.12837315)
 
 [node name="monitor real" type="MeshInstance3D" parent="prohibited area/monitor fix/monitor esqueleto/base/base 2/base3/monitor real" unique_id=951826593]
 transform = Transform3D(0.99996006, -0.008911018, 0.000748657, 0.0056383153, 0.69325715, 0.72066915, -0.0069409134, -0.7206363, 0.6932799, 0.13433456, -0.03938532, 0.08333206)
@@ -6044,6 +6233,12 @@ stream = ExtResource("111_k6b4t")
 [node name="Servo8" type="AudioStreamPlayer" parent="prohibited area/enlapc/son idos aleatorios" unique_id=130309623]
 stream = ExtResource("112_qj4ya")
 
+[node name="FloraphonicShortPunchySineWaveDing17E211758" type="AudioStreamPlayer" parent="prohibited area/enlapc" unique_id=985827396]
+stream = ExtResource("120_k6b4t")
+
+[node name="FloraphonicShortPunchySineWaveDing7F211750" type="AudioStreamPlayer" parent="prohibited area/enlapc" unique_id=1056420230]
+stream = ExtResource("121_qj4ya")
+
 [connection signal="timeout" from="WorldEnvironment/Timer" to="CharacterBody3D2/Sprite3D2" method="_on_timer_timeout"]
 [connection signal="pressed" from="CanvasLayer/Label4/TextureButton" to="CanvasLayer/reloj" method="_on_texture_button_pressed"]
 [connection signal="timeout" from="CanvasLayer/reloj/Timer" to="CanvasLayer/reloj" method="_on_timer_timeout"]
@@ -6094,6 +6289,10 @@ stream = ExtResource("112_qj4ya")
 [connection signal="body_entered" from="carnaval/circoestas" to="CharacterBody3D" method="_on_circoestas_body_entered"]
 [connection signal="body_entered" from="carnaval/circoestas2" to="CharacterBody3D" method="_on_circoestas_2_body_entered"]
 [connection signal="body_entered" from="carnaval/circoaparece" to="CharacterBody3D" method="_on_circoaparece_body_entered"]
+[connection signal="presionado" from="prohibited area/monitor fix/StaticBody3D/mesa/boton" to="prohibited area/monitor fix/monitor esqueleto/base/base 2/base3/monitor real/monitor real/SubViewport/PantallaMonitor" method="_on_boton_presionado"]
+[connection signal="presionado" from="prohibited area/monitor fix/StaticBody3D/mesa/boton2" to="prohibited area/monitor fix/monitor esqueleto/base/base 2/base3/monitor real/monitor real/SubViewport/PantallaMonitor" method="_on_boton_2_presionado"]
+[connection signal="presionado" from="prohibited area/monitor fix/StaticBody3D/mesa/boton3" to="prohibited area/monitor fix/monitor esqueleto/base/base 2/base3/monitor real/monitor real/SubViewport/PantallaMonitor" method="_on_boton_3_presionado"]
+[connection signal="presionado" from="prohibited area/monitor fix/StaticBody3D/mesa/boton4" to="prohibited area/monitor fix/monitor esqueleto/base/base 2/base3/monitor real/monitor real/SubViewport/PantallaMonitor" method="_on_boton_4_presionado"]
 [connection signal="timeout" from="prohibited area/monitor fix/monitor esqueleto/AnimationPlayer/idle" to="CharacterBody3D" method="_on_idle_timeout"]
 [connection signal="body_entered" from="prohibited area/enlapc" to="CharacterBody3D" method="_on_enlapc_body_entered"]
 

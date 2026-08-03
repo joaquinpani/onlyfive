@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dn4a6xbb840t4"
+path="res://.godot/imported/floraphonic-short-punchy-sine-wave-ding-7-f-211750.mp3-6b554feb310bd2f2eeae5da1a350b11b.mp3str"
+
+[deps]
+
+source_file="res://monitor sounds/floraphonic-short-punchy-sine-wave-ding-7-f-211750.mp3"
+dest_files=["res://.godot/imported/floraphonic-short-punchy-sine-wave-ding-7-f-211750.mp3-6b554feb310bd2f2eeae5da1a350b11b.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
