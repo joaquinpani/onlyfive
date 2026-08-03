@@ -1,0 +1,75 @@
+[gd_scene format=3 uid="uid://cs6wy06ol8xg1"]
+
+[ext_resource type="Script" uid="uid://buur7kwn63uqq" path="res://pantalla_monitor.gd" id="1_6j7i5"]
+[ext_resource type="Texture2D" uid="uid://dddsah81sd6t0" path="res://sprites/fondo1.png" id="2_6j7i5"]
+
+[sub_resource type="Animation" id="Animation_iayk2"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("..:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-576, 972)]
+}
+
+[sub_resource type="Animation" id="Animation_n2bj8"]
+resource_name = "bucle"
+length = 10.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("..:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 10),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-576, 972), Vector2(575, 326)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_lmt2l"]
+_data = {
+&"RESET": SubResource("Animation_iayk2"),
+&"bucle": SubResource("Animation_n2bj8")
+}
+
+[node name="Node2D" type="Node2D" unique_id=1958028142]
+position = Vector2(0, 1157)
+rotation = -1.5707964
+script = ExtResource("1_6j7i5")
+
+[node name="Sprite2D3" type="Sprite2D" parent="." unique_id=169115079]
+position = Vector2(-576, 972)
+texture = ExtResource("2_6j7i5")
+
+[node name="Sprite2D" type="Sprite2D" parent="Sprite2D3" unique_id=1306230113]
+position = Vector2(1152, -648)
+texture = ExtResource("2_6j7i5")
+
+[node name="Sprite2D4" type="Sprite2D" parent="Sprite2D3" unique_id=1548456173]
+position = Vector2(0, -648)
+texture = ExtResource("2_6j7i5")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Sprite2D3" unique_id=1198955516]
+position = Vector2(1152, 0)
+texture = ExtResource("2_6j7i5")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite2D3" unique_id=110627493]
+root_node = NodePath("../Sprite2D")
+libraries/ = SubResource("AnimationLibrary_lmt2l")
+
+[node name="Label" type="Label" parent="." unique_id=1954014430]
+offset_left = 216.0
+offset_top = 115.0
+offset_right = 922.0
+offset_bottom = 252.0
+theme_override_font_sizes/font_size = 100
+text = "enter the code"
