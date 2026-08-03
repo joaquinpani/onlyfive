@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c3am8typafjfb"
+path="res://.godot/imported/soundreality-button-4-214382.mp3-51fdadcffc478d461d0d756aa0320de4.mp3str"
+
+[deps]
+
+source_file="res://monitor sounds/soundreality-button-4-214382.mp3"
+dest_files=["res://.godot/imported/soundreality-button-4-214382.mp3-51fdadcffc478d461d0d756aa0320de4.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -44,6 +44,9 @@ func _input(event: InputEvent) -> void:
 				var objeto_mirado = raycast.get_collider()
 				print("Mirando a: ", objeto_mirado.name)
 				
+				if objeto_mirado.has_method("presionar"):
+					objeto_mirado.presionar()
+				
 				# Si el objeto tiene una función de interactuar, la ejecutamos
 				if objeto_mirado.has_method("interactuar") and objeto_mirado.usable == true:
 					objeto_mirado.interactuar()
@@ -57,9 +60,16 @@ func _input(event: InputEvent) -> void:
 				if objeto_mirado.has_method("interactuar") and objeto_mirado.usable == true:
 					$"../CanvasLayer/Puntero".self_modulate = "#fffffffc"
 					$"../CanvasLayer/Puntero".scale = Vector2(0.015,0.015)
+					
+				elif objeto_mirado.has_method("presionar") and objeto_mirado.ocupado == false:
+					$"../CanvasLayer/Puntero".self_modulate = "#fffffffc"
+					$"../CanvasLayer/Puntero".scale = Vector2(0.015,0.015)
+					
+				
 				else: 
 					$"../CanvasLayer/Puntero".self_modulate = "#ffffff7f"
 					$"../CanvasLayer/Puntero".scale = Vector2(0.01,0.01)
+				
 		else: 
 			$"../CanvasLayer/Puntero".self_modulate = "#ffffff7f"
 			$"../CanvasLayer/Puntero".scale = Vector2(0.01,0.01)

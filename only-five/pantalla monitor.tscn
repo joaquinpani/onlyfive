@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://buur7kwn63uqq" path="res://pantalla_monitor.gd" id="1_6j7i5"]
 [ext_resource type="Texture2D" uid="uid://dddsah81sd6t0" path="res://sprites/fondo1.png" id="2_6j7i5"]
+[ext_resource type="FontFile" uid="uid://cqnucubpx1v66" path="res://PressStart2P-Regular.ttf" id="3_xhbcr"]
 
 [sub_resource type="Animation" id="Animation_iayk2"]
 length = 0.001
@@ -66,10 +67,72 @@ texture = ExtResource("2_6j7i5")
 root_node = NodePath("../Sprite2D")
 libraries/ = SubResource("AnimationLibrary_lmt2l")
 
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1415789641]
+visible = false
+offset_left = 144.0
+offset_top = 129.0
+offset_right = 958.6898
+offset_bottom = 882.9299
+
 [node name="Label" type="Label" parent="." unique_id=1954014430]
 offset_left = 216.0
-offset_top = 115.0
-offset_right = 922.0
-offset_bottom = 252.0
-theme_override_font_sizes/font_size = 100
-text = "enter the code"
+offset_top = 144.0
+offset_right = 1616.0
+offset_bottom = 281.0
+scale = Vector2(0.72, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 17
+theme_override_fonts/font = ExtResource("3_xhbcr")
+theme_override_font_sizes/font_size = 70
+text = "Enter the code"
+
+[node name="Node2D" type="Node2D" parent="." unique_id=1762139098]
+position = Vector2(-3.6280453e-06, 83)
+
+[node name="Label5" type="Label" parent="Node2D" unique_id=503218128]
+offset_left = 760.0
+offset_top = 361.00003
+offset_right = 2160.0
+offset_bottom = 561.0
+scale = Vector2(0.72, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 17
+theme_override_fonts/font = ExtResource("3_xhbcr")
+theme_override_font_sizes/font_size = 200
+text = "-"
+
+[node name="Label4" type="Label" parent="Node2D" unique_id=1353157866]
+offset_left = 592.0
+offset_top = 361.00003
+offset_right = 1992.0
+offset_bottom = 561.0
+scale = Vector2(0.72, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 17
+theme_override_fonts/font = ExtResource("3_xhbcr")
+theme_override_font_sizes/font_size = 200
+text = "-"
+
+[node name="Label3" type="Label" parent="Node2D" unique_id=866973402]
+offset_left = 424.0
+offset_top = 361.0
+offset_right = 1824.0
+offset_bottom = 561.0
+scale = Vector2(0.72, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 17
+theme_override_fonts/font = ExtResource("3_xhbcr")
+theme_override_font_sizes/font_size = 200
+text = "-"
+
+[node name="Label2" type="Label" parent="Node2D" unique_id=1595425577]
+offset_left = 253.0
+offset_top = 361.00003
+offset_right = 1653.0
+offset_bottom = 561.0
+scale = Vector2(0.72, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 17
+theme_override_fonts/font = ExtResource("3_xhbcr")
+theme_override_font_sizes/font_size = 200
+text = "-"

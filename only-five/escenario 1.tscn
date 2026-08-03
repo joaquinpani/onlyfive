@@ -102,10 +102,12 @@
 [ext_resource type="Texture2D" uid="uid://c8wmli8oy1iee" path="res://sprites/triangule.png" id="98_qol8e"]
 [ext_resource type="AudioStream" uid="uid://dx365ucqlvum6" path="res://monitor sounds/freesound_community-mechanicalclamp-6217.mp3" id="98_vs3q7"]
 [ext_resource type="AudioStream" uid="uid://dvyrm0kkigiy3" path="res://monitor sounds/freesound_community-servo-96129.mp3" id="99_87jc2"]
+[ext_resource type="Script" uid="uid://di76bbci5exjf" path="res://boton.gd" id="99_morqj"]
 [ext_resource type="Texture2D" uid="uid://bq571gji0dncr" path="res://sprites/circule.png" id="99_swymh"]
 [ext_resource type="PackedScene" uid="uid://cs6wy06ol8xg1" path="res://pantalla monitor.tscn" id="100_fc11i"]
 [ext_resource type="AudioStream" uid="uid://ca0b2fmipf47t" path="res://monitor sounds/freesound_community-servomotor-104111.mp3" id="100_rexif"]
 [ext_resource type="AudioStream" uid="uid://c3ywp4yve7xgj" path="res://monitor sounds/freesound_community-small-servo-arduino-35614.mp3" id="101_7ro6g"]
+[ext_resource type="AudioStream" uid="uid://c3am8typafjfb" path="res://monitor sounds/soundreality-button-4-214382.mp3" id="101_qol8e"]
 [ext_resource type="AudioStream" uid="uid://161wywpv8il4" path="res://monitor sounds/aleatorios/servo12.ogg" id="102_hdc7k"]
 [ext_resource type="AudioStream" uid="uid://d2tulub6heyfc" path="res://monitor sounds/aleatorios/servo11.ogg" id="103_60if7"]
 [ext_resource type="AudioStream" uid="uid://wa1elrjaxkmo" path="res://monitor sounds/aleatorios/servo10.ogg" id="104_vvme2"]
@@ -1950,7 +1952,7 @@ cull_mode = 2
 albedo_color = Color(0.9063318, 0.9063318, 0.9063318, 1)
 roughness = 0.5
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_1s3nd"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_4825t"]
 _surfaces = [{
 "aabb": AABB(-0.32907748, -0.54636323, -0.4526006, 0.68019855, 0.5668322, 0.88315773),
 "format": 34896613377,
@@ -1964,8 +1966,8 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_inmfa"]
-resource_name = "monitor fix_Cube_005"
+[sub_resource type="ArrayMesh" id="ArrayMesh_v3a84"]
+resource_name = "monitor fix_Cube_002"
 _surfaces = [{
 "aabb": AABB(-0.32907748, -0.54636323, -0.4526006, 0.68019855, 0.5668322, 0.88315773),
 "attribute_data": PackedByteArray("/1////+f/7//n////1//v/9f/7//n/9//5//v/9f/3//X/9//5//P/+f/3//X/8//1//P/+fAAD/n/8//18AAP8f/3//X/8//1//f/8f/z//n/9//9//P//f/3//n/8/"),
@@ -1980,45 +1982,13 @@ _surfaces = [{
 "vertex_data": PackedByteArray("AAAAAP//wtCOI3b3VibpzksoFez14FrVAAAAAAAA7MsAAAAAAABQ+VTV///cIE75jiN291Ymwfj//wAAAADI+f//AAAAAE3fOM5295zkNdZU1f//3CD62///AAD//0ba//8AAP//18lLKBXs9eBsuDjOdvec5HzCAAAAAP//fsIAAAAAAAD/v///AAD///+///8AAAAA/78AAAAA////v1TV///cIG39SygV7PXga/+OI3b3ViYo/jjOdvec5J3+JNgO0ITVH9EH3qfN1tAI07O7Ib7Huw++SMJAuLK2mMJ2KIkn8DG9IbQrjiVzLXwkdPbjCBj33Qyy9mUKsvZkCgAA/38AAP9/AAD/fwAA/3+7f9a+o33fvfV+cL55fi++")
 }]
 blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_1s3nd")
+shadow_mesh = SubResource("ArrayMesh_4825t")
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6wrif"]
-albedo_color = Color(1.1551381e-06, 0.73411715, 0.73411703, 1)
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3k0jq"]
+albedo_color = Color(0.76775056, 0, 0.17298245, 1)
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_6jcoo"]
-_surfaces = [{
-"aabb": AABB(-0.32907748, -0.54636323, -0.4526006, 0.68019855, 0.5668322, 0.88315773),
-"format": 34896613377,
-"index_count": 36,
-"index_data": PackedByteArray("AAABAAIAAAADAAEABAACAAEAAwAEAAEABQAAAAIAAwAAAAUABAAGAAIABQACAAYAAwAHAAQAAwAFAAcABwAGAAQABwAFAAYA"),
-"name": "boton",
-"primitive": 3,
-"uv_scale": Vector4(0, 0, 0, 0),
-"vertex_count": 8,
-"vertex_data": PackedByteArray("AAAAAP//AACOI3b3ViYAAEsoFez14AAAAAAAAAAAAABU1f//3CAAAP//AAD//wAAOM5295zkAAD//wAAAAAAAA==")
-}]
-blend_shape_mode = 0
-
-[sub_resource type="ArrayMesh" id="ArrayMesh_uy3ub"]
-resource_name = "monitor fix_Cube_004"
-_surfaces = [{
-"aabb": AABB(-0.32907748, -0.54636323, -0.4526006, 0.68019855, 0.5668322, 0.88315773),
-"attribute_data": PackedByteArray("/1////+f/7//n////1//v/9f/7//n/9//5//v/9f/3//X/9//5//P/+f/3//X/8//1//P/+fAAD/n/8//18AAP8f/3//X/8//1//f/8f/z//n/9//9//P//f/3//n/8/"),
-"format": 34896613399,
-"index_count": 36,
-"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_4n8k2"),
-"name": "boton",
-"primitive": 3,
-"uv_scale": Vector4(0, 0, 0, 0),
-"vertex_count": 24,
-"vertex_data": PackedByteArray("AAAAAP//wtCOI3b3VibpzksoFez14FrVAAAAAAAA7MsAAAAAAABQ+VTV///cIE75jiN291Ymwfj//wAAAADI+f//AAAAAE3fOM5295zkNdZU1f//3CD62///AAD//0ba//8AAP//18lLKBXs9eBsuDjOdvec5HzCAAAAAP//fsIAAAAAAAD/v///AAD///+///8AAAAA/78AAAAA////v1TV///cIG39SygV7PXga/+OI3b3ViYo/jjOdvec5J3+JNgO0ITVH9EH3qfN1tAI07O7Ib7Huw++SMJAuLK2mMJ2KIkn8DG9IbQrjiVzLXwkdPbjCBj33Qyy9mUKsvZkCgAA/38AAP9/AAD/fwAA/3+7f9a+o33fvfV+cL55fi++")
-}]
-blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_6jcoo")
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ry3h2"]
-albedo_color = Color(0.692553, 0.69211465, 0, 1)
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_sx12x"]
+points = PackedVector3Array(0.35112107, -0.54636323, 0.43055707, 0.21882325, 0.0015486479, 0.33606893, -0.32907748, -0.54636323, 0.43055707, 0.35112107, -0.54636323, -0.4526006, 0.23773247, 0.02046895, -0.33926663, -0.22208071, -0.023641407, 0.3234474, -0.23466465, 0.0015486479, -0.32042086, -0.32907748, -0.54636323, -0.4526006)
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_lbc6m"]
 _surfaces = [{
@@ -2056,7 +2026,10 @@ shadow_mesh = SubResource("ArrayMesh_lbc6m")
 resource_local_to_scene = true
 albedo_color = Color(0.28824732, 0.6221051, 0, 1)
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_4825t"]
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_2kiqi"]
+points = PackedVector3Array(0.35112107, -0.54636323, 0.43055707, 0.21882325, 0.0015486479, 0.33606893, -0.32907748, -0.54636323, 0.43055707, 0.35112107, -0.54636323, -0.4526006, 0.23773247, 0.02046895, -0.33926663, -0.22208071, -0.023641407, 0.3234474, -0.23466465, 0.0015486479, -0.32042086, -0.32907748, -0.54636323, -0.4526006)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_6jcoo"]
 _surfaces = [{
 "aabb": AABB(-0.32907748, -0.54636323, -0.4526006, 0.68019855, 0.5668322, 0.88315773),
 "format": 34896613377,
@@ -2070,8 +2043,8 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_v3a84"]
-resource_name = "monitor fix_Cube_002"
+[sub_resource type="ArrayMesh" id="ArrayMesh_uy3ub"]
+resource_name = "monitor fix_Cube_004"
 _surfaces = [{
 "aabb": AABB(-0.32907748, -0.54636323, -0.4526006, 0.68019855, 0.5668322, 0.88315773),
 "attribute_data": PackedByteArray("/1////+f/7//n////1//v/9f/7//n/9//5//v/9f/3//X/9//5//P/+f/3//X/8//1//P/+fAAD/n/8//18AAP8f/3//X/8//1//f/8f/z//n/9//9//P//f/3//n/8/"),
@@ -2086,10 +2059,51 @@ _surfaces = [{
 "vertex_data": PackedByteArray("AAAAAP//wtCOI3b3VibpzksoFez14FrVAAAAAAAA7MsAAAAAAABQ+VTV///cIE75jiN291Ymwfj//wAAAADI+f//AAAAAE3fOM5295zkNdZU1f//3CD62///AAD//0ba//8AAP//18lLKBXs9eBsuDjOdvec5HzCAAAAAP//fsIAAAAAAAD/v///AAD///+///8AAAAA/78AAAAA////v1TV///cIG39SygV7PXga/+OI3b3ViYo/jjOdvec5J3+JNgO0ITVH9EH3qfN1tAI07O7Ib7Huw++SMJAuLK2mMJ2KIkn8DG9IbQrjiVzLXwkdPbjCBj33Qyy9mUKsvZkCgAA/38AAP9/AAD/fwAA/3+7f9a+o33fvfV+cL55fi++")
 }]
 blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_4825t")
+shadow_mesh = SubResource("ArrayMesh_6jcoo")
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3k0jq"]
-albedo_color = Color(0.76775056, 0, 0.17298245, 1)
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ry3h2"]
+albedo_color = Color(0.692553, 0.69211465, 0, 1)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_b28a5"]
+points = PackedVector3Array(0.35112107, -0.54636323, 0.43055707, 0.21882325, 0.0015486479, 0.33606893, -0.32907748, -0.54636323, 0.43055707, 0.35112107, -0.54636323, -0.4526006, 0.23773247, 0.02046895, -0.33926663, -0.22208071, -0.023641407, 0.3234474, -0.23466465, 0.0015486479, -0.32042086, -0.32907748, -0.54636323, -0.4526006)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_1s3nd"]
+_surfaces = [{
+"aabb": AABB(-0.32907748, -0.54636323, -0.4526006, 0.68019855, 0.5668322, 0.88315773),
+"format": 34896613377,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAACAAEAAwAEAAEABQAAAAIAAwAAAAUABAAGAAIABQACAAYAAwAHAAQAAwAFAAcABwAGAAQABwAFAAYA"),
+"name": "boton",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("AAAAAP//AACOI3b3ViYAAEsoFez14AAAAAAAAAAAAABU1f//3CAAAP//AAD//wAAOM5295zkAAD//wAAAAAAAA==")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_inmfa"]
+resource_name = "monitor fix_Cube_005"
+_surfaces = [{
+"aabb": AABB(-0.32907748, -0.54636323, -0.4526006, 0.68019855, 0.5668322, 0.88315773),
+"attribute_data": PackedByteArray("/1////+f/7//n////1//v/9f/7//n/9//5//v/9f/3//X/9//5//P/+f/3//X/8//1//P/+fAAD/n/8//18AAP8f/3//X/8//1//f/8f/z//n/9//9//P//f/3//n/8/"),
+"format": 34896613399,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
+"material": SubResource("StandardMaterial3D_4n8k2"),
+"name": "boton",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("AAAAAP//wtCOI3b3VibpzksoFez14FrVAAAAAAAA7MsAAAAAAABQ+VTV///cIE75jiN291Ymwfj//wAAAADI+f//AAAAAE3fOM5295zkNdZU1f//3CD62///AAD//0ba//8AAP//18lLKBXs9eBsuDjOdvec5HzCAAAAAP//fsIAAAAAAAD/v///AAD///+///8AAAAA/78AAAAA////v1TV///cIG39SygV7PXga/+OI3b3ViYo/jjOdvec5J3+JNgO0ITVH9EH3qfN1tAI07O7Ib7Huw++SMJAuLK2mMJ2KIkn8DG9IbQrjiVzLXwkdPbjCBj33Qyy9mUKsvZkCgAA/38AAP9/AAD/fwAA/3+7f9a+o33fvfV+cL55fi++")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_1s3nd")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6wrif"]
+albedo_color = Color(1.1551381e-06, 0.73411715, 0.73411703, 1)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_unvvw"]
+points = PackedVector3Array(0.35112107, -0.54636323, 0.43055707, 0.21882325, 0.0015486479, 0.33606893, -0.32907748, -0.54636323, 0.43055707, 0.35112107, -0.54636323, -0.4526006, 0.23773247, 0.02046895, -0.33926663, -0.22208071, -0.023641407, 0.3234474, -0.23466465, 0.0015486479, -0.32042086, -0.32907748, -0.54636323, -0.4526006)
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_qol8e"]
 points = PackedVector3Array(0.1687189, 0, 0.050599873, -0.16871893, 0, 0.050599873, 0.1687189, 0, -0.05064708, 0.1687189, 1.0638567, -0.27019638, -0.16871893, 0, -0.05064708, -0.16871893, 1.0638567, -0.27019638, 0.1687189, 1.1827856, -0.47739345, 0.1687189, 1.2775785, -0.44193894, -0.16871893, 1.1827856, -0.47739345, -0.16871893, 1.2775785, -0.44193894)
@@ -2584,6 +2598,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.7388363, -0.22238082)
 
 [node name="RayCast3D" type="RayCast3D" parent="CharacterBody3D/Camera3D" unique_id=753420920]
 target_position = Vector3(0, 0, -1)
+collide_with_areas = true
 
 [node name="SpotLight3D" type="SpotLight3D" parent="CharacterBody3D/Camera3D" unique_id=655119029]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.42196298, -0.0067083836)
@@ -5494,7 +5509,6 @@ material = SubResource("StandardMaterial3D_jdqxa")
 
 [node name="CSGBox3D2" type="CSGBox3D" parent="." unique_id=1328112199]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.203343, 6.3024683, 33.975258)
-visible = false
 use_collision = true
 size = Vector3(96.78914, 0.001, 200.78658)
 material = SubResource("StandardMaterial3D_hqi3u")
@@ -5810,49 +5824,82 @@ transform = Transform3D(1.788139e-07, 0, 0.9999999, -0.36578712, 0.9306985, 6.54
 mesh = SubResource("ArrayMesh_v8lme")
 skeleton = NodePath("")
 
-[node name="boton4" type="MeshInstance3D" parent="prohibited area/monitor fix/StaticBody3D/mesa" unique_id=1782316098]
-transform = Transform3D(1.7881396e-07, 0, -1, 0, 1, 0, 1, 0, 1.7881396e-07, -0.024254799, 1.827549, -1.5382881)
-mesh = SubResource("ArrayMesh_inmfa")
-skeleton = NodePath("")
-surface_material_override/0 = SubResource("StandardMaterial3D_6wrif")
+[node name="boton" type="Area3D" parent="prohibited area/monitor fix/StaticBody3D/mesa" unique_id=278836433]
+script = ExtResource("99_morqj")
 
-[node name="Sprite3D4" type="Sprite3D" parent="prohibited area/monitor fix/StaticBody3D/mesa/boton4" unique_id=1156628614]
-transform = Transform3D(0.029957924, -0.0005047175, 0.0015059635, 0.0014983059, -0.00045802072, -0.029959103, 0.0005270215, 0.029992286, -0.00043216906, 0.032619476, 0.024577618, 0.015706062)
-shaded = true
-texture = ExtResource("96_fc11i")
-
-[node name="boton 3" type="MeshInstance3D" parent="prohibited area/monitor fix/StaticBody3D/mesa" unique_id=805620709]
-transform = Transform3D(1.7881396e-07, 0, -1, 0, 1, 0, 1, 0, 1.7881396e-07, -0.024254799, 1.827549, -0.42455292)
-mesh = SubResource("ArrayMesh_uy3ub")
-skeleton = NodePath("")
-surface_material_override/0 = SubResource("StandardMaterial3D_ry3h2")
-
-[node name="Sprite3D3" type="Sprite3D" parent="prohibited area/monitor fix/StaticBody3D/mesa/boton 3" unique_id=897401706]
-transform = Transform3D(0.029957924, -0.0005047175, 0.0015059635, 0.0014983056, -0.0004580198, -0.029959094, 0.00052702136, 0.029992279, -0.00043216906, -0.01537323, 0.024577618, 0.015706062)
-shaded = true
-texture = ExtResource("97_morqj")
-
-[node name="boton2" type="MeshInstance3D" parent="prohibited area/monitor fix/StaticBody3D/mesa" unique_id=1383329547]
-transform = Transform3D(1.7881396e-07, 0, -1, 0, 1, 0, 1, 0, 1.7881396e-07, -0.024254799, 1.827549, 0.59339905)
-mesh = SubResource("ArrayMesh_3yrda")
-skeleton = NodePath("")
-surface_material_override/0 = SubResource("StandardMaterial3D_m750w")
-
-[node name="Sprite3D2" type="Sprite3D" parent="prohibited area/monitor fix/StaticBody3D/mesa/boton2" unique_id=227150637]
-transform = Transform3D(0.029957924, -0.0005047175, 0.0015059635, 0.0014983051, -0.00045801792, -0.02995908, 0.00052702124, 0.029992271, -0.00043217, -0.048332214, 0.0033364296, 0.06975174)
-shaded = true
-texture = ExtResource("98_qol8e")
-
-[node name="boton1" type="MeshInstance3D" parent="prohibited area/monitor fix/StaticBody3D/mesa" unique_id=880606350]
-transform = Transform3D(1.7881396e-07, 0, -1, 0, 1, 0, 1, 0, 1.7881396e-07, -0.024254799, 1.827549, 1.6755524)
+[node name="boton1" type="MeshInstance3D" parent="prohibited area/monitor fix/StaticBody3D/mesa/boton" unique_id=880606350]
+transform = Transform3D(1.7881396e-07, 0, -1.0000001, -2.8297253e-15, 1.0000001, 0, 1, 0, 1.7881398e-07, -0.024254799, 1.8275492, 1.6755486)
 mesh = SubResource("ArrayMesh_v3a84")
 skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_3k0jq")
 
-[node name="Sprite3D" type="Sprite3D" parent="prohibited area/monitor fix/StaticBody3D/mesa/boton1" unique_id=1063400235]
+[node name="Sprite3D" type="Sprite3D" parent="prohibited area/monitor fix/StaticBody3D/mesa/boton/boton1" unique_id=1063400235]
 transform = Transform3D(0.029957924, -0.0005047175, 0.0015059635, 0.0014983047, -0.00045801792, -0.02995907, 0.0005270211, 0.029992264, -0.00043217, 0.009239197, 0.003334999, 0.06975174)
 shaded = true
 texture = ExtResource("99_swymh")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="prohibited area/monitor fix/StaticBody3D/mesa/boton" unique_id=1000198268]
+transform = Transform3D(1.7881396e-07, 0, -1.0000001, -2.8297253e-15, 1.0000001, 0, 1, 0, 1.7881398e-07, -0.024254799, 1.8275492, 1.6755486)
+shape = SubResource("ConvexPolygonShape3D_sx12x")
+
+[node name="boton2" type="Area3D" parent="prohibited area/monitor fix/StaticBody3D/mesa" unique_id=1184478118]
+transform = Transform3D(1.0000001, 0, -1.4210855e-14, 0, 1.0000001, 0, -2.842171e-14, 0, 1, 0, 0, 0)
+script = ExtResource("99_morqj")
+
+[node name="boton1" type="MeshInstance3D" parent="prohibited area/monitor fix/StaticBody3D/mesa/boton2" unique_id=1383329547]
+transform = Transform3D(1.7881396e-07, 0, -1.0000001, -2.8297253e-15, 1.0000001, 0, 1, 0, 1.7881398e-07, -0.024254799, 1.8275492, 0.59339523)
+mesh = SubResource("ArrayMesh_3yrda")
+skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_m750w")
+
+[node name="Sprite3D2" type="Sprite3D" parent="prohibited area/monitor fix/StaticBody3D/mesa/boton2/boton1" unique_id=227150637]
+transform = Transform3D(0.029957924, -0.0005047175, 0.0015059635, 0.0014983051, -0.00045801792, -0.02995908, 0.00052702124, 0.029992271, -0.00043217, -0.048332214, 0.0033364296, 0.06975174)
+shaded = true
+texture = ExtResource("98_qol8e")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="prohibited area/monitor fix/StaticBody3D/mesa/boton2" unique_id=1131971920]
+transform = Transform3D(1.7881396e-07, 0, -1.0000001, -2.8297253e-15, 1.0000001, 0, 1, 0, 1.7881398e-07, -0.024254799, 1.8275492, 0.59339523)
+shape = SubResource("ConvexPolygonShape3D_2kiqi")
+
+[node name="boton3" type="Area3D" parent="prohibited area/monitor fix/StaticBody3D/mesa" unique_id=1542438164]
+transform = Transform3D(1.0000001, 0, -1.4210855e-14, 0, 1.0000001, 0, -2.842171e-14, 0, 1, 0, 0, 0)
+script = ExtResource("99_morqj")
+
+[node name="boton1" type="MeshInstance3D" parent="prohibited area/monitor fix/StaticBody3D/mesa/boton3" unique_id=805620709]
+transform = Transform3D(1.7881396e-07, 0, -1.0000001, -2.8297253e-15, 1.0000001, 0, 1, 0, 1.7881398e-07, -0.024254799, 1.8275492, -0.42455673)
+mesh = SubResource("ArrayMesh_uy3ub")
+skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_ry3h2")
+
+[node name="Sprite3D3" type="Sprite3D" parent="prohibited area/monitor fix/StaticBody3D/mesa/boton3/boton1" unique_id=897401706]
+transform = Transform3D(0.029957924, -0.0005047175, 0.0015059635, 0.0014983056, -0.0004580198, -0.029959094, 0.00052702136, 0.029992279, -0.00043216906, -0.01537323, 0.024577618, 0.015706062)
+shaded = true
+texture = ExtResource("97_morqj")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="prohibited area/monitor fix/StaticBody3D/mesa/boton3" unique_id=12412270]
+transform = Transform3D(1.7881396e-07, 0, -1.0000001, -2.8297253e-15, 1.0000001, 0, 1, 0, 1.7881398e-07, -0.024254799, 1.8275492, -0.42455673)
+shape = SubResource("ConvexPolygonShape3D_b28a5")
+
+[node name="boton4" type="Area3D" parent="prohibited area/monitor fix/StaticBody3D/mesa" unique_id=428020926]
+script = ExtResource("99_morqj")
+
+[node name="boton1" type="MeshInstance3D" parent="prohibited area/monitor fix/StaticBody3D/mesa/boton4" unique_id=1782316098]
+transform = Transform3D(1.7881396e-07, 0, -1.0000001, -2.8297253e-15, 1.0000001, 0, 1, 0, 1.7881398e-07, -0.024254799, 1.8275492, -1.5382919)
+mesh = SubResource("ArrayMesh_inmfa")
+skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_6wrif")
+
+[node name="Sprite3D4" type="Sprite3D" parent="prohibited area/monitor fix/StaticBody3D/mesa/boton4/boton1" unique_id=1156628614]
+transform = Transform3D(0.029957924, -0.0005047175, 0.0015059635, 0.0014983059, -0.00045802072, -0.029959103, 0.0005270215, 0.029992286, -0.00043216906, 0.032619476, 0.024577618, 0.015706062)
+shaded = true
+texture = ExtResource("96_fc11i")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="prohibited area/monitor fix/StaticBody3D/mesa/boton4" unique_id=436604355]
+transform = Transform3D(1.7881396e-07, 0, -1.0000001, -2.8297253e-15, 1.0000001, 0, 1, 0, 1.7881398e-07, -0.024254799, 1.8275492, -1.5382919)
+shape = SubResource("ConvexPolygonShape3D_unvvw")
+
+[node name="SoundrealityButton4214382" type="AudioStreamPlayer" parent="prohibited area/monitor fix/StaticBody3D/mesa" unique_id=1973891461]
+stream = ExtResource("101_qol8e")
 
 [node name="monitor esqueleto" type="Node3D" parent="prohibited area/monitor fix" unique_id=1809321804]
 transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, -0.886467, -1.18149)
