@@ -10,6 +10,7 @@ var ala4 = false
 var ala5 = false
 var ala6 = false
 var ala7 = false
+var ala8 = true
 # Referencia a la cámara (asegúrate de que el nodo se llame Camera3D dentro de tu Player)
 @onready var camera = $Camera3D
 @onready var raycast = $Camera3D/RayCast3D
@@ -112,7 +113,8 @@ func _physics_process(delta: float) -> void:
 func _on_area_3d_body_entered(body: Node3D) -> void:
 	if a == true:
 		a = false
-		$"../Node/Sprite3D2".hide()
+		ala8 = false
+		$"../Node/parkul zone/CSGBox3D14/Sprite3D2".hide()
 		$"../Node/AnimationPlayer".play_backwards("goup")
 		$"../Completado".play()
 		$"../CanvasLayer/Label2/AnimationPlayer".play("new_animation")
@@ -202,4 +204,23 @@ func _on_enlapc_body_entered(body: Node3D) -> void:
 func _on_idle_timeout() -> void:
 	
 	$"../prohibited area/monitor fix/monitor esqueleto/AnimationPlayer".play("idle",1.0,0.7)
+	pass # Replace with function body.
+
+
+func _on_regreso_body_entered(body: Node3D) -> void:
+	if ala8 == false:
+		$"../Node/parkul zone/CSGBox3D/AnimationPlayer".play("lasvarun")
+		$"../Node/parkul zone/jump zone/AnimationPlayer".play("aparecer")
+		$"../prohibited area/enlapc/BombinsoundPowerfulPercussionVersion3551821".play()
+		$"../prohibited area/enlapc/Timeforruneandjump!".play()
+		$"../CanvasLayer/runandjump/Label7/AnimationPlayer".play("new_animation")
+		$"../CanvasLayer/runandjump/Label8/AnimationPlayer".play("new_animation")
+		$"../CanvasLayer/runandjump/AnimationPlayer".play("ala")
+		ala8 = true
+	pass # Replace with function body.
+
+
+func _on_muerte_body_entered(body: Node3D) -> void:
+	if body.is_in_group("player"):
+		GameManager.maldeltiempo = true
 	pass # Replace with function body.

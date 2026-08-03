@@ -7,5 +7,5 @@ func interactuar():
 	usable = false
 	$".".hide()
 	GameManager.llave = true
-	$"../../Recoger".play()
-	$"../CSGBox3D11/AnimationPlayer".play("pared mov")
+	$"../../../../Recoger".play()
+	$"../../../CSGBox3D52/AnimationPlayer".play("new_animation")

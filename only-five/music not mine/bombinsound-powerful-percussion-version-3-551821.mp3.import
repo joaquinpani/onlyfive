@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bpfbk2mw66xlx"
+path="res://.godot/imported/bombinsound-powerful-percussion-version-3-551821.mp3-45fbec173061a0fbbb86f451aa869adc.mp3str"
+
+[deps]
+
+source_file="res://music not mine/bombinsound-powerful-percussion-version-3-551821.mp3"
+dest_files=["res://.godot/imported/bombinsound-powerful-percussion-version-3-551821.mp3-45fbec173061a0fbbb86f451aa869adc.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

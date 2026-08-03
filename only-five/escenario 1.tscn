@@ -57,6 +57,7 @@
 [ext_resource type="AudioStream" uid="uid://dfx4a851on20h" path="res://sonidos/iniciodark.ogg" id="30_7f3d7"]
 [ext_resource type="AudioStream" uid="uid://nhb3noe3vdne" path="res://sonidos/linterna.ogg" id="31_3we0i"]
 [ext_resource type="AudioStream" uid="uid://bril7tn88ykkn" path="res://sonidos/atrapado.ogg" id="32_3ufex"]
+[ext_resource type="AudioStream" uid="uid://duvbj0vsotmnp" path="res://music not mine/mightuser-sound-of-geysers-and-bubbling-mud-pots-hd-263161.mp3" id="32_qj4ya"]
 [ext_resource type="Script" uid="uid://cqgighmm2eiw" path="res://palanquitatriste.gd" id="34_jdqxa"]
 [ext_resource type="Script" uid="uid://xh76iba80w58" path="res://character_body_3d_2.gd" id="35_32whi"]
 [ext_resource type="Script" uid="uid://cwgt4i078jgs7" path="res://sprite_3d_2.gd" id="36_0bqei"]
@@ -121,6 +122,8 @@
 [ext_resource type="AudioStream" uid="uid://i13y62svb54c" path="res://monitor sounds/aleatorios/servo8.ogg" id="112_qj4ya"]
 [ext_resource type="AudioStream" uid="uid://061y7kbewvfe" path="res://monitor sounds/floraphonic-short-punchy-sine-wave-ding-17-e-211758.mp3" id="120_k6b4t"]
 [ext_resource type="AudioStream" uid="uid://dn4a6xbb840t4" path="res://monitor sounds/floraphonic-short-punchy-sine-wave-ding-7-f-211750.mp3" id="121_qj4ya"]
+[ext_resource type="AudioStream" uid="uid://bpfbk2mw66xlx" path="res://music not mine/bombinsound-powerful-percussion-version-3-551821.mp3" id="123_8mx6i"]
+[ext_resource type="AudioStream" uid="uid://3tdqe2awsfra" path="res://sonidos/timeforruneandjump!.ogg" id="124_kl4gy"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_nho35"]
 
@@ -924,6 +927,191 @@ _data = {
 &"new_animation": SubResource("Animation_87jc2")
 }
 
+[sub_resource type="Animation" id="Animation_u875y"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(467, 260)]
+}
+
+[sub_resource type="Animation" id="Animation_ck5vt"]
+resource_name = "new_animation"
+length = 3.0000000000000004
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.26666668, 0.96666664, 1.9, 3),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(467, 260), Vector2(467, 275), Vector2(475, 246), Vector2(451, 259)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_sx12x"]
+_data = {
+&"RESET": SubResource("Animation_u875y"),
+&"new_animation": SubResource("Animation_ck5vt")
+}
+
+[sub_resource type="Animation" id="Animation_2kiqi"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(744, 250)]
+}
+
+[sub_resource type="Animation" id="Animation_b28a5"]
+resource_name = "new_animation"
+length = 0.5
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.033333335, 0.26666668, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(744, 250), Vector2(744, 186), Vector2(744, 250)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_unvvw"]
+_data = {
+&"RESET": SubResource("Animation_2kiqi"),
+&"new_animation": SubResource("Animation_b28a5")
+}
+
+[sub_resource type="Animation" id="Animation_3wwbk"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Label5:self_modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Label8:self_modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Label7:self_modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_r51oq"]
+resource_name = "ala"
+length = 3.0000000000000004
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.23333333, 2.75, 2.99),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Label7:self_modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.9, 1.0666667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(13.469, 0, 0, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Label8:self_modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(1.9666667, 2.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(5.7923665, 5.7923665, 0, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Label5:self_modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0.2, 0.33333334),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(0, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_8vd3v"]
+_data = {
+&"RESET": SubResource("Animation_3wwbk"),
+&"ala": SubResource("Animation_r51oq")
+}
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_k0qej"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dy43l"]
@@ -1284,6 +1472,75 @@ size = Vector3(31.887085, 8.185425, 1.4674072)
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_sn88x"]
 radius = 0.7836914
 height = 3.1687012
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_3k0jq"]
+size = Vector3(1, 1, 5.687561)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7yxtm"]
+emission_enabled = true
+emission = Color(0.87058824, 0, 0, 1)
+emission_energy_multiplier = 5.0
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_m750w"]
+size = Vector3(1.125, 5.344879, 10.997803)
+
+[sub_resource type="Animation" id="Animation_qj4ya"]
+length = 0.001
+tracks/0/type = "position_3d"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array(0, 1, -128.2494, 3.9000316, -22.42455)
+
+[sub_resource type="Animation" id="Animation_mshhq"]
+resource_name = "lasvarun"
+length = 35.0
+tracks/0/type = "position_3d"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array(0, 1, -128.2494, 3.9000316, -22.42455, 35, 1, -11.971245, 3.9000316, -22.424543)
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_8mx6i"]
+_data = {
+&"RESET": SubResource("Animation_qj4ya"),
+&"lasvarun": SubResource("Animation_mshhq")
+}
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tasqw"]
+shading_mode = 0
+albedo_color = Color(0.23031491, 0.23031494, 0.23031494, 1)
+
+[sub_resource type="Animation" id="Animation_8mx6i"]
+length = 0.001
+tracks/0/type = "position_3d"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array(0, 1, -114.549095, -2.487375, -23.099306)
+
+[sub_resource type="Animation" id="Animation_kl4gy"]
+resource_name = "aparecer"
+length = 2.0
+tracks/0/type = "position_3d"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array(0, 1, -114.549095, -2.487375, -23.099306, 1.9666667, 1, -114.549095, 2.0180726, -23.099306)
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_u875y"]
+_data = {
+&"RESET": SubResource("Animation_8mx6i"),
+&"aparecer": SubResource("Animation_kl4gy")
+}
 
 [sub_resource type="Animation" id="Animation_wwn1j"]
 length = 0.001
@@ -2766,7 +3023,7 @@ size = Vector3(6.47295, 1, 1)
 metadata/_edit_horizontal_guides_ = [-336.0]
 
 [node name="CharacterBody3D" type="CharacterBody3D" parent="." unique_id=622563897 groups=["player"]]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2991714, 2.9411943, -3.9692879)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.402233, 2.9411943, 1.8515301)
 script = ExtResource("1_tscvi")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D" unique_id=1773996199]
@@ -3428,6 +3685,73 @@ texture = ExtResource("18_hlgl1")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/credits" unique_id=1379107019]
 libraries/ = SubResource("AnimationLibrary_rexif")
+
+[node name="runandjump" type="Control" parent="CanvasLayer" unique_id=2141319051]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 3
+anchors_preset = 0
+offset_left = -22.0
+offset_right = 18.0
+offset_bottom = 40.0
+
+[node name="Label5" type="Label" parent="CanvasLayer/runandjump" unique_id=1608839430]
+layout_mode = 0
+offset_left = 214.0
+offset_top = 289.0
+offset_right = 970.0
+offset_bottom = 534.99994
+theme_override_fonts/font = ExtResource("3_6evt7")
+theme_override_font_sizes/font_size = 70
+text = "Time"
+
+[node name="Label6" type="Label" parent="CanvasLayer/runandjump" unique_id=277457132]
+layout_mode = 0
+offset_left = 359.0
+offset_top = 296.0
+offset_right = 1115.0
+offset_bottom = 541.99994
+theme_override_fonts/font = ExtResource("3_6evt7")
+theme_override_font_sizes/font_size = 55
+text = "for"
+
+[node name="Label9" type="Label" parent="CanvasLayer/runandjump" unique_id=1273275599]
+layout_mode = 0
+offset_left = 637.0
+offset_top = 290.0
+offset_right = 1393.0
+offset_bottom = 535.99994
+theme_override_fonts/font = ExtResource("3_6evt7")
+theme_override_font_sizes/font_size = 55
+text = "and"
+
+[node name="Label7" type="Label" parent="CanvasLayer/runandjump" unique_id=578160568]
+layout_mode = 0
+offset_left = 467.0
+offset_top = 260.0
+offset_right = 1222.9983
+offset_bottom = 506.001
+theme_override_fonts/font = ExtResource("3_6evt7")
+theme_override_font_sizes/font_size = 120
+text = "run"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/runandjump/Label7" unique_id=1068757833]
+libraries/ = SubResource("AnimationLibrary_sx12x")
+
+[node name="Label8" type="Label" parent="CanvasLayer/runandjump" unique_id=55137450]
+layout_mode = 0
+offset_left = 744.0
+offset_top = 250.0
+offset_right = 1500.0
+offset_bottom = 495.99268
+theme_override_fonts/font = ExtResource("3_6evt7")
+theme_override_font_sizes/font_size = 120
+text = "jump"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/runandjump/Label8" unique_id=2031945124]
+libraries/ = SubResource("AnimationLibrary_unvvw")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/runandjump" unique_id=2066819709]
+libraries/ = SubResource("AnimationLibrary_8vd3v")
 
 [node name="Node" type="Node" parent="." unique_id=1179095226]
 
@@ -4277,7 +4601,7 @@ use_collision = true
 size = Vector3(1, 5.3826904, 12.067918)
 
 [node name="CSGBox3D15" type="CSGBox3D" parent="Node/parkul zone/CSGBox3D14" unique_id=255084569]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.078543, 0, -0.21073914)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.078974, 2.3841858e-07, -0.20735168)
 use_collision = true
 size = Vector3(1, 5.3826904, 12.733445)
 
@@ -4383,6 +4707,225 @@ omni_range = 140.90974
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -124.25826, 1.7388191, -23.325817)
 shadow_enabled = true
 omni_range = 140.90974
+
+[node name="regreso" type="Area3D" parent="Node/parkul zone" unique_id=182389261]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -119.45901, 4.2454567, -23.984318)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/parkul zone/regreso" unique_id=643487851]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.268242, -2.087084, 0.86727905)
+shape = SubResource("BoxShape3D_3k0jq")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Node/parkul zone" unique_id=133869685]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -128.2494, 3.9000316, -22.42455)
+size = Vector3(1, 5.2335815, 11.028259)
+material = SubResource("StandardMaterial3D_7yxtm")
+
+[node name="muerte" type="Area3D" parent="Node/parkul zone/CSGBox3D" unique_id=1193438291]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/parkul zone/CSGBox3D/muerte" unique_id=1845281029]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0625, 0.07688904, -0.015258789)
+shape = SubResource("BoxShape3D_m750w")
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="Node/parkul zone/CSGBox3D" unique_id=484940581]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.4552536, -0.61127543, -0.62075996)
+stream = ExtResource("32_qj4ya")
+autoplay = true
+max_distance = 4.0
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Node/parkul zone/CSGBox3D" unique_id=386020622]
+libraries/ = SubResource("AnimationLibrary_8mx6i")
+
+[node name="jump zone" type="Node3D" parent="Node/parkul zone" unique_id=798933193]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -114.549095, -2.487375, -23.099306)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Node/parkul zone/jump zone" unique_id=1036800616]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.3610916, -0.4449165, 0.009853363)
+material_override = SubResource("StandardMaterial3D_tasqw")
+use_collision = true
+size = Vector3(1, 0.65026855, 7.254822)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Node/parkul zone/jump zone" unique_id=751599411]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.10939, -0.4449165, 0.009857178)
+material_override = SubResource("StandardMaterial3D_tasqw")
+use_collision = true
+size = Vector3(1, 0.65026855, 7.254822)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="Node/parkul zone/jump zone" unique_id=1697890]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.103363, -0.4449165, 0.009859085)
+material_override = SubResource("StandardMaterial3D_tasqw")
+use_collision = true
+size = Vector3(1, 0.65026855, 7.254822)
+
+[node name="CSGBox3D9" type="CSGBox3D" parent="Node/parkul zone/jump zone" unique_id=1053631727]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 44.808548, -0.4449165, 0.009860992)
+material_override = SubResource("StandardMaterial3D_tasqw")
+use_collision = true
+size = Vector3(1, 0.65026855, 7.254822)
+
+[node name="CSGBox3D10" type="CSGBox3D" parent="Node/parkul zone/jump zone" unique_id=392835090]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50.10041, -0.24560618, -0.13607025)
+material_override = SubResource("StandardMaterial3D_tasqw")
+use_collision = true
+size = Vector3(2.1557617, 1.0488892, 2.4692078)
+
+[node name="CSGBox3D13" type="CSGBox3D" parent="Node/parkul zone/jump zone" unique_id=282426754]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 64.36048, 0.114539385, 1.5048904)
+material_override = SubResource("StandardMaterial3D_tasqw")
+use_collision = true
+size = Vector3(2.1557617, 1.7691803, 2.4692078)
+
+[node name="CSGBox3D15" type="CSGBox3D" parent="Node/parkul zone/jump zone" unique_id=543322789]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 68.01404, 0.3837731, 1.5048904)
+material_override = SubResource("StandardMaterial3D_tasqw")
+use_collision = true
+size = Vector3(2.1557617, 2.3076477, 2.4692078)
+
+[node name="CSGBox3D12" type="CSGBox3D" parent="Node/parkul zone/jump zone" unique_id=2059060130]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 60.04932, -0.24560618, -1.7039013)
+material_override = SubResource("StandardMaterial3D_tasqw")
+use_collision = true
+size = Vector3(2.1557617, 1.0488892, 2.4692078)
+
+[node name="CSGBox3D11" type="CSGBox3D" parent="Node/parkul zone/jump zone" unique_id=1170285545]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 51.973816, 0.1610043, -0.066078186)
+material_override = SubResource("StandardMaterial3D_tasqw")
+use_collision = true
+size = Vector3(0.43530273, 1.8621101, 7.10289)
+
+[node name="CSGBox3D14" type="CSGBox3D" parent="Node/parkul zone/jump zone" unique_id=1451346472]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 70.655975, 0.6196835, -0.06608391)
+material_override = SubResource("StandardMaterial3D_tasqw")
+use_collision = true
+size = Vector3(0.43530273, 2.7794685, 7.10289)
+
+[node name="CSGBox3D16" type="CSGBox3D" parent="Node/parkul zone/jump zone" unique_id=99861637]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 74.23763, 0.92848516, 1.7978764)
+material_override = SubResource("StandardMaterial3D_tasqw")
+use_collision = true
+size = Vector3(0.43530273, 3.3970718, 3.732109)
+
+[node name="CSGBox3D17" type="CSGBox3D" parent="Node/parkul zone/jump zone" unique_id=1399074986]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 77.056274, 0.92848516, -1.7024899)
+material_override = SubResource("StandardMaterial3D_tasqw")
+use_collision = true
+size = Vector3(0.43530273, 3.3970718, 3.732109)
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="Node/parkul zone/jump zone" unique_id=1670651448]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.315376, -0.4449165, 0.009864807)
+material_override = SubResource("StandardMaterial3D_tasqw")
+use_collision = true
+size = Vector3(0.2939453, 0.65026855, 7.254822)
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="Node/parkul zone/jump zone/CSGBox3D4" unique_id=1877730191]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.009765625, 1.700871, -1.0439205)
+material_override = SubResource("StandardMaterial3D_tasqw")
+use_collision = true
+size = Vector3(0.31347656, 2.6738892, 5.1669617)
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="Node/parkul zone/jump zone" unique_id=1034366987]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.99862, -0.4449165, 0.009864807)
+material_override = SubResource("StandardMaterial3D_tasqw")
+use_collision = true
+size = Vector3(0.2939453, 0.65026855, 7.254822)
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="Node/parkul zone/jump zone/CSGBox3D5" unique_id=1668188887]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.009765625, 1.700871, 0.94439125)
+material_override = SubResource("StandardMaterial3D_tasqw")
+use_collision = true
+size = Vector3(0.31347656, 2.6738892, 5.1669617)
+
+[node name="CSGBox3D18" type="CSGBox3D" parent="Node/parkul zone/jump zone" unique_id=933434178]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 82.61211, -0.4449165, 0.009868622)
+material_override = SubResource("StandardMaterial3D_tasqw")
+use_collision = true
+size = Vector3(0.2939453, 0.65026855, 7.254822)
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="Node/parkul zone/jump zone/CSGBox3D18" unique_id=1210086941]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.009765625, 1.700871, 0.94439125)
+material_override = SubResource("StandardMaterial3D_tasqw")
+use_collision = true
+size = Vector3(0.31347656, 2.6738892, 5.1669617)
+
+[node name="CSGBox3D19" type="CSGBox3D" parent="Node/parkul zone/jump zone" unique_id=894796807]
+transform = Transform3D(-1, 0, -8.742277e-08, 0, 1, 0, 8.742277e-08, 0, -1, 85.22137, -0.4449165, 0.009868622)
+material_override = SubResource("StandardMaterial3D_tasqw")
+use_collision = true
+size = Vector3(0.2939453, 0.65026855, 7.254822)
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="Node/parkul zone/jump zone/CSGBox3D19" unique_id=1613595383]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.009765625, 1.700871, 0.94439125)
+material_override = SubResource("StandardMaterial3D_tasqw")
+use_collision = true
+size = Vector3(0.31347656, 2.6738892, 5.1669617)
+
+[node name="CSGBox3D20" type="CSGBox3D" parent="Node/parkul zone/jump zone" unique_id=1377975798]
+transform = Transform3D(-1, 0, -8.742277e-08, 0, 1, 0, 8.742277e-08, 0, -1, 92.81766, -0.4449165, 0.009868622)
+material_override = SubResource("StandardMaterial3D_tasqw")
+use_collision = true
+size = Vector3(0.2939453, 0.65026855, 7.254822)
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="Node/parkul zone/jump zone/CSGBox3D20" unique_id=772711147]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.009765625, -0.26461387, 0.051410675)
+material_override = SubResource("StandardMaterial3D_tasqw")
+use_collision = true
+size = Vector3(0.31347656, 2.6738892, 4.446438)
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="Node/parkul zone/jump zone" unique_id=1660941791]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29.761765, -0.4449165, 0.009864807)
+material_override = SubResource("StandardMaterial3D_tasqw")
+use_collision = true
+size = Vector3(0.2939453, 0.65026855, 7.254822)
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="Node/parkul zone/jump zone/CSGBox3D6" unique_id=1422989312]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.009765625, 1.700871, -2.2084904)
+material_override = SubResource("StandardMaterial3D_tasqw")
+use_collision = true
+size = Vector3(0.31347656, 2.6738892, 2.66893)
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="Node/parkul zone/jump zone/CSGBox3D6" unique_id=2083285155]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.009765625, 1.700871, 2.1675358)
+material_override = SubResource("StandardMaterial3D_tasqw")
+use_collision = true
+size = Vector3(0.31347656, 2.6738892, 2.66893)
+
+[node name="CSGBox3D7" type="CSGBox3D" parent="Node/parkul zone/jump zone" unique_id=1300861432]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 35.144287, -0.4449165, 0.009864807)
+material_override = SubResource("StandardMaterial3D_tasqw")
+use_collision = true
+size = Vector3(0.2939453, 0.65026855, 7.254822)
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="Node/parkul zone/jump zone/CSGBox3D7" unique_id=2090493701]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.009765625, 1.700871, -2.2084904)
+material_override = SubResource("StandardMaterial3D_tasqw")
+use_collision = true
+size = Vector3(0.31347656, 2.6738892, 2.66893)
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="Node/parkul zone/jump zone/CSGBox3D7" unique_id=56656211]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.009765625, 1.700871, 2.1675358)
+material_override = SubResource("StandardMaterial3D_tasqw")
+use_collision = true
+size = Vector3(0.31347656, 2.6738892, 2.66893)
+
+[node name="CSGBox3D8" type="CSGBox3D" parent="Node/parkul zone/jump zone" unique_id=58800261]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40.20305, -0.4449165, 0.009864807)
+material_override = SubResource("StandardMaterial3D_tasqw")
+use_collision = true
+size = Vector3(0.2939453, 0.65026855, 7.254822)
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="Node/parkul zone/jump zone/CSGBox3D8" unique_id=1651664395]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.009765625, 1.700871, -2.2084904)
+material_override = SubResource("StandardMaterial3D_tasqw")
+use_collision = true
+size = Vector3(0.31347656, 2.6738892, 2.66893)
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="Node/parkul zone/jump zone/CSGBox3D8" unique_id=449824033]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.009765625, 1.700871, 3.1835823)
+material_override = SubResource("StandardMaterial3D_tasqw")
+use_collision = true
+size = Vector3(0.31347656, 2.6738892, 0.636837)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Node/parkul zone/jump zone" unique_id=1459004623]
+libraries/ = SubResource("AnimationLibrary_u875y")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Node" unique_id=227496890]
 libraries/ = SubResource("AnimationLibrary_odru0")
@@ -6094,7 +6637,7 @@ stream = ExtResource("101_qol8e")
 transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, -0.886467, -1.18149)
 
 [node name="base" type="AnimatableBody3D" parent="prohibited area/monitor fix/monitor esqueleto" unique_id=1324843801]
-transform = Transform3D(1, 0, 0, 0, 0.1760076, -0.9843884, 0, 0.9843884, 0.1760076, 0, 1.2248679, 2.9082546)
+transform = Transform3D(1, 0, 0, 0, 0.17600758, -0.98438835, 0, 0.98438835, 0.17600758, 0, 1.2248679, 2.9082546)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="prohibited area/monitor fix/monitor esqueleto/base" unique_id=1559224992]
 transform = Transform3D(1, 0, 0, 0, 0.6932816, -0.7206668, 0, 0.7206668, 0.6932816, -0.012672424, 0.02939701, 7.343292e-05)
@@ -6120,7 +6663,7 @@ mesh = SubResource("ArrayMesh_nyupy")
 skeleton = NodePath("")
 
 [node name="base3" type="Node3D" parent="prohibited area/monitor fix/monitor esqueleto/base/base 2" unique_id=1513280688]
-transform = Transform3D(-1.0000004, 1.8412918e-07, -7.754537e-08, -1.3760892e-07, -0.3533734, 0.9354818, 1.4484735e-07, 0.93548083, 0.3533738, 0.0069770813, 0.35760307, -0.65316343)
+transform = Transform3D(-1.0000004, 1.8412918e-07, -7.7545366e-08, -1.3760892e-07, -0.3533734, 0.9354817, 1.4484735e-07, 0.93548083, 0.35337377, 0.0069770813, 0.35760307, -0.65316343)
 
 [node name="CollisionShape3D3" type="CollisionShape3D" parent="prohibited area/monitor fix/monitor esqueleto/base/base 2/base3" unique_id=1097083272]
 transform = Transform3D(1, -1.15463195e-14, 1.7763568e-15, 1.15463195e-14, 0.99999994, -2.9802322e-08, 1.3322676e-15, 0, 0.99999994, 0, -0.00027561188, -0.0022878647)
@@ -6239,6 +6782,12 @@ stream = ExtResource("120_k6b4t")
 [node name="FloraphonicShortPunchySineWaveDing7F211750" type="AudioStreamPlayer" parent="prohibited area/enlapc" unique_id=1056420230]
 stream = ExtResource("121_qj4ya")
 
+[node name="BombinsoundPowerfulPercussionVersion3551821" type="AudioStreamPlayer" parent="prohibited area/enlapc" unique_id=705219612]
+stream = ExtResource("123_8mx6i")
+
+[node name="Timeforruneandjump!" type="AudioStreamPlayer" parent="prohibited area/enlapc" unique_id=8432394]
+stream = ExtResource("124_kl4gy")
+
 [connection signal="timeout" from="WorldEnvironment/Timer" to="CharacterBody3D2/Sprite3D2" method="_on_timer_timeout"]
 [connection signal="pressed" from="CanvasLayer/Label4/TextureButton" to="CanvasLayer/reloj" method="_on_texture_button_pressed"]
 [connection signal="timeout" from="CanvasLayer/reloj/Timer" to="CanvasLayer/reloj" method="_on_timer_timeout"]
@@ -6276,6 +6825,8 @@ stream = ExtResource("121_qj4ya")
 [connection signal="body_entered" from="Node/parkul zone/Node3D/movedisas2/red area14/Area3D" to="Node/parkul zone/Node3D" method="_on_area_3d_body_entered"]
 [connection signal="body_entered" from="Node/parkul zone/Area3D" to="palanquita3" method="_on_area_3d_body_entered"]
 [connection signal="body_entered" from="Node/parkul zone/CSGBox3D14/Sprite3D2/Area3D" to="CharacterBody3D" method="_on_area_3d_body_entered"]
+[connection signal="body_entered" from="Node/parkul zone/regreso" to="CharacterBody3D" method="_on_regreso_body_entered"]
+[connection signal="body_entered" from="Node/parkul zone/CSGBox3D/muerte" to="CharacterBody3D" method="_on_muerte_body_entered"]
 [connection signal="body_entered" from="zona2/Node3D/ZonaEvasion" to="zona2/Node3D" method="_on_zona_evasion_body_entered"]
 [connection signal="body_entered" from="zona2/Area3D" to="zona2/Node3D" method="_on_area_3d_body_entered"]
 [connection signal="body_entered" from="CharacterBody3D2/Area3D" to="CharacterBody3D2" method="_on_area_3d_body_entered"]

@@ -172,6 +172,8 @@ func ganar():
 func despuesdeperder():
 	$"../../../../../../../../../SpotLight3D3".light_color = Color.RED
 func despuesdeganar():
+	$"../../../../../../..".hide()
+	$"../../../../../../../../../../WorldEnvironment".environment.ambient_light_color = Color(0x7a7a7aff)
 	$"../../../../../../../../../../OmniLight3D16".show()
 	$"../../../../../../../../../../Node/CSGBox3D52/AnimationPlayer".play("new_animation")
 	$"../../../../../../../../../../ParedMoviendose".play()
