@@ -9,6 +9,7 @@ var ala3 = false
 var ala4 = false
 var ala5 = false
 var ala6 = false
+var ala7 = false
 # Referencia a la cámara (asegúrate de que el nodo se llame Camera3D dentro de tu Player)
 @onready var camera = $Camera3D
 @onready var raycast = $Camera3D/RayCast3D
@@ -174,3 +175,19 @@ func _on_circoestas_2_body_entered(body: Node3D) -> void:
 		ala6 = true
 	pass # Replace with function body.
 	
+
+
+func _on_enlapc_body_entered(body: Node3D) -> void:
+	if ala7 == false:
+		$"../prohibited area/SpotLight3D2".hide()
+		$"../prohibited area/SpotLight3D".hide()
+		$"../WorldEnvironment".environment.ambient_light_color = Color.BLACK
+		$"../prohibited area/monitor fix/monitor esqueleto/AnimationPlayer".play("aparecer")
+		$"../prohibited area/monitor fix/monitor esqueleto/AnimationPlayer/idle".start()
+		ala7 = true
+	pass # Replace with function body.
+
+
+func _on_idle_timeout() -> void:
+	$"../prohibited area/monitor fix/monitor esqueleto/AnimationPlayer".play("idle")
+	pass # Replace with function body.
