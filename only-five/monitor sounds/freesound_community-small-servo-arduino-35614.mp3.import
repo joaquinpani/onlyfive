@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c3ywp4yve7xgj"
+path="res://.godot/imported/freesound_community-small-servo-arduino-35614.mp3-17e7d4a4e59ac75d2fd6e88fb6355442.mp3str"
+
+[deps]
+
+source_file="res://monitor sounds/freesound_community-small-servo-arduino-35614.mp3"
+dest_files=["res://.godot/imported/freesound_community-small-servo-arduino-35614.mp3-17e7d4a4e59ac75d2fd6e88fb6355442.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

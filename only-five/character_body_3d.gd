@@ -184,10 +184,12 @@ func _on_enlapc_body_entered(body: Node3D) -> void:
 		$"../WorldEnvironment".environment.ambient_light_color = Color.BLACK
 		$"../prohibited area/monitor fix/monitor esqueleto/AnimationPlayer".play("aparecer")
 		$"../prohibited area/monitor fix/monitor esqueleto/AnimationPlayer/idle".start()
+		$"../prohibited area/enlapc/DragonStudioImpact406635".play()
 		ala7 = true
 	pass # Replace with function body.
 
 
 func _on_idle_timeout() -> void:
-	$"../prohibited area/monitor fix/monitor esqueleto/AnimationPlayer".play("idle")
+	
+	$"../prohibited area/monitor fix/monitor esqueleto/AnimationPlayer".play("idle",1.0,0.7)
 	pass # Replace with function body.

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dx365ucqlvum6"
+path="res://.godot/imported/freesound_community-mechanicalclamp-6217.mp3-5c27903af5eee58eca4e817c5f5ecdfa.mp3str"
+
+[deps]
+
+source_file="res://monitor sounds/freesound_community-mechanicalclamp-6217.mp3"
+dest_files=["res://.godot/imported/freesound_community-mechanicalclamp-6217.mp3-5c27903af5eee58eca4e817c5f5ecdfa.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

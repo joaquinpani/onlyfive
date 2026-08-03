@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://yf5x6010jjlr"
+path="res://.godot/imported/servo7.ogg-e19db73c9c7fa4df262f847e4797347c.oggvorbisstr"
+
+[deps]
+
+source_file="res://monitor sounds/aleatorios/servo7.ogg"
+dest_files=["res://.godot/imported/servo7.ogg-e19db73c9c7fa4df262f847e4797347c.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
