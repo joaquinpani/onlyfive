@@ -11,6 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://5r7x26lv5gdx" path="res://sprites/monstruo1.png" id="4_exrs5"]
 [ext_resource type="Texture2D" uid="uid://sebylegeqadf" path="res://sprites/player.png" id="4_wbrl0"]
 [ext_resource type="Texture2D" uid="uid://cfgmn3ngvh0vk" path="res://sprites/ruby.png" id="6_uylda"]
+[ext_resource type="Texture2D" uid="uid://xv50mc74kdvq" path="res://sprites2/magician.png" id="8_c7uhq"]
 [ext_resource type="AudioStream" uid="uid://dye1ca1yuvqa3" path="res://sonidos/lineas de voz/linganguli/ling1.ogg" id="8_s55h4"]
 [ext_resource type="AudioStream" uid="uid://damr47camv27w" path="res://sonidos/lineas de voz/linganguli/ling2.ogg" id="9_c7uhq"]
 [ext_resource type="AudioStream" uid="uid://bhqg2nmadgoj7" path="res://sonidos/lineas de voz/linganguli/ling5.ogg" id="10_8dfid"]
@@ -22,11 +23,16 @@
 [ext_resource type="AudioStream" uid="uid://dje6j2l22p5yd" path="res://sonidos/filipino4.ogg" id="16_hf7m3"]
 [ext_resource type="AudioStream" uid="uid://vix4dtciwtv0" path="res://sonidos/filipino5.ogg" id="17_whlvq"]
 [ext_resource type="AudioStream" uid="uid://iojbkanam48v" path="res://sonidos/alien1.ogg" id="18_rkqe2"]
+[ext_resource type="AudioStream" uid="uid://cjoa7rnikky1q" path="res://sonidos/lineas de voz/vendebal.ogg" id="19_fuaxh"]
 [ext_resource type="AudioStream" uid="uid://dy1wy50wuhbuj" path="res://sonidos/alien2.ogg" id="19_y35q6"]
+[ext_resource type="AudioStream" uid="uid://benl3iyqdw71a" path="res://sonidos/lineas de voz/vendebal2.ogg" id="20_7yrcx"]
 [ext_resource type="AudioStream" uid="uid://bc11ngk1523fx" path="res://sonidos/alien3.ogg" id="20_fuaxh"]
 [ext_resource type="AudioStream" uid="uid://cia815ggdet6q" path="res://sonidos/alien4.ogg" id="21_7yrcx"]
+[ext_resource type="AudioStream" uid="uid://clie5pb7pjae" path="res://sonidos/lineas de voz/vendebal3.ogg" id="21_ywudl"]
+[ext_resource type="AudioStream" uid="uid://bgx5g6qqf6ln" path="res://sonidos/lineas de voz/vendebal4.ogg" id="22_c5gow"]
 [ext_resource type="AudioStream" uid="uid://bwn6i1nr6m7k7" path="res://sonidos/alien5.ogg" id="22_ywudl"]
 [ext_resource type="AudioStream" uid="uid://bxrua770ijj34" path="res://sonidos/king1.ogg" id="23_c5gow"]
+[ext_resource type="AudioStream" uid="uid://5ldw4c66f3tu" path="res://sonidos/lineas de voz/vendebal5.ogg" id="23_s3lc6"]
 [ext_resource type="AudioStream" uid="uid://dbjlmgvwrsbdm" path="res://sonidos/king2.ogg" id="24_s3lc6"]
 [ext_resource type="AudioStream" uid="uid://bie0hn3p4vfhw" path="res://sonidos/king3.ogg" id="25_ancld"]
 [ext_resource type="AudioStream" uid="uid://d06ndbp2na6p4" path="res://sonidos/king4.ogg" id="26_2cl1g"]
@@ -160,13 +166,14 @@ _data = {
 layer = 100
 script = ExtResource("1_36de5")
 sprite_personaje = NodePath("Balloon/MarginContainer/Node2D/Linganguli")
-audio_stream_player = NodePath("Balloon/MarginContainer/Node2D/Grabación(61)")
-texturas_personajes = Array[Texture2D]([ExtResource("2_1337t"), ExtResource("3_icj72"), ExtResource("4_exrs5"), ExtResource("4_83g4i"), ExtResource("6_uylda"), ExtResource("4_wbrl0")])
-sonidos_p1 = Array[AudioStream]([ExtResource("8_s55h4"), ExtResource("9_c7uhq"), ExtResource("10_8dfid"), ExtResource("11_hf7m3"), ExtResource("12_whlvq")])
-sonidos_p2 = Array[AudioStream]([ExtResource("13_s55h4"), ExtResource("14_c7uhq"), ExtResource("15_8dfid"), ExtResource("16_hf7m3"), ExtResource("17_whlvq")])
+audio_stream_player = NodePath("AudioStreamPlayer")
+texturas_personajes = Array[Texture2D]([ExtResource("2_1337t"), ExtResource("3_icj72"), ExtResource("4_exrs5"), ExtResource("4_83g4i"), ExtResource("6_uylda"), ExtResource("4_wbrl0"), ExtResource("8_c7uhq")])
+sonidos_p1 = Array[AudioStream]([ExtResource("8_s55h4"), ExtResource("9_c7uhq"), ExtResource("11_hf7m3"), ExtResource("12_whlvq"), ExtResource("10_8dfid")])
+sonidos_p2 = Array[AudioStream]([ExtResource("13_s55h4"), ExtResource("14_c7uhq"), ExtResource("16_hf7m3"), ExtResource("15_8dfid"), ExtResource("17_whlvq")])
 sonidos_p4 = Array[AudioStream]([ExtResource("18_rkqe2"), ExtResource("19_y35q6"), ExtResource("20_fuaxh"), ExtResource("21_7yrcx"), ExtResource("22_ywudl")])
 sonidos_p5 = Array[AudioStream]([ExtResource("23_c5gow"), ExtResource("24_s3lc6"), ExtResource("25_ancld"), ExtResource("26_2cl1g"), ExtResource("27_bibu1")])
 sonidos_p6 = Array[AudioStream]([ExtResource("28_e38m1"), ExtResource("29_q3joy"), ExtResource("30_7fb0i"), ExtResource("31_keixe"), ExtResource("32_ni180")])
+sonidos_p7 = Array[AudioStream]([ExtResource("19_fuaxh"), ExtResource("20_7yrcx"), ExtResource("21_ywudl"), ExtResource("22_c5gow"), ExtResource("23_s3lc6")])
 
 [node name="Balloon" type="Control" parent="." unique_id=359403728]
 unique_name_in_owner = true

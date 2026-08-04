@@ -1,0 +1,27 @@
+~ start
+set GameManager.personaje_actual = 6
+player: !!!
+player: WAHHHHHH!!!
+set GameManager.personaje_actual = 7
+???: HAHAHAHAH hola amigo
+set GameManager.personaje_actual = 6
+player: ¿DE DONDE HAZ APARECIDO? ME HAZ ASUSTADO
+set GameManager.personaje_actual = 7
+???: yo? en todos lados, yo estoy en todos lados este es mi carnaval
+set GameManager.personaje_actual = 6
+player: este lugar me da vibras muy raras....
+set GameManager.personaje_actual = 7
+???: jajaja que divertido eres!
+???: es momento de un juego
+???: vamos a jugar c:
+set GameManager.personaje_actual = 6
+player: espera que estas haciendo!!
+player: hermano literalmente me acabas de empujar eso esta loquisimo
+player: estoy encerrado?!
+set GameManager.personaje_actual = 7
+???: no... considerate afortunado
+???: hasta que termines podras salir!
+???: toca el boton grande y rojo cuando quieras iniciar estare esperando...
+set GameManager.personaje_actual = 6
+player: cada vez sale un tipo mas loco...
+=> END

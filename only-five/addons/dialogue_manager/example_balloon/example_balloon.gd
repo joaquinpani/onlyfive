@@ -11,7 +11,7 @@ class_name DialogueManagerExampleBalloon extends CanvasLayer
 @export var audio_stream_player: AudioStreamPlayer 
 
 @export_group("Texturas y Sonidos")
-## Arrastra las texturas. Índice 0 = Personaje 1, Índice 1 = Personaje 2, etc.
+## Arrastra las texturas. Índice 0 = Personaje 1, Índice 1 = Personaje 2, etc. (Hasta 7 personajes)
 @export var texturas_personajes: Array[Texture2D]
 
 @export var sonidos_p1: Array[AudioStream]
@@ -20,6 +20,7 @@ class_name DialogueManagerExampleBalloon extends CanvasLayer
 @export var sonidos_p4: Array[AudioStream]
 @export var sonidos_p5: Array[AudioStream]
 @export var sonidos_p6: Array[AudioStream]
+@export var sonidos_p7: Array[AudioStream] # <--- Añadido Personaje 7
 ## =========================================================
 
 ## The dialogue resource
@@ -278,6 +279,7 @@ func reproducir_sonido_personaje() -> void:
 		4: sonidos_activos = sonidos_p4
 		5: sonidos_activos = sonidos_p5
 		6: sonidos_activos = sonidos_p6
+		7: sonidos_activos = sonidos_p7 # <--- Añadido Personaje 7
 		
 	if sonidos_activos.size() > 0:
 		audio_stream_player.stream = sonidos_activos[randi() % sonidos_activos.size()]

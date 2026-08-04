@@ -12,6 +12,7 @@ var ala6 = false
 var ala7 = false
 var ala8 = true
 var ala9 = false
+var ala10 = false
 # Referencia a la cámara (asegúrate de que el nodo se llame Camera3D dentro de tu Player)
 @onready var camera = $Camera3D
 @onready var raycast = $Camera3D/RayCast3D
@@ -188,9 +189,9 @@ func _on_circoestas_2_body_entered(body: Node3D) -> void:
 	if ala6 == false:
 		$"../carnaval/circo/SpotLight3D".hide()
 		$"../Node/CSGBox3D53".hide()
-		$"../carnaval/circo/SpotLight3D2".show()
+		$"../SpotLight3D6".show()
 		$"../carnaval/UniversfieldAppearance04142918".play()
-		$"../carnaval/pelota/AnimationPlayer".play("pelota se mueve")
+		$"../entrada/pelota/AnimationPlayer".play("pelota se mueve")
 		ala6 = true
 	pass # Replace with function body.
 	
@@ -236,7 +237,7 @@ func _on_muerte_body_entered(body: Node3D) -> void:
 func _on_circoestas_3_body_entered(body: Node3D) -> void:
 	if body.is_in_group("player") and ala9 == false:
 		ala9 = true
-		$"../carnaval/pelota".hide()
-		$"../carnaval/AnimatableBody3D".show()
-		$"../carnaval/hablar personaje5/AnimationPlayer".play("new_animation")
+		$"../entrada/pelota".hide()
+		$"../entrada/AnimatableBody3D".show()
+		$"../entrada/hablar personaje5/AnimationPlayer".play("new_animation")
 		

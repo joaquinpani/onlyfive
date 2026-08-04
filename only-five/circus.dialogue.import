@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://b0cvaamcabg0a"
+path="res://.godot/imported/circus.dialogue-fd65d32f309dc054ae196b84508c8dcb.tres"
+
+[deps]
+
+source_file="res://circus.dialogue"
+dest_files=["res://.godot/imported/circus.dialogue-fd65d32f309dc054ae196b84508c8dcb.tres"]
+
+[params]
+
+defaults=true

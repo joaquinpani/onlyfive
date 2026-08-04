@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://5ldw4c66f3tu"
+path="res://.godot/imported/vendebal5.ogg-ee92b4bb1ab23bce6293cbb8d5882590.oggvorbisstr"
+
+[deps]
+
+source_file="res://sonidos/lineas de voz/vendebal5.ogg"
+dest_files=["res://.godot/imported/vendebal5.ogg-ee92b4bb1ab23bce6293cbb8d5882590.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
