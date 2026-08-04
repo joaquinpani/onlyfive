@@ -11,6 +11,7 @@ var ala5 = false
 var ala6 = false
 var ala7 = false
 var ala8 = true
+var ala9 = false
 # Referencia a la cámara (asegúrate de que el nodo se llame Camera3D dentro de tu Player)
 @onready var camera = $Camera3D
 @onready var raycast = $Camera3D/RayCast3D
@@ -52,6 +53,11 @@ func _input(event: InputEvent) -> void:
 				if objeto_mirado.has_method("interactuar") and objeto_mirado.usable == true:
 					objeto_mirado.interactuar()
 					
+					
+		if raycast.is_colliding():
+			var objeto_mirado = raycast.get_collider()
+			if objeto_mirado.has_method("interactuar") and objeto_mirado.usable == true and objeto_mirado.is_in_group("autodiag"):
+					objeto_mirado.interactuar()
 			# Lanzamos el diálogo de Dialogue Manager
 		if raycast.is_colliding():
 				var objeto_mirado = raycast.get_collider()
@@ -184,6 +190,7 @@ func _on_circoestas_2_body_entered(body: Node3D) -> void:
 		$"../Node/CSGBox3D53".hide()
 		$"../carnaval/circo/SpotLight3D2".show()
 		$"../carnaval/UniversfieldAppearance04142918".play()
+		$"../carnaval/pelota/AnimationPlayer".play("pelota se mueve")
 		ala6 = true
 	pass # Replace with function body.
 	
@@ -224,3 +231,12 @@ func _on_muerte_body_entered(body: Node3D) -> void:
 	if body.is_in_group("player"):
 		GameManager.maldeltiempo = true
 	pass # Replace with function body.
+
+
+func _on_circoestas_3_body_entered(body: Node3D) -> void:
+	if body.is_in_group("player") and ala9 == false:
+		ala9 = true
+		$"../carnaval/pelota".hide()
+		$"../carnaval/AnimatableBody3D".show()
+		$"../carnaval/hablar personaje5/AnimationPlayer".play("new_animation")
+		
