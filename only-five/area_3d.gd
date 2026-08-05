@@ -11,6 +11,12 @@ func presionar():
 		return
 	ocupado = true
 	emit_signal("presionado")
+	$"../../pulpo/Icosphere/AnimationPlayer".play("new_animation")
+	$"../../pulpo/Icosphere_004/AnimationPlayer".play("new_animation")
+	$"../../pulpo/Sphere/AnimationPlayer".play("normal")
+	$"../../pulpo/Sphere/Icosphere_009/Icosphere_008/Icosphere_010/AnimationPlayer".play("new_animation")
+	$"../../pulpo/Sphere/Icosphere_009/Icosphere_008/AnimationPlayer".play("new_animation")
+	$"../../pulpo/Sphere/Icosphere_009/AnimationPlayer".play("arriba")
 	$"../../entrada/hablar personaje5/ChakongBabaYagaDanceHalloweenMelodySpookyGuitarVintageFilm255731".stop()
 	$DjAirhornSoundEffectKingbeatz1.play()
 	var tween = create_tween()
