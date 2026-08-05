@@ -11,3 +11,4 @@ var mensajes = 0
 var palancaaparecer = false
 var onlyfiveaparece = false
 var cinematic = false
+var movercirco = false

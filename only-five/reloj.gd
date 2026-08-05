@@ -1,5 +1,5 @@
 extends Sprite2D
-var minutos = 4
+var minutos = 9
 var segundos = 59
 
 # Called when the node enters the scene tree for the first time.

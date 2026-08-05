@@ -3,25 +3,26 @@ set GameManager.personaje_actual = 6
 player: !!!
 player: WAHHHHHH!!!
 set GameManager.personaje_actual = 7
-???: HAHAHAHAH hola amigo
+???: HAHAHAHAH hello, my friend.
 set GameManager.personaje_actual = 6
-player: ¿DE DONDE HAZ APARECIDO? ME HAZ ASUSTADO
+player: WHERE DID YOU COME FROM? YOU SCARED ME!
 set GameManager.personaje_actual = 7
-???: yo? en todos lados, yo estoy en todos lados este es mi carnaval
+???: Me? Everywhere. I'm everywhere. This is my carnival.
 set GameManager.personaje_actual = 6
-player: este lugar me da vibras muy raras....
+player: This place gives me really weird vibes...
 set GameManager.personaje_actual = 7
-???: jajaja que divertido eres!
-???: es momento de un juego
-???: vamos a jugar c:
+???: Hahaha, you're so funny!
+???: It's time for a game.
+set GameManager.movercirco = true
+???: Let's play c:
 set GameManager.personaje_actual = 6
-player: espera que estas haciendo!!
-player: hermano literalmente me acabas de empujar eso esta loquisimo
-player: estoy encerrado?!
+player: Wait, what are you doing?!
+player: Dude, you literally just pushed me. That's crazy!
+player: Am I trapped?!
 set GameManager.personaje_actual = 7
-???: no... considerate afortunado
-???: hasta que termines podras salir!
-???: toca el boton grande y rojo cuando quieras iniciar estare esperando...
+???: No... consider yourself lucky.
+???: You won't be able to leave until you finish!
+???: Press the big red button whenever you're ready to start. I'll be waiting...
 set GameManager.personaje_actual = 6
-player: cada vez sale un tipo mas loco...
+player: Every time, an even crazier guy shows up...
 => END

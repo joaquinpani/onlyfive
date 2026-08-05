@@ -6,8 +6,8 @@ func interactuar():
 	usable = false
 	$palanca/AnimationPlayer.play("Cube_001Action")
 	$"../Node/CSGBox3D16/AnimationPlayer".play("moverpues")
-	$"../OmniLight3D3".hide()
-	$"../OmniLight3D4".hide()
+	
+	
 	
 	$"../PalancaBaja".play()
 	

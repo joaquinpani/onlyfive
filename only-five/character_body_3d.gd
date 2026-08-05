@@ -13,6 +13,7 @@ var ala7 = false
 var ala8 = true
 var ala9 = false
 var ala10 = false
+var ala11 = false
 # Referencia a la cámara (asegúrate de que el nodo se llame Camera3D dentro de tu Player)
 @onready var camera = $Camera3D
 @onready var raycast = $Camera3D/RayCast3D
@@ -241,3 +242,11 @@ func _on_circoestas_3_body_entered(body: Node3D) -> void:
 		$"../entrada/AnimatableBody3D".show()
 		$"../entrada/hablar personaje5/AnimationPlayer".play("new_animation")
 		
+
+
+func _on_caermadera_body_entered(body: Node3D) -> void:
+	if body.is_in_group("player") and ala11 == false:
+		$"../Node3D/mesa/Cube_002/StaticBody3D/AnimationPlayer".play("new_animation")
+		ala11 = true
+		
+	pass # Replace with function body.

@@ -16,7 +16,7 @@ func _on_area_3d_body_entered(body: Node3D) -> void:
 	if usable1 == true:
 		$"../Node/CSGBox3D52/AnimationPlayer".play_backwards("new_animation")
 		$"../Node/AnimationPlayer".play("goup")
-		$"../Node/CSGBox3D11/AnimationPlayer".play_backwards("pared mov")
+		
 		$"../ParedMoviendose".play()
 		usable1 = false
 		$"../CanvasLayer/Label/AnimationPlayer".play("parkul")
