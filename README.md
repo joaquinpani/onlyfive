@@ -1,6 +1,6 @@
+
 <div align="center">
-  <h1><img width="1152" height="648" alt="only five banner" src="https://github.com/user-attachments/assets/4055b792-940c-40d3-9a73-b6af41f58e52" />
-</h1>
+  <h1><img width="1152" height="648" alt="only five banner" src="https://github.com/user-attachments/assets/4055b792-940c-40d3-9a73-b6af41f58e52" /></h1>
 </div>
 
 <hr>
@@ -36,8 +36,27 @@ if the alarm reaches 0 the game restarts and starts from 0</p>
 <p>i really dont know the game isnt optimized but its in compitible mode without good lights because is a standalone meta quest game</p>
 
 <h2>#5 HOW TO INSTALL</h2>
+HERE: https://github.com/joaquinpani/onlyfive/releases/tag/incompleted
 
 <h2>#6 HOW TO OPEN THE PROJECT IN GODOT EDITOR</h2>
+<div style="background-color: #1e1e1e; color: #ffffff; padding: 20px; border-radius: 10px; font-family: sans-serif;">
+  <p>If you want see the code and play inside Godot, is easy but you need follow this steps:</p>
+  <ul>
+    <li>first you need to have godot yeah because i dont klnow what are you going to do withouht godot but yeah
+    ("the version of the project that i made with godot is godot 4.7)
+    https://godotengine.org/download/archive/4.7-stable/</li>
+    <li><b>Step 1: Download code:</b> You go up in this github page and click the green button that say "Code" and select "Download ZIP". Or if you know how use git, put this in terminal: <code>git clone https://github.com/joaquinpani/onlyfive.git</code>. When download finish, extract the zip folder in your pc!</li>
+    <li><b>Step 2: Open Godot:</b> You need Godot Engine for open this. Open the program.</li>
+    <li><b>Step 3: Import it!:</b> In the Godot projects manager, you need to click in "Import" button!
+        <br><br>
+        with that you can already run the game it doesnt require any external dependency (everything comes in the github) so you can already modify and or see the program just giving click to enter the project!
+        <br>
+        <i><img width="264" height="165" alt="image" src="https://github.com/user-attachments/assets/ab63b316-89b6-4e1d-bc0d-736005b4e899" /></i>
+        <br><br>
+    </li>
+    <li><b>Step 4: Search the project:</b> Find the folder you extract before and select the file called <code>project.godot</code>. And finish! Now you have the project open to modify!</li>
+  </ul>
+</div>
 
 <h2>#7 HOW TO PASS THE GAME (SPOILERS)</h2>
 
@@ -116,6 +135,7 @@ the ai is today for that to be viable but it takes away 100% the freedom of maki
   <li>in the system of the control minigame</li>
   <li>in the text bubble </li>
   <li>the 100 messages of the king (cmon i was not going to write 100 messages that nobody is going to see)</li>
+  <li>in the script of the monster to follow the player</li>
 </ul>
 
 <p>Equally even though i hve used them as a base the point for me is to save time but 
@@ -129,12 +149,10 @@ advances to be able to apply it in my favor like in characterbody</p>
   <li>3D MODELS MADE BY ME/TUTORIAL GUIDE BUT WITH MY OWN CHANGES AND OR MODIFICATIONS</li>
 </ul>
 
-<b>EXTRA CREDITS:</b>
 <ul>
   <li><b>MUSIC:</b> pixabay</li>
   <li><b>FONTS:</b> @augie: augiefont</li>
   <li><b>MATERIALS:</b> ambient cg</li>
 </ul>
-
 
 THIS README HAS BEEN TRANSLETED TO ENGLISH BY GOOGLE AND ME (yeah me its not a good think, english isnt my native language but i do a lapse if you wanna see i do the readme withouth ia)
