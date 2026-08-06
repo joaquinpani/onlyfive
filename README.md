@@ -36,7 +36,7 @@ if the alarm reaches 0 the game restarts and starts from 0</p>
 <p>i really dont know the game isnt optimized but its in compitible mode without good lights because is a standalone meta quest game</p>
 
 <h2>#5 HOW TO INSTALL</h2>
-HERE: https://github.com/joaquinpani/onlyfive/releases/tag/incompleted_v2
+HERE: https://github.com/joaquinpani/onlyfive/releases/tag/incompleted_v2_fix
 just execute the .exe
 
 <h2>#6 HOW TO OPEN THE PROJECT IN GODOT EDITOR</h2>
