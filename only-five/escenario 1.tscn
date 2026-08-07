@@ -6136,12 +6136,6 @@ light_energy = 4.485
 shadow_enabled = true
 omni_range = 56.29132
 
-[node name="OmniLight3D14" type="OmniLight3D" parent="." unique_id=1628364341]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32.54277, 4.6884866, 8.262927)
-light_energy = 3.0
-shadow_enabled = true
-omni_range = 56.29132
-
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1731608351]
 
 [node name="Puntero" type="Sprite2D" parent="CanvasLayer" unique_id=1033224776]
@@ -8401,11 +8395,11 @@ transform = Transform3D(-0.0999598, 0, -0.0028352903, 0, 0.1, 0, 0.0028352903, 0
 stream = ExtResource("29_u1p4t")
 max_distance = 20.0
 
-[node name="SpotLight3D" type="SpotLight3D" parent="zona2/Node3D/dualsenseusablpro" unique_id=242169986]
-transform = Transform3D(9.991961, 0.28352857, 0.2834146, -0.2835286, -4.3606067e-07, 9.995979, 0.28341457, -9.995979, 0.00803841, -0.03741455, 61.07828, 1.3189697)
-light_energy = 4.0
-spot_range = 3.6550045
-spot_angle = 27.382122
+[node name="OmniLight3D14" type="OmniLight3D" parent="zona2/Node3D/dualsenseusablpro" unique_id=1628364341]
+transform = Transform3D(-0.28352857, 0, -9.995979, 0, 10, 0, 9.995979, 0, -0.28352857, 2.0514755, 60.157562, 5.1588745)
+light_energy = 3.0
+shadow_enabled = true
+omni_range = 56.29132
 
 [node name="ZonaEvasion" type="Area3D" parent="zona2/Node3D" unique_id=786402609]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4.6128407)
@@ -9399,7 +9393,6 @@ shaded = true
 texture = ExtResource("87_fqo8e")
 
 [node name="carnaval" type="Node3D" parent="." unique_id=1301024364]
-visible = false
 script = ExtResource("90_dy7cl")
 
 [node name="Timer" type="Timer" parent="carnaval" unique_id=90274633]
@@ -9408,6 +9401,7 @@ one_shot = true
 
 [node name="circo" parent="carnaval" unique_id=1448476315 instance=ExtResource("84_hqi3u")]
 transform = Transform3D(6, 0, 0, 0, 6, 0, 0, 0, 6, 0.48661995, 7.660568, -160.39107)
+visible = false
 
 [node name="Cylinder" parent="carnaval/circo" index="0" unique_id=1511328902]
 surface_material_override/2 = SubResource("StandardMaterial3D_kl4gy")
@@ -9832,7 +9826,7 @@ stream = ExtResource("101_qol8e")
 transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, -0.886467, -1.18149)
 
 [node name="base" type="AnimatableBody3D" parent="prohibited area/monitor fix/monitor esqueleto" unique_id=1324843801]
-transform = Transform3D(1, 0, 0, 0, 0.1760075, -0.9843879, 0, 0.9843879, 0.1760075, 0, 1.2248679, 2.9082546)
+transform = Transform3D(1, 0, 0, 0, 0.17600748, -0.98438776, 0, 0.98438776, 0.17600748, 0, 1.2248679, 2.9082546)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="prohibited area/monitor fix/monitor esqueleto/base" unique_id=1559224992]
 transform = Transform3D(1, 0, 0, 0, 0.6932816, -0.7206668, 0, 0.7206668, 0.6932816, -0.012672424, 0.02939701, 7.343292e-05)

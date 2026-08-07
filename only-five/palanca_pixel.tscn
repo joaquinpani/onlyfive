@@ -1,0 +1,51 @@
+[gd_scene format=3 uid="uid://ejkld5fyi6e0"]
+
+[ext_resource type="Texture2D" uid="uid://eqq43p3iobxd" path="res://pixel minigame/palanca.png" id="1_pbytx"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qg7j2"]
+atlas = ExtResource("1_pbytx")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_adntj"]
+atlas = ExtResource("1_pbytx")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qefoi"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qg7j2")
+}],
+"loop": 1,
+"name": &"abajo",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_adntj")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 1.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3icjp"]
+size = Vector2(42, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uenwl"]
+size = Vector2(46, 20)
+
+[node name="palanca" type="AnimatableBody2D" unique_id=192063451]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1610351342]
+sprite_frames = SubResource("SpriteFrames_qefoi")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=749328102]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1872308809]
+position = Vector2(-1, 14)
+shape = SubResource("RectangleShape2D_3icjp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=333044046]
+position = Vector2(-1, -10)
+shape = SubResource("RectangleShape2D_uenwl")
