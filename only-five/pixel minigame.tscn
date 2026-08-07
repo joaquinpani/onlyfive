@@ -87,7 +87,7 @@ func _on_cambio_5_body_entered(body: Node2D) -> void:
 
 func _on_cambio_8_body_entered(body: Node2D) -> void:
 	if body.is_in_group(\"player_p\"):
-		
+		pass
 	pass # Replace with function body.
 "
 
@@ -374,7 +374,6 @@ zoom = Vector2(1.7, 1.7)
 [node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=843019490 groups=["player_p"]]
 position = Vector2(60, 315)
 script = SubResource("GDScript_nho35")
-velocidad = null
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=1922448226]
 position = Vector2(0, 2.5)
